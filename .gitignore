@@ -1,0 +1,16 @@
+*.venv*
+*pycache*
+*DS_Store*
+*node_modules*
+scratch/
+.adk/
+.adk/session.db
+*.egg-info
+*scratchpad*
+*scratchpad-*
+.venv
+.pytest_cache
+__pycache__
+
+*token.json
+*.env
