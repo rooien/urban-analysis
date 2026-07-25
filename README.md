@@ -13,6 +13,7 @@ Welcome to the **Urban Streetscape Intervention Analysis** repository. This proj
 6. [Directory Structure](#-directory-structure)
 7. [Installation & Setup](#-installation--setup)
 8. [Git Workflow & Collaboration Guide](#-git-workflow--collaboration-guide)
+9. [Coding Standards](#-coding-standards)
 
 ---
 
@@ -190,3 +191,10 @@ git push -u origin <your-branch-name>
 
 #### Step 5: Review and Merge
 Assign reviewers from your stream and tag the POs/Mentor if needed. Once approved and checks pass, your PR can be merged into `main`.
+
+---
+
+## 💻 Coding Standards
+To ensure our codebase remains clean and maintainable, all contributors are expected to follow our shared coding standards (covering PEP 8, Tidyverse, docstrings, notebook hygiene, and security). 
+
+Please read the full **[Coding Standards & Best Practices Guide](CODING_STANDARDS.md)** before writing code.
