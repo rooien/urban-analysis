@@ -21,8 +21,6 @@ The goal is to develop a repeatable analytical framework to deliver clear, decis
 **Team & Roles:**
 - **Product Owners:** Matthew Raisbeck & Danielle Rebbechi (Infrastructure Victoria)
 - **Mentor:** Scott West
-- **Company Director:** Sing
-- **Tools:** Microsoft Teams (communication) and Microsoft Planner (project management)
 
 ## Business Problem & Research Question
 Understanding the impacts on businesses, parking utilization, and movement patterns when road space is reallocated is complex. We are leveraging public datasets to provide data-driven evidence of these impacts, accounting for challenges like COVID-19 behavioral shifts.
