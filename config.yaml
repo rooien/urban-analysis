@@ -1,0 +1,40 @@
+# Victoria Urban Planning - Project Configuration
+# This file stores all configurable parameters, paths, and URLs used throughout the project.
+
+ports:
+  backend: 7000
+  frontend: 5000
+
+data_sources:
+  bicycle_network: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/bicycle-network/exports/geojson"
+  parking_bays: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/on-street-parking-bays/exports/geojson"
+  suburbs: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/small-areas-for-census-of-land-use-and-employment-clue/exports/geojson"
+
+paths:
+  data_dir: "data"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  database: "data/parking_analytics.duckdb"
+
+processing:
+  # Buffer distances (in meters) used for geospatial proximity matching and spatial joins
+  buffers:
+    # Distance in meters used to buffer bike lane line geometries when identifying nearby parking bays and street blocks
+    bike_lanes_meters: 20
+    # Distance in meters used to buffer parking bay point locations when matching them against bike lane networks
+    parking_bays_meters: 20
+    
+  # Spatial Coordinate Reference Systems (CRS) EPSG codes
+  spatial:
+    # Projected CRS (GDA2020 / VicGrid - EPSG:7899) unit in meters; used for accurate spatial calculations, buffering, and distance joins
+    epsg_projected: 7899
+    # Geographic CRS (WGS 84 - EPSG:4326) unit in degrees (lat/lon); used for GeoJSON web data exchange and frontend map visualization
+    epsg_wgs84: 4326
+    
+  historical:
+    baseline:
+      year: 2013
+      months: [1, 2]
+    post_intervention:
+      year: 2014
+      months: [11, 12]

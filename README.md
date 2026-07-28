@@ -7,11 +7,12 @@ This repository is for the SIT Capstone "Chameleon Project" in partnership with 
 2. Business Problem & Research Question
 3. Stream Structure
 4. Tech Stack
-5. Data Sources & CRS Warning
-6. Directory Structure
-7. Installation & Setup
-8. Git Workflow & Collaboration Guide
-9. Coding Standards
+5. Architecture & Key Components
+6. Data Sources & CRS Warning
+7. Directory Structure
+8. Installation, Setup & Execution
+9. Git Workflow & Collaboration Guide
+10. Coding Standards
 
 ## Project Overview
 Infrastructure Victoria is an independent advisory body providing evidence-based research to the Victorian Government. This project evaluates the real-world impacts of streetscape interventions (like new bike lanes, road reallocations, and pedestrian upgrades) on transport efficiency, sustainability, and livability. 
@@ -42,10 +43,57 @@ The project is divided into four stakeholder-focused streams:
 **Note:** All streams must share the same foundational tech stack and methodology to avoid sprawl and ensure the final insights are cohesive.
 
 ## Tech Stack
-- **Languages:** Python and R (both confirmed)
-- **Python Libraries:** pandas, numpy, statsmodels, geopandas, shapely, matplotlib, plotly (and JupyterLab)
-- **Visualization:** Power BI or Tableau (to be confirmed with POs), or potentially a custom React UI
+- **Backend:** Python (FastAPI, DuckDB, pandas, geopandas, shapely, uvicorn)
+- **Frontend:** React, Vite, MapLibre GL, Recharts
+- **Languages:** Python, JavaScript, R (planned)
+- **Visualization:** Custom React Dashboard
 - **GIS Tools:** QGIS or ArcGIS
+- **Notebooks:** JupyterLab (for data exploration)
+
+## Architecture & Key Components
+
+The diagram below illustrates the end-to-end architecture and key building blocks of the application, showcasing the ingestion pipeline, data storage, application serving, and orchestration layers.
+
+```mermaid
+flowchart TD
+    %% Subgraphs for layering
+    subgraph Client ["Client and Browser"]
+        B["React Dashboard on Port 5173"]
+        MC["MapContainer with MapLibre GL"]
+        ID["ImpactDashboard with Recharts"]
+        B --> MC
+        B --> ID
+    end
+
+    subgraph AppServers ["Application Serving"]
+        direction LR
+        FE["Vite Dev Server"] -->|Serves Application| B
+        BE["FastAPI Backend on Port 8000"] -->|REST API for GeoJSON and Metrics| MC
+        BE -->|REST API for Hourly Occupancy| ID
+    end
+
+    subgraph Storage ["Data Storage"]
+        DB[(DuckDB Database)]
+        BE -->|Queries| DB
+    end
+
+    subgraph Orchestration ["Orchestration and Control"]
+        RUN["run_app.py"] -->|Starts concurrently| FE
+        RUN -->|Starts concurrently| BE
+        STOP["stop_app.py"] -->|Gracefully terminates| FE
+        STOP -->|Gracefully terminates| BE
+        CFG{"config.yaml"} -.->|Provides Ports and Paths| RUN
+        CFG -.->|Provides Ports and Paths| STOP
+        CFG -.->|Provides Shared Constants| BE
+        CFG -.->|Generates dotenv file| FE
+    end
+
+    subgraph DataPipeline ["Data Ingestion Pipeline ETL"]
+        RAW[/Raw Data GeoJSON and CSV/] -->|Extracted and Transformed| ING["Python Scripts in src/ingestion"]
+        ING -->|Loads Aggregated Data| DB
+        CFG -.->|Provides Spatial Buffers and Years| ING
+    end
+```
 
 ## Data Sources & CRS Warning
 We are using public datasets from:
@@ -67,16 +115,28 @@ Please adhere to this structure to keep the repo organized and facilitate code s
 Victoria-Urban-Planning/
 ├── data/
 │   ├── raw/            # Original, untouched datasets
-│   └── processed/      # Cleaned and transformed datasets
-├── notebooks/          # Notebooks organized by stream or task
-├── src/                # Shared Python/R modules and utilities
-├── project_description.md
-├── requirements.txt
+│   ├── processed/      # Cleaned and transformed datasets
+│   └── parking_analytics.duckdb # Aggregated database for the API
+├── frontend/           # React + Vite dashboard application
+│   ├── src/
+│   ├── package.json
+│   └── ...
+├── notebooks/          # Data exploration notebooks
+├── src/
+│   ├── api/            # FastAPI backend application
+│   └── ingestion/      # Data processing and ingestion scripts
 ├── CODING_STANDARDS.md
-└── README.md
+├── DATA.md
+├── README.md
+├── requirements.txt
+└── scratchpad.txt
 ```
 
-## Installation & Setup
+## Installation, Setup & Execution
+
+### Automated Orchestration (Recommended)
+
+The `run_app.py` script automatically bootstraps the entire application. It creates and activates the Python virtual environment, installs backend and frontend dependencies, generates the frontend `.env` file from `config.yaml`, and starts both services concurrently.
 
 1. **Clone the Repository:**
    ```bash
@@ -84,27 +144,65 @@ Victoria-Urban-Planning/
    cd Victoria-Urban-Planning
    ```
 
-2. **Set Up Python Virtual Environment:**
-   - On macOS/Linux:
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
-   - On Windows:
-     ```bash
-     python -m venv .venv
-     .venv\Scripts\activate
-     ```
-
-3. **Install Dependencies:**
+2. **Run the Orchestrator:**
    ```bash
-   pip install -r requirements.txt
+   python run_app.py
+   ```
+   *Note: Ensure you have Python 3 and Node.js/npm installed locally.*
+
+3. **Run the Data Ingestion Pipeline (First Time Only):**
+   If the database file is not present, build and populate it by executing the orchestrator:
+   ```bash
+   python run_ingestion.py
    ```
 
-4. **Launch JupyterLab:**
+4. **Stopping the Application:**
+   To gracefully terminate both background services and free up the ports, run:
    ```bash
-   jupyter lab
+   python stop_app.py
    ```
+
+---
+
+### Manual Setup (For Development)
+
+If you prefer to manage the services independently or execute data exploration notebooks, follow these manual steps:
+
+#### 1. Backend Setup & Execution
+```bash
+# Create the Virtual Environment
+python3 -m venv .venv
+
+# Activate the Virtual Environment
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install Dependencies
+pip install -r requirements.txt
+
+# Run Ingestion Pipeline
+python run_ingestion.py
+
+# Start the Backend API
+uvicorn src.api.main:app --reload
+```
+The API will be running at `http://localhost:8000`. You can view the interactive documentation at `http://localhost:8000/docs`.
+
+#### 3. Frontend Setup & Execution
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The dashboard will be running at `http://localhost:5173`. 
+
+*Note: Make sure to copy the `ports` and `historical` values from `config.yaml` into a `frontend/.env` file if running manually.*
+
+#### 4. Launch JupyterLab
+If you want to run the data exploration notebooks, activate your virtual environment and run:
+```bash
+source .venv/bin/activate
+jupyter lab
+```
 
 ## Git Workflow & Collaboration Guide
 

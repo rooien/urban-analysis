@@ -1,0 +1,284 @@
+.mapWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: var(--bg-deep);
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-deep);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  gap: 16px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(6, 182, 212, 0.1);
+  border-top-color: var(--accent-cyan);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.popupContent {
+  background: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  box-shadow: var(--shadow-premium);
+  pointer-events: none;
+}
+
+.popupTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4px;
+}
+
+.popupStat {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.popupStat span {
+  font-weight: 600;
+  color: var(--accent-coral);
+}
+
+/* Maplibre popup overrides to match glassmorphism */
+:global(.maplibregl-popup-content) {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+:global(.maplibregl-popup-tip) {
+  border-top-color: var(--bg-surface) !important;
+}
+
+/* Premium Map Legend */
+.mapLegend {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  z-index: 10;
+  background: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-premium);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.legendTitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 6px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.legendLineCyan,
+.legendLineOrange {
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  border-radius: var(--radius-full);
+}
+
+.legendLineCyan {
+  background-color: var(--accent-cyan);
+  box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+.legendLineOrange {
+  background-color: #f97316;
+  box-shadow: 0 0 8px #f97316;
+}
+
+.hasTooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+  transition: border-color var(--transition-fast);
+}
+
+.hasTooltip:hover {
+  border-bottom-color: var(--accent-cyan);
+}
+
+.hasTooltipOrange:hover {
+  border-bottom-color: var(--accent-coral);
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 240px;
+  background: rgba(15, 17, 26, 0.95);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 110%;
+  box-shadow: var(--shadow-premium);
+  opacity: 0;
+  transform: translateY(-50%) translateX(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+  text-align: left;
+}
+
+.tooltipText::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent rgba(15, 17, 26, 0.95) transparent transparent;
+}
+
+.hasTooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.tooltipTitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 4px;
+}
+
+.tooltipOrange .tooltipTitle {
+  color: var(--accent-coral);
+}
+
+.tooltipList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.tooltipList li {
+  margin-bottom: 6px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.tooltipList li::before {
+  content: "•";
+  color: var(--accent-cyan);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tooltipOrange .tooltipList li::before {
+  color: var(--accent-coral);
+}
+
+.streetFocusBadge {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 10;
+  background: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  border-left: 4px solid var(--accent-cyan);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-premium);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.badgePulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(6, 182, 212, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+}
+
+.badgeText {
+  color: var(--text-secondary);
+}
+
+.badgeText strong {
+  color: var(--text-primary);
+}
+
+.badgeSuburb {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 4px;
+}
+
