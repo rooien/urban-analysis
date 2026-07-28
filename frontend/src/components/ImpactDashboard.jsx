@@ -196,7 +196,7 @@ const ImpactDashboard = ({ suburb, street, selectedBlock, onBlockClick, blocksGe
                     "No parking bays were removed on this block for bike lanes."
                   ) : (
                     <>
-                      Constructing bike lanes removed <span className={styles.highlightAlert}>{removed} parking bays</span> ({pctRemoved}% capacity reduction). Average parking occupancy on remaining bays <span className={styles.highlightAlert}>{isPositive ? `increased by +${(diff * 100).toFixed(1)}%` : diff < 0 ? `decreased by ${(diff * 100).toFixed(1)}%` : 'remained unchanged'}</span>.
+                      Constructing bike lanes removed <span className={styles.highlightAlert}>{removed} parking bays</span> ({pctRemoved}% capacity reduction). Average parking occupancy on remaining bays <span className={styles.highlightAlert}>{isPositive ? `increased by +${(diff * 100).toFixed(1)}%` : diff < 0 ? `decreased by ${Math.abs(diff * 100).toFixed(1)}%` : 'remained unchanged'}</span>.
                     </>
                   )}
                 </div>
@@ -332,7 +332,7 @@ const ImpactDashboard = ({ suburb, street, selectedBlock, onBlockClick, blocksGe
                     `No parking bays were removed across ${street && street !== 'All Streets' ? street : suburb || 'this area'} for bike lanes.`
                   ) : (
                     <>
-                      Constructing bike lanes in <span className={styles.highlightAlert}>{suburb}</span> {street && street !== 'All Streets' ? `on ${street}` : 'across all streets'} removed <span className={styles.highlightAlert}>{removed} parking bays</span> ({pct}% capacity reduction). Average parking occupancy <span className={styles.highlightAlert}>{isPositive ? `increased by +${(diff * 100).toFixed(1)}%` : diff < 0 ? `decreased by ${(diff * 100).toFixed(1)}%` : 'remained unchanged'}</span>.
+                      Constructing bike lanes in <span className={styles.highlightAlert}>{suburb}</span> {street && street !== 'All Streets' ? `on ${street}` : 'across all streets'} removed <span className={styles.highlightAlert}>{removed} parking bays</span> ({pct}% capacity reduction). Average parking occupancy <span className={styles.highlightAlert}>{isPositive ? `increased by +${(diff * 100).toFixed(1)}%` : diff < 0 ? `decreased by ${Math.abs(diff * 100).toFixed(1)}%` : 'remained unchanged'}</span>.
                     </>
                   )}
                 </div>

@@ -173,11 +173,11 @@ def get_block_occupancy(
                 AVG(CASE WHEN year={BASELINE_YEAR} THEN occupancy_rate ELSE NULL END) as occ_pre,
                 AVG(CASE WHEN year={POST_YEAR} THEN occupancy_rate ELSE NULL END) as occ_post
             FROM hourly_occupancy
-            WHERE suburb = ? AND street_name = ? AND block_desc = ?
+            WHERE street_name = ? AND block_desc = ?
             GROUP BY 1
             ORDER BY 1
         """
-        df = con.execute(query, [suburb, street, block_desc]).df()
+        df = con.execute(query, [street, block_desc]).df()
         
         if df.empty:
             raise HTTPException(

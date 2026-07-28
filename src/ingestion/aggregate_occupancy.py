@@ -48,13 +48,13 @@ def get_block_key(desc: str) -> str:
     if len(parts) > 1:
         cross = parts[1].split(" and ")
         if len(cross) > 1:
-            st1 = cross[0].strip().upper()
-            st2 = cross[1].strip().upper()
+            st1 = normalize(cross[0])
+            st2 = normalize(cross[1])
             st_sorted = sorted([st1, st2])
             return f"BETWEEN {st_sorted[0]} AND {st_sorted[1]}"
     parts = desc.split(" from ")
     if len(parts) > 1:
-        return f"FROM {parts[0].strip().upper()}"
+        return f"FROM {normalize(parts[0])}"
     return ""
 
 
@@ -79,6 +79,10 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
     # Join the Parquet file with the mapping table and save a temporary mapped Parquet to speed up aggregation
     temp_parquet = os.path.join(PROCESSED_DIR, f"temp_mapped_events_{year}.parquet")
     
+    norm_st = "REGEXP_REPLACE(REPLACE(REPLACE(UPPER(TRIM(StreetName)), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\\\s+', ' ', 'g')"
+    norm_b1 = "REGEXP_REPLACE(REPLACE(REPLACE(UPPER(TRIM(BetweenStreet1)), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\\\s+', ' ', 'g')"
+    norm_b2 = "REGEXP_REPLACE(REPLACE(REPLACE(UPPER(TRIM(BetweenStreet2)), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\\\s+', ' ', 'g')"
+
     query_map = f"""
     COPY (
         WITH events AS (
@@ -90,15 +94,15 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
                 ArrivalTime,
                 DepartureTime,
                 DurationSeconds,
-                UPPER(REGEXP_REPLACE(REPLACE(TRIM(StreetName), 'LITTLE ', 'LT '), '\\s+', ' ', 'g')) AS norm_street,
+                {norm_st} AS norm_street,
                 CASE 
                     WHEN BetweenStreet2 IS NOT NULL AND TRIM(BetweenStreet2) != '' AND TRIM(UPPER(BetweenStreet2)) != 'DEAD END'
                     THEN 'BETWEEN ' || 
-                         CASE WHEN TRIM(UPPER(BetweenStreet1)) < TRIM(UPPER(BetweenStreet2)) 
-                              THEN TRIM(UPPER(BetweenStreet1)) || ' AND ' || TRIM(UPPER(BetweenStreet2)) 
-                              ELSE TRIM(UPPER(BetweenStreet2)) || ' AND ' || TRIM(UPPER(BetweenStreet1)) 
+                         CASE WHEN {norm_b1} < {norm_b2} 
+                              THEN {norm_b1} || ' AND ' || {norm_b2} 
+                              ELSE {norm_b2} || ' AND ' || {norm_b1} 
                          END
-                    ELSE 'FROM ' || TRIM(UPPER(BetweenStreet1))
+                    ELSE 'FROM ' || {norm_b1}
                 END AS block_key
             FROM read_parquet('{parquet_path}')
         )

@@ -110,20 +110,19 @@ def main() -> None:
     con.execute(f"""
     CREATE OR REPLACE TABLE blocks_summary AS
     WITH baseline AS (
-        SELECT suburb, street_name, block_desc, MAX(bay_count) as baseline_bays
+        SELECT street_name, block_desc, MAX(bay_count) as baseline_bays
         FROM hourly_occupancy
         WHERE year = {BASELINE_YEAR} AND month(hr) IN {base_months_str}
-        GROUP BY 1, 2, 3
+        GROUP BY 1, 2
     ),
     final AS (
-        SELECT suburb, street_name, block_desc, MAX(bay_count) as final_bays
+        SELECT street_name, block_desc, MAX(bay_count) as final_bays
         FROM hourly_occupancy
         WHERE year = {POST_YEAR} AND month(hr) IN {post_months_str}
-        GROUP BY 1, 2, 3
+        GROUP BY 1, 2
     ),
     occupancy_stats AS (
         SELECT 
-            suburb,
             street_name,
             block_desc,
             year,
@@ -131,7 +130,7 @@ def main() -> None:
         FROM hourly_occupancy
         WHERE (year = {BASELINE_YEAR} AND month(hr) IN {base_months_str}) 
            OR (year = {POST_YEAR} AND month(hr) IN {post_months_str})
-        GROUP BY 1, 2, 3, 4
+        GROUP BY 1, 2, 3
     )
     SELECT 
         g.suburb,
@@ -144,9 +143,9 @@ def main() -> None:
         MAX(CASE WHEN s.year = {BASELINE_YEAR} THEN s.avg_occupancy ELSE NULL END) as pre_occupancy,
         MAX(CASE WHEN s.year = {POST_YEAR} THEN s.avg_occupancy ELSE NULL END) as post_occupancy
     FROM block_geometries g
-    LEFT JOIN baseline b ON g.suburb = b.suburb AND g.street_name = b.street_name AND g.block_desc = b.block_desc
-    LEFT JOIN final f ON g.suburb = f.suburb AND g.street_name = f.street_name AND g.block_desc = f.block_desc
-    LEFT JOIN occupancy_stats s ON g.suburb = s.suburb AND g.street_name = s.street_name AND g.block_desc = s.block_desc
+    LEFT JOIN baseline b ON g.street_name = b.street_name AND g.block_desc = b.block_desc
+    LEFT JOIN final f ON g.street_name = f.street_name AND g.block_desc = f.block_desc
+    LEFT JOIN occupancy_stats s ON g.street_name = s.street_name AND g.block_desc = s.block_desc
     GROUP BY 1, 2, 3, 4, 5, 6, 7
     """)
 

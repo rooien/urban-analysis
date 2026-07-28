@@ -85,7 +85,7 @@ def main() -> None:
                 ArrivalTime,
                 DepartureTime,
                 TRY_CAST(DurationSeconds AS INTEGER) AS DurationSeconds,
-                UPPER(REGEXP_REPLACE(REPLACE(TRIM(StreetName), 'LITTLE ', 'LT '), '\\s+', ' ', 'g')) AS normalized
+                UPPER(REGEXP_REPLACE(REPLACE(REPLACE(TRIM(StreetName), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\s+', ' ', 'g')) AS normalized
             FROM read_csv_auto('{csv_path}', ignore_errors=true)
             WHERE ArrivalTime IS NOT NULL
               AND DepartureTime IS NOT NULL
