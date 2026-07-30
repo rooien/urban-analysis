@@ -10,37 +10,34 @@ The roadmap is phased over three sprints, each culminating in a key milestone.
 **Objective:** Ingest all relevant public datasets, perform rigorous Exploratory Data Analysis (EDA) to validate proxy methodologies, resolve CRS discrepancies, and build the foundational spatial database schema.
 **Key Milestone 1:** A fully populated, query-optimized DuckDB database and a complete suite of EDA notebooks validating Before/After metrics.
 
-### 1.1 Project Bootstrapping & Environment Setup
-- [ ] Initialize the Git repository, configure the comprehensive `.gitignore`, and establish the standardized directory structure (`data/raw/`, `data/processed/`, `notebooks/`, `src/ingestion/`, `src/api/`, `frontend/`).
-- [ ] Define the Python virtual environment and list exact dependencies in requirements.txt (FastAPI, DuckDB, GeoPandas, Shapely, PyYAML, etc.).
-- [ ] Create the central config.yaml to manage shared parameters (ports, buffer distances, historical years, and CRS strings).
-- [ ] Implement src/config.py to expose YAML configurations as strongly-typed, module-level Python constants.
+### 1.1 Data Acquisition & Preparation
+- [ ] As a Data Analyst, I want to automatically download and store raw datasets (Bicycle Networks, SCATS Volumes, and Parking Records) so that I have a reliable and standardized local data source for analysis.
+- [ ] As a Data Analyst, I want to establish a proxy data acquisition workflow using Remote Sensing and economic indicators so that I can evaluate impacts in LGAs lacking direct sensor infrastructure.
 
-### 1.2 Data Acquisition & Preparation
-- [ ] Implement src/ingestion/download_base_data.py to automatically fetch and store raw datasets (Bicycle Infrastructure Network, Pop-up Bike Lanes, Suburbs GeoJSON, SCATS Volumes, and Parking Sensor historical records) into `data/raw/`.
-- [ ] Formulate a proxy data acquisition workflow for Remote Sensing data (Vicmap Aerial Imagery or Google Earth Historical imagery) and local council pedestrian/spend portals as outlined in DATA.md.
+### 1.2 Multi-Stream Exploratory Data Analysis (EDA)
+**Task 1.2.1 - Spatial & Intervention Temporal Analysis**
+- [ ] As a Transport Planner, I want to conduct an EDA on bike lane network datasets to map infrastructure and extract exact construction dates across all target LGAs so that I can establish a precise intervention timeline.
+- [ ] As a Transport Planner, I want to analyze and document spatial overlaps between bike lanes and parking infrastructure using buffer analysis so that I can identify zones with potential parking impacts.
 
-### 1.3 Multi-Stream Exploratory Data Analysis (EDA)
-- [ ] **Task 1.3.1 - Spatial & Intervention Temporal Analysis**
-  - Create notebooks/01_bike_lanes_eda.ipynb to map bike lane networks and extract exact construction dates ($T_c$) across all target LGAs.
-  - Document spatial overlaps with existing on-street parking infrastructure using Buffer analysis.
-- [ ] **Task 1.3.2 - Traffic & Active Transport Trends**
-  - Create notebooks/02_traffic_volumes_eda.ipynb to parse SCATS 15-minute interval data and historical AADT.
-  - Aggregate traffic and intersection turning movements by hour/day to establish baseline congestion profiles.
-- [ ] **Task 1.3.3 - Parking Proxies & Sensor Evaluation**
-  - Create notebooks/03_parking_and_aerial_imagery_eda.ipynb to evaluate City of Melbourne (CoM) historical parking sensor records.
-  - Prototype the Remote Sensing approach: use a pre-trained Object Detection model (e.g., YOLO) or manual sampling on aerial imagery to count parked cars in buffers ($T_c \pm 6$ months) for non-sensor LGAs.
-- [ ] **Task 1.3.4 - Economic Proxies & CRS Resolution**
-  - Create notebooks/04_economic_social_eda.ipynb to explore VISTA survey data and map footfall metrics.
-  - Identify all CRS mismatches (e.g., GDA2020/VICGRID94 vs Web Mercator) and document the precise mathematical reprojection strategy.
+**Task 1.2.2 - Traffic & Active Transport Trends**
+- [ ] As a Transport Engineer, I want to conduct an EDA on SCATS interval data and historical AADT so that I can understand baseline traffic volumes and turning movements.
+- [ ] As a Transport Engineer, I want to aggregate traffic and turning movements by hour and day so that I can establish baseline congestion profiles for comparisons.
 
-### 1.4 Spatial ETL Pipeline Implementation
-- [ ] Implement src/ingestion/match_bike_lanes.py to spatially join bike infrastructure segments with raw street networks and suburbs, applying explicit GeoPandas buffer logic.
-- [ ] Implement src/ingestion/filter_supported_events.py to filter massive time-series parking sensor and SCATS records strictly by the historical baseline and post-intervention bounds.
-- [ ] Implement src/ingestion/aggregate_occupancy.py to aggregate raw block-level and intersection-level event streams into hourly average occupancy rates and traffic volumes.
-- [ ] Implement src/ingestion/match_bike_to_blocks.py to map the aggregated spatial blocks and intersections back to specific bike lane corridors, preparing the Before/After summary matrices.
-- [ ] Initialize the DuckDB relational and spatial database schema (`data/parking_analytics.duckdb`) to optimize analytical queries over millions of rows.
-- [ ] Write the pipeline orchestrator run_ingestion.py to execute the full ETL sequence sequentially and log execution durations.
+**Task 1.2.3 - Parking Proxies & Sensor Evaluation**
+- [ ] As a Data Analyst, I want to conduct an EDA on historical parking sensor records to evaluate baseline and post-intervention parking utilization in the City of Melbourne.
+- [ ] As a Data Analyst, I want to prototype an aerial imagery object detection or sampling methodology to count parked cars in buffer zones for LGAs lacking sensor infrastructure.
+
+**Task 1.2.4 - Economic Proxies & CRS Resolution**
+- [ ] As an Urban Planner, I want to conduct an EDA on VISTA survey data and proxy metrics to explore broader economic and social impacts of the streetscape interventions.
+- [ ] As a GIS Specialist, I want to identify and resolve all Coordinate Reference System mismatches so that all datasets align perfectly for accurate buffer analysis.
+
+### 1.3 Spatial ETL Pipeline Implementation
+- [ ] As a Data Engineer, I want to build a spatial pipeline that joins bike infrastructure with street networks and suburbs using buffer logic so that analytical zones are precisely defined.
+- [ ] As a Data Engineer, I want to build a pipeline to filter time-series parking and SCATS records strictly by baseline and post-intervention bounds so that processing volume is optimized and relevant.
+- [ ] As a Data Engineer, I want to build a pipeline that aggregates event streams into hourly average occupancy rates and traffic volumes so that data is summarized for performant serving.
+- [ ] As a Data Engineer, I want to build a pipeline that maps aggregated blocks and intersections back to specific bike lane corridors so that the final Before/After summary matrices are produced.
+- [ ] As a Data Engineer, I want to implement an optimized relational and spatial database schema so that analytical queries over millions of rows execute efficiently.
+- [ ] As a Data Engineer, I want an automated ETL orchestrator that executes the full data pipeline sequentially and logs execution so that the ingestion process is reproducible and monitored.
 
 ---
 
@@ -49,50 +46,37 @@ The roadmap is phased over three sprints, each culminating in a key milestone.
 **Key Milestone 2:** A functional end-to-end prototype mapping bike lanes and dynamically displaying baseline Metrics overlays.
 
 ### 2.1 Backend API Development (FastAPI)
-- [ ] Initialize the FastAPI application in src/api/main.py with OpenAPI documentation and Pydantic schema validation.
-- [ ] Configure Cross-Origin Resource Sharing (CORS) middleware to allow seamless asynchronous requests from the frontend development server.
-- [ ] Implement thread-safe connection pooling to the read-only DuckDB instance.
-- [ ] Develop `GET /api/v1/interventions`: An endpoint returning GeoJSON features representing the bike lanes, buffer zones, and high-level intervention dates.
-- [ ] Develop `GET /api/v1/metrics/spatial`: An endpoint returning aggregated Before/After parking utilization and traffic volume metrics grouped by block or intersection.
-- [ ] Develop `GET /api/v1/metrics/temporal`: An endpoint parameterized by `intervention_id`, returning granular time-series data for time-of-day graphs.
+- [ ] As a Frontend Developer, I want an API endpoint that returns GeoJSON features of bike lanes, buffer zones, and intervention dates so that they can be rendered dynamically on the interactive map.
+- [ ] As a Frontend Developer, I want an API endpoint that returns aggregated spatial metrics grouped by block or intersection so that Before/After overlays can be displayed on the map.
+- [ ] As a Frontend Developer, I want an API endpoint that returns granular time-series metrics parameterized by intervention so that time-of-day graphs can be populated.
 
 ### 2.2 Frontend Application Foundation
-- [ ] Scaffold the React application using Vite in `frontend/`.
-- [ ] Configure the styling foundation (CSS or Tailwind CSS) applying premium design principles, smooth micro-animations, and modern typography tokens.
-- [ ] Integrate MapLibre GL (`maplibre-gl` and `react-map-gl`) to handle high-performance, vector-tile geospatial rendering.
+- [ ] As an End User, I want a premium and modern user interface with smooth animations, high readability, and responsive styling so that the application is engaging and professional.
+- [ ] As an Urban Planner, I want a high-performance geospatial rendering engine integrated into the dashboard so that dense spatial data layers can be viewed and interacted with smoothly.
 
 ### 2.3 Interactive Geospatial Dashboard
-- [ ] Build the frontend/src/components/Header.jsx component to handle top-level application navigation and branding.
-- [ ] Build the frontend/src/components/MapContainer.jsx component to render the intervention GeoJSON layers, styling colors by buffer type or volume metric.
-- [ ] Implement interactive popup tooltips that display summarized street-level metrics when a user clicks on an intervention zone.
-- [ ] Implement reactive control panels (filtering by LGA, Year, or Intervention Category) that dynamically trigger API refetches and update the map layers.
+- [ ] As an End User, I want a top-level application header so that I can easily navigate the dashboard and understand its context.
+- [ ] As an Urban Planner, I want to view intervention layers on a map with styling based on buffer type or volume metrics so that I can visually distinguish spatial impacts.
+- [ ] As an Urban Planner, I want to click on an intervention zone and see a popup with summarized street-level metrics so that I can quickly inspect localized data.
+- [ ] As an Urban Planner, I want to use reactive control panels to filter data by LGA, Year, or Category so that the map dynamically updates with relevant information.
 
 ---
 
-## Sprint 3: Advanced Time-Series Dashboards, Polish, & Orchestration
-**Objective:** Build detailed temporal visualizations, integrate proxy data pipelines, optimize performance, and create seamless pipeline orchestration scripts.
+## Sprint 3: Advanced Time-Series Dashboards, Proxy Integrations, & Performance Tuning
+**Objective:** Build detailed temporal visualizations, integrate proxy data pipelines, and optimize frontend and backend performance.
 **Key Milestone 3:** A production-ready, highly responsive Victoria Urban Planning Impact Dashboard providing decision-ready insights.
 
 ### 3.1 Advanced Analytics Visualizations
-- [ ] Integrate Recharts (`recharts`) to build the frontend/src/components/ImpactDashboard.jsx component.
-- [ ] Implement Area and Line charts comparing Average Hourly Occupancy (e.g., Baseline vs. Post-Intervention).
-- [ ] Create dual-axis graphs displaying SCATS traffic volumes alongside Bicycle counter volumes to visualize explicit mode shifts.
-- [ ] Ensure all Recharts components gracefully handle asynchronous loading states and responsive resizing.
+- [ ] As an Urban Planner, I want an advanced analytics dashboard with interactive charts integrated so that I can explore complex data trends beyond the map.
+- [ ] As a Transport Analyst, I want Area and Line charts comparing baseline versus post-intervention hourly occupancy so that I can identify shifts in parking utilization patterns.
+- [ ] As a Transport Analyst, I want dual-axis graphs comparing traffic and bicycle volumes so that I can visualize and validate explicit mode shifts.
+- [ ] As an End User, I want charts to handle asynchronous loading and responsive resizing gracefully so that the interface remains seamless and readable across devices.
 
-### 3.2 System Orchestration & Environment Automation
-- [ ] Implement run_app.py to fully automate the local deployment lifecycle:
-  - Initialize and activate the Python virtual environment.
-  - Install backend dependencies and frontend dependencies.
-  - Automatically generate the frontend `.env` file dynamically injecting ports and variables from config.yaml.
-  - Spin up both the FastAPI Uvicorn server and the Vite development server concurrently with stdout streaming.
-- [ ] Implement stop_app.py to accurately locate and gracefully terminate running background processes to free up active ports.
+### 3.2 Proxy Integrations & Performance Tuning
+- [ ] As a Data Scientist, I want to finalize the execution of the aerial imagery proxy pipeline and load results into the database so that non-sensor LGA data is available for the final analysis.
+- [ ] As an End User, I want backend database queries optimized with indices and views so that the dashboard loads metrics and charts with minimal latency.
+- [ ] As an End User, I want the geospatial rendering optimized using chunking or clustering strategies so that I can experience smooth 60 FPS interactions on dense data grids.
 
-### 3.3 Proxy Integrations & Performance Tuning
-- [ ] Finalize the production execution of the computer-vision or sampling-based Aerial Imagery data proxy pipeline for non-CoM LGAs, loading the proxy results into DuckDB.
-- [ ] Optimize DuckDB analytical queries by creating composite indices and materialized views for time-series aggregate routes.
-- [ ] Optimize MapLibre GL rendering using source data chunking or cluster strategies to ensure 60 FPS interactions on dense data grids.
-
-### 3.4 Polish, Accessibility, & Documentation
-- [ ] Perform UI/UX audits to ensure WCAG accessibility standards, high contrast readability, and a flawless premium aesthetic.
-- [ ] Verify that all existing comments and docstrings are perfectly preserved, adhering to strict Coding Standards outlined in CODING_STANDARDS.md.
-- [ ] Compile the final write_up.md summarizing the research outcomes, hypothesis testing (Null Hypothesis: No change in parking capacity), and future recommendations.
+### 3.3 Polish, Accessibility, & Documentation
+- [ ] As an End User, I want the application audited and optimized for WCAG accessibility, high contrast readability, and premium aesthetics so that it is inclusive and professional.
+- [ ] As a Product Owner, I want a comprehensive final write-up summarizing research outcomes, hypothesis testing, and future recommendations so that I can deliver clear insights to government stakeholders.
