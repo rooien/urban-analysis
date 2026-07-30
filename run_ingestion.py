@@ -12,11 +12,8 @@ import subprocess
 import time
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-VENV_PYTHON = os.path.join(ROOT_DIR, ".venv", "bin", "python")
-
-if not os.path.exists(VENV_PYTHON):
-    print("[E] Python virtual environment not found. Please run 'python run_app.py' first to initialize the environment.")
-    sys.exit(1)
+# Use the current Python executable to ensure portability across environments
+PYTHON_EXEC = sys.executable
 
 
 def run_script(script_path: str, args: list = None) -> None:
@@ -26,7 +23,7 @@ def run_script(script_path: str, args: list = None) -> None:
     if args is None:
         args = []
     
-    cmd = [VENV_PYTHON, script_path] + args
+    cmd = [PYTHON_EXEC, script_path] + args
     script_name = os.path.basename(script_path)
     
     print("=" * 60)
