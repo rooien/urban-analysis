@@ -14,3 +14,6 @@ __pycache__
 
 *token.json
 *.env
+*duckdb
+processed*
+raw*
