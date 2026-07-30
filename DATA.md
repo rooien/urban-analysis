@@ -88,19 +88,3 @@ Calculate parking occupancy rates along intervention corridors "before" and "aft
 5. **Metric Calculation**:
    $$\text{Parking Utilization Rate} = \frac{\text{Counted Parked Cars}}{\text{Total Parking Capacity}} \times 100$$
 6. **Comparison**: Assess if parking utilization significantly increased, decreased, or remained stable, accounting for any reduction in total capacity due to the bike lane.
-
----
-
-## 4. Consultant Dataset Requirements (Wishlist)
-
-If Infrastructure Victoria proceeds with procuring or providing the "consultant pre/post dataset" mentioned in [scratchpad.txt](file:///Users/szanevra/repositories/Victoria-Urban-Planning/scratchpad.txt), we recommend ensuring it includes the following specifications to maximize its utility for Stream 2:
-
-1. **High-Frequency Parking Data**:
-    - **Format**: Time-series occupancy data (at least 15-minute or hourly intervals).
-    - **Scope**: Covers the exact intervention corridors in Yarra, Port Phillip, Merri-bek, Maribyrnong, Dandenong, and Geelong.
-    - **Duration**: Minimum of 2 weeks "before" and 2 weeks "after" construction, avoiding anomalous periods (e.g., lockdowns, school holidays).
-2. **Granular Local Economic Data**:
-    - **Format**: De-identified Point-of-Sale (POS) or bank transaction spend data (e.g., Spendmapp or Mastercard Spend Insights).
-    - **Aggregation**: Aggregated to the street precinct level (not just LGA) to measure the direct economic impact on businesses adjacent to bike lanes.
-3. **Active Transport & Turning Counts**:
-    - **Format**: Intersection Turning Movement Counts (TMC) that explicitly segregate **Bicycles**, **Cars**, and **Heavy Vehicles**.
