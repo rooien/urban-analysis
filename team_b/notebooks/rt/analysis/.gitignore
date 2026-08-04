@@ -1,0 +1,5 @@
+data/raw/
+data/interim/
+*.zip
+*.parquet
+__pycache__/
