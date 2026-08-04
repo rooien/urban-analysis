@@ -65,34 +65,39 @@ Datasets from different sources (e.g., VicRoads vs. PTV) are unlikely to share t
 *Note: ABS Census data releases in August. Population data integration will be deferred until after the release to avoid mid-sprint disruption. Use proxy labeling approaches where ground truth is absent, and document proxy methods in the `src/` directory.*
 
 ## Directory Structure
-Please adhere to this structure to keep the repo organized and facilitate code sharing:
+
+Please adhere to this structure to keep the repo organized and facilitate collaboration across streams:
 
 ```
 Victoria-Urban-Planning/
+├── .github/            # GitHub configuration (e.g., Pull Request templates)
 ├── data/
 │   ├── raw/            # Original, untouched datasets
 │   ├── processed/      # Cleaned and transformed datasets
-│   └── parking_analytics.duckdb # Aggregated database for the API
-├── frontend/           # React + Vite dashboard application
-│   ├── src/
-│   ├── package.json
-│   └── ...
-├── notebooks/          # Data exploration notebooks
-├── src/
-│   ├── api/            # FastAPI backend application
-│   └── ingestion/      # Data processing and ingestion scripts
-├── CODING_STANDARDS.md
-├── DATA.md
-├── README.md
-├── requirements.txt
-└── scratchpad.txt
+│   └── parking_analytics.duckdb # DuckDB database for parking analytics
+├── team_a/             # Stream 1: Cycling and public transport mode shift / Stream 3: Pedestrian counts
+│   ├── notebooks/      # Stream 1 & 3 research and EDA notebooks
+│   └── __init__.py
+├── team_b/             # Stream 2: Traffic volumes and parking
+│   ├── notebooks/      # Stream 2 research and EDA notebooks
+│   └── __init__.py
+├── team_c/             # Stream 4: Temporal patterns
+│   ├── notebooks/      # Stream 4 research and EDA notebooks
+│   └── __init__.py
+├── CODING_STANDARDS.md # Shared coding guidelines and best practices
+├── DATA.md             # Detailed dataset inventory and proxy methodology
+├── README.md           # Project documentation and setup guide
+├── config.yaml         # Configuration file for data paths and sources
+├── requirements.txt    # Python baseline dependencies
+├── run_ingestion.py    # Pipeline orchestration runner
+└── scratchpad.txt      # Temporary scratchpad for notes and queries
 ```
 
 ## Installation, Setup & Execution
 
-### Automated Orchestration (Recommended)
+To explore the datasets, run the data ingestion workflow, and perform exploratory data analysis (EDA), follow these steps to set up the Python environment and launch JupyterLab.
 
-The `run_app.py` script automatically bootstraps the entire application. It creates and activates the Python virtual environment, installs backend and frontend dependencies, generates the frontend `.env` file from `config.yaml`, and starts both services concurrently.
+### 1. Environment Setup
 
 1. **Clone the Repository:**
    ```bash
@@ -100,65 +105,38 @@ The `run_app.py` script automatically bootstraps the entire application. It crea
    cd Victoria-Urban-Planning
    ```
 
-2. **Run the Orchestrator:**
+2. **Create the Python Virtual Environment:**
    ```bash
-   python run_app.py
-   ```
-   *Note: Ensure you have Python 3 and Node.js/npm installed locally.*
-
-3. **Run the Data Ingestion Pipeline (First Time Only):**
-   If the database file is not present, build and populate it by executing the orchestrator:
-   ```bash
-   python run_ingestion.py
+   python3 -m venv .venv
    ```
 
-4. **Stopping the Application:**
-   To gracefully terminate both background services and free up the ports, run:
+3. **Activate the Virtual Environment:**
+   - **macOS/Linux:**
+     ```bash
+     source .venv/bin/activate
+     ```
+   - **Windows:**
+     ```cmd
+     .venv\Scripts\activate
+     ```
+
+4. **Install Dependencies:**
    ```bash
-   python stop_app.py
+   pip install -r requirements.txt
    ```
 
----
+### 2. Running JupyterLab & Data Exploration
 
-### Manual Setup (For Development)
-
-If you prefer to manage the services independently or execute data exploration notebooks, follow these manual steps:
-
-#### 1. Backend Setup & Execution
+Launch JupyterLab to interact with the notebooks:
 ```bash
-# Create the Virtual Environment
-python3 -m venv .venv
-
-# Activate the Virtual Environment
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install Dependencies
-pip install -r requirements.txt
-
-# Run Ingestion Pipeline
-python run_ingestion.py
-
-# Start the Backend API
-uvicorn src.api.main:app --reload
-```
-The API will be running at `http://localhost:8000`. You can view the interactive documentation at `http://localhost:8000/docs`.
-
-#### 3. Frontend Setup & Execution
-```bash
-cd frontend
-npm install
-npm run dev
-```
-The dashboard will be running at `http://localhost:5173`. 
-
-*Note: Make sure to copy the `ports` and `historical` values from `config.yaml` into a `frontend/.env` file if running manually.*
-
-#### 4. Launch JupyterLab
-If you want to run the data exploration notebooks, activate your virtual environment and run:
-```bash
-source .venv/bin/activate
 jupyter lab
 ```
+
+### 3. Data Ingestion & Pipeline Orchestration
+
+For Stream 2 (Traffic Volumes & Parking), you can run the full ingestion pipeline by navigating to the Stream 2 workspace:
+1. Open the [00_data_ingestion.ipynb](team_b/notebooks/scott_z/00_data_ingestion.ipynb) notebook.
+2. Run the cells sequentially to download base GeoJSON datasets, download and extract historical parking sensor CSVs, and execute the end-to-end ETL processing steps to build the DuckDB database.
 
 ## Git Workflow & Collaboration Guide
 
