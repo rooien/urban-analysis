@@ -38,3 +38,11 @@ processing:
     post_intervention:
       year: 2014
       months: [11, 12]
+
+  # Site-specific baseline/post windows derived from sites_db.csv
+  # Baseline = [anchor - window_months, anchor); Post = (anchor, anchor + window_months]
+  # Anchor prefers DisruptionStartDate / DisruptionEndDate, else DateOfIntervention/InitialCapture
+  site_windows:
+    window_months: 2
+    sites_db: "data/raw/sites_db.csv"
+    parking_years: [2013, 2014]
