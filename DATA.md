@@ -47,13 +47,13 @@ All datasets in this section are free and publicly available for educational and
 | Dataset Name | Source / Portal | Spatial Coverage | Temporal Coverage | Metrics / Data Fields | CRS | Gaps Addressed |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **VISTA (Victorian Integrated Survey of Travel and Activity)** | [Transport Victoria](https://opendata.transport.vic.gov.au/) | Greater Melbourne & Geelong | Multi-year periodic surveys | Travel mode shifts, trip purpose, business/shopping trip frequency. | Non-spatial (Tabular) | Addresses social impacts, behavioral shifts, and modal shifts. |
-| **Local Council Pedestrian & Spend Portals** | Yarra, Port Phillip, Merri-bek, Maribyrnong, Geelong Open Data | Respective LGAs | Varied (typically 2018-Present) | Pedestrian footfall counts, local economic indicators, business precinct activity. | Varied | Directly addresses the economic and business impact objectives outlined in the [README.md](file:///Users/szanevra/repositories/Victoria-Urban-Planning/README.md). |
+| **Local Council Pedestrian & Spend Portals** | Yarra, Port Phillip, Merri-bek, Maribyrnong, Geelong Open Data | Respective LGAs | Varied (typically 2018-Present) | Pedestrian footfall counts, local economic indicators, business precinct activity. | Varied | Directly addresses the economic and business impact objectives outlined in the [README.md](README.md). |
 
 ---
 
 ## 2. Commercial / Restricted Datasets
 
-The following datasets were identified as highly relevant (and mentioned in [scratchpad.txt](file:///Users/szanevra/repositories/Victoria-Urban-Planning/scratchpad.txt)) but are **Commercial or Restricted**. They are documented here for completeness and to justify the free alternatives leveraged above.
+The following datasets were identified as highly relevant (and mentioned in [scratchpad.txt](scratchpad.txt)) but are **Commercial or Restricted**. They are documented here for completeness and to justify the free alternatives leveraged above.
 
 ### A. Nearmap Aerial Imagery
 - **Status**: Commercial / Paid Subscription.

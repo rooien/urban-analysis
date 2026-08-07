@@ -11,8 +11,9 @@ This repository is for the SIT Capstone "Chameleon Project" in partnership with 
 6. Data Sources & CRS Warning
 7. Directory Structure
 8. Installation, Setup & Execution
-9. Git Workflow & Collaboration Guide
-10. Coding Standards
+9. Sprint Plans & Task Lists
+10. Git Workflow & Collaboration Guide
+11. Coding Standards
 
 ## Project Overview
 Infrastructure Victoria is an independent advisory body providing evidence-based research to the Victorian Government. This project evaluates the real-world impacts of streetscape interventions (like new bike lanes, road reallocations, and pedestrian upgrades) on transport efficiency, sustainability, and livability. 
@@ -84,6 +85,8 @@ Victoria-Urban-Planning/
 ├── team_c/             # Stream 4: Temporal patterns
 │   ├── notebooks/      # Stream 4 research and EDA notebooks
 │   └── __init__.py
+├── sprint_plans/       # Sprint task lists and roadmaps
+│   └── sprint_2.md     # Sprint 2 (Week 2) task list for Stream B
 ├── CODING_STANDARDS.md # Shared coding guidelines and best practices
 ├── DATA.md             # Detailed dataset inventory and proxy methodology
 ├── README.md           # Project documentation and setup guide
@@ -137,6 +140,11 @@ jupyter lab
 For Stream 2 (Traffic Volumes & Parking), you can run the full ingestion pipeline by navigating to the Stream 2 workspace:
 1. Open the [00_data_ingestion.ipynb](team_b/notebooks/scott_z/00_data_ingestion.ipynb) notebook.
 2. Run the cells sequentially to download base GeoJSON datasets, download and extract historical parking sensor CSVs, and execute the end-to-end ETL processing steps to build the DuckDB database.
+
+## Sprint Plans & Task Lists
+
+Track active sprint plans, epics, and task definitions:
+- **Sprint 2 (Week 2):** [Stream B: Traffic Volumes & Parking Task List](sprint_plans/sprint_2.md)
 
 ## Git Workflow & Collaboration Guide
 
