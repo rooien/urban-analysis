@@ -16,6 +16,7 @@ paths:
   processed_dir: "team_b/data/processed"
   database: "team_b/data/parking_analytics.duckdb"
 
+
 processing:
   # Buffer distances (in meters) used for geospatial proximity matching and spatial joins
   buffers:
@@ -46,3 +47,4 @@ processing:
     window_months: 2
     sites_db: "team_b/data/raw/sites_db.csv"
     parking_years: [2013, 2014]
+
