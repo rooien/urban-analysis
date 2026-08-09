@@ -9,6 +9,7 @@ data_sources:
   bicycle_network: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/bicycle-network/exports/geojson"
   parking_bays: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/on-street-parking-bays/exports/geojson"
   suburbs: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/small-areas-for-census-of-land-use-and-employment-clue/exports/geojson"
+  pedestrian_counting_system: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/pedestrian-counting-system-monthly-counts-per-hour/exports/geojson"
 
 paths:
   data_dir: "data"
