@@ -6,7 +6,7 @@ This guide explains how we ingest raw geospatial boundaries, bicycle networks, p
 
 ## Pipeline Architecture
 
-The ingestion pipeline is managed by [`team_b/run_ingestion.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/run_ingestion.py). It runs several scripts sequentially to download spatial sources, filter historical sensors, compute occupancy rates, and load the final DuckDB tables.
+The ingestion pipeline is managed by [`run_ingestion.py`](./run_ingestion.py). It runs several scripts sequentially to download spatial sources, filter historical sensors, compute occupancy rates, and load the final DuckDB tables.
 
 ```mermaid
 flowchart TD
@@ -93,12 +93,12 @@ To support traffic volume queries when running offline, the pipeline checks for 
 
 ## Ingestion Scripts
 
-The pipeline is split into these scripts under `team_b/ingestion/`:
+The pipeline is split into these scripts under `ingestion/`:
 
-* **[`download_base_data.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/download_base_data.py)**: Downloads base GeoJSONs. If S3 downloads for historical parking CSVs fail, it auto-generates simulated event files to let the pipeline run locally.
-* **[`match_bike_lanes.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/match_bike_lanes.py)**: Buffers bike lanes, intersects them with parking bays and suburbs, and outputs the matched geometries.
-* **[`filter_supported_events.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/filter_supported_events.py)**: Streams the large raw CSV events through DuckDB to extract events matching our supported streets, saving the output as compressed Parquet files.
-* **[`process_scats_traffic.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/process_scats_traffic.py)**: Imports or simulates SCATS traffic counts into the database.
-* **[`aggregate_occupancy.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/aggregate_occupancy.py)**: Aggregates the raw events into hourly occupancy percentages using DuckDB window functions.
-* **[`match_bike_to_blocks.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/match_bike_to_blocks.py)**: Groups bike lanes by block, dissolves linear geometries for map visualization, and creates the blocks summary tables.
-* **[`validate_pipeline.py`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/ingestion/validate_pipeline.py)**: Performs final integrity checks (such as bounds checking on occupancy rates and verifying key constraints) and writes a markdown report.
+* **[`download_base_data.py`](./ingestion/download_base_data.py)**: Downloads base GeoJSONs. If S3 downloads for historical parking CSVs fail, it auto-generates simulated event files to let the pipeline run locally.
+* **[`match_bike_lanes.py`](./ingestion/match_bike_lanes.py)**: Buffers bike lanes, intersects them with parking bays and suburbs, and outputs the matched geometries.
+* **[`filter_supported_events.py`](./ingestion/filter_supported_events.py)**: Streams the large raw CSV events through DuckDB to extract events matching our supported streets, saving the output as compressed Parquet files.
+* **[`process_scats_traffic.py`](./ingestion/process_scats_traffic.py)**: Imports or simulates SCATS traffic counts into the database.
+* **[`aggregate_occupancy.py`](./ingestion/aggregate_occupancy.py)**: Aggregates the raw events into hourly occupancy percentages using DuckDB window functions.
+* **[`match_bike_to_blocks.py`](./ingestion/match_bike_to_blocks.py)**: Groups bike lanes by block, dissolves linear geometries for map visualization, and creates the blocks summary tables.
+* **[`validate_pipeline.py`](./ingestion/validate_pipeline.py)**: Performs final integrity checks (such as bounds checking on occupancy rates and verifying key constraints) and writes a markdown report to [`./data/processed/validation_report.md`](./data/processed/validation_report.md).
