@@ -106,6 +106,17 @@ We are using public datasets from:
 **Important CRS Warning:**
 Datasets from different sources (e.g., VicRoads vs. PTV) are unlikely to share the same spatial coordinate systems (CRS). You must define and document CRS reprojections in your notebooks/scripts. Do not assume all datasets share the same ground truth.
 
+## Data Ingestion, Cleaning & Transformations (Stream B)
+The project includes a robust, end-to-end data pipeline to ingest, clean, and transform spatial layers and transactional sensor logs into an analytical DuckDB database. Key transformations include:
+- **Spatial Reprojection**: Normalizing all layers to a metric-based grid projection (`EPSG:7899`) for accurate 20m spatial buffering, then reprojecting back to `EPSG:4326` for web rendering.
+- **Topology Filtering**: Stripping virtual centroid connector links from the bicycle network layer to remove visual mapping spikes.
+- **Intersection Suppression**: Excluding parking bays located directly at intersections (e.g., descriptions starting with "Intersection of") to ensure block consistency.
+- **Street & Block Normalization**: Unified uppercase normalization, whitespace trimming, and alphabetical sorting of cross-streets (e.g. `BETWEEN QUEEN AND ELIZABETH` unifies `BETWEEN ELIZABETH AND QUEEN`) to allow clean joins between spatial layers and sensor logs.
+- **Dynamic Capacity Engine**: Calculating parking bay capacities monthly based on maximum unique broadcasting devices to avoid static count discrepancies.
+- **SCATS Traffic Simulation**: Simulating 15-minute traffic flows at intersection sensors to establish baseline volumes under sandboxed execution constraints.
+
+For a detailed breakdown of the pipelines and transformations, see the [`team_b/DATA_INGESTION.md`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/DATA_INGESTION.md) documentation.
+
 ## Directory Structure
 
 ```
