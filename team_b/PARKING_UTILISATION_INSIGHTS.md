@@ -1,44 +1,44 @@
-# Executive & Business Insights: How Bike Lanes Impact Parking in Victoria
+# Impact of Bicycle Infrastructure on Parking Capacity and Utilisation in Victoria
+
 **Stream 2: Traffic Volumes & Parking (Team B)**  
-**Project:** Urban Streetscape Intervention Analysis (USIA)  
-**Partners:** Infrastructure Victoria & SIT Capstone (Chameleon Project)  
-**Date:** August 2026  
-**Document Status:** Complete Empirical Synthesis  
+Urban Streetscape Intervention Analysis (USIA)  
+Infrastructure Victoria & SIT Capstone (Chameleon Project)  
+August 2026 | Empirical Research Synthesis
 
 ---
 
 ## Quick Navigation
-1. [Plain English Executive Summary](#1-plain-english-executive-summary)
-2. [The Core Question: What Are Business Owners Concerned About?](#2-the-core-question-what-are-business-owners-concerned-about)
-3. [The Two Sides of Parking: Spaces Available vs. Actual Usage](#3-the-two-sides-of-parking-spaces-available-vs-actual-usage)
-4. [Finding 1: How Many Parking Spaces Were Actually Removed?](#4-finding-1-how-many-parking-spaces-were-actually-removed)
-5. [Finding 2: Did Customers Face Parking Shortages? (Sensor Data)](#5-finding-2-did-customers-face-parking-shortages-sensor-data)
-6. [Real-World Street Case Studies (What Happened on the Ground?)](#6-real-world-street-case-studies-what-happened-on-the-ground)
-7. [Finding 3: Why Were Only 1 in 3 Pop-up Bike Lanes Kept?](#7-finding-3-why-were-only-1-in-3-pop-up-bike-lanes-kept)
-8. [Solving the Data Gap: How Other Councils Can Measure Parking Without Sensors](#8-solving-the-data-gap-how-other-councils-can-measure-parking-without-sensors)
-9. [Actionable Recommendations for Infrastructure Victoria & Councils](#9-actionable-recommendations-for-infrastructure-victoria--councils)
+1. [Executive Summary](#1-executive-summary)
+2. [Stakeholder Concerns & Research Objectives](#2-stakeholder-concerns--research-objectives)
+3. [Conceptual Framework: Supply vs. Demand](#3-conceptual-framework-supply-vs-demand)
+4. [Capacity Impact: Difference-in-Differences Analysis](#4-capacity-impact-difference-in-differences-analysis)
+5. [Demand & Occupancy: Sensor Telemetry Findings](#5-demand--occupancy-sensor-telemetry-findings)
+6. [Corridor Case Studies](#6-corridor-case-studies)
+7. [Evaluation of the COVID-19 Pop-up Bike Lane Program](#7-evaluation-of-the-covid-19-pop-up-bike-lane-program)
+8. [Addressing the Regional Data Gap: Aerial Proxy Methodology](#8-addressing-the-regional-data-gap-aerial-proxy-methodology)
+9. [Policy & Planning Recommendations](#9-policy--planning-recommendations)
 10. [Notebook Index & Evidence Sources](#10-notebook-index--evidence-sources)
 
 ---
 
-## 1. Plain English Executive Summary
+## 1. Executive Summary
 
-When local councils propose building new bike lanes or widening footpaths, local shop owners and drivers often worry that parking will disappear, streets will become congested, and business will suffer.
+When local governments propose reallocating street space for protected bicycle lanes or widened footpaths, business owners and motorists frequently voice concern that kerbside parking will be eliminated, congestion will worsen, and commercial trade will decline.
 
-Our team analyzed millions of data points from public records, traffic sensors, aerial photos, and government street upgrades across Victoria. **The data reveals three clear facts:**
+To evaluate these concerns with empirical rigor, our team analyzed multi-year datasets spanning municipal parking inventories, in-ground sensor logs, aerial photography, and transport project records across Victoria. The evidence indicates three consistent findings:
 
 ```mermaid
 flowchart TD
-    subgraph Facts ["What the Real-World Data Shows"]
-        F1["<b>Fact 1: Most Parking Stays Intact</b><br/>For a typical shopping or commuter street with 100 parking spots, building a protected bike lane removed only about <b>8 spots</b> (leaving 92 spots available)."]
-        F2["<b>Fact 2: No Parking Shortages Occurred</b><br/>Before bike lanes were built, parking spots on monitored streets were only <b>6.8% full</b> on average. After construction, occupancy was <b>6.6% full</b>. Over 93% of parking remained empty."]
-        F3["<b>Fact 3: Community Consultation Drives Success</b><br/>Only <b>32.2% (1 in 3)</b> of temporary COVID-19 pop-up bike lanes were made permanent. The City of Port Phillip succeeded (93% retention) because they preserved parking alongside bike lanes."]
+    subgraph Findings ["Empirical Evidence"]
+        F1["<b>Preserved Capacity</b><br/>Protected bike lane projects removed a median of 8.1% of parking bays, leaving over 90% of kerbside spaces intact."]
+        F2["<b>Ample Surplus</b><br/>Monitored streets maintained average occupancy rates of 6.77% before and 6.60% after construction, with over 93% of bays unoccupied."]
+        F3["<b>Retention Through Design</b><br/>Only 32.2% of temporary COVID-19 pop-up lanes were made permanent statewide. The City of Port Phillip achieved a 93% retention rate by retaining parking alongside bike lanes."]
     end
 
-    subgraph BusinessMeaning ["What This Means for Business Stakeholders"]
-        B1["Protected bike lanes do not require destroying an entire street's parking supply."]
-        B2["Fears of customer parking gridlock are disproven by real-world sensor measurements."]
-        B3["Well-designed projects (like 'floating parking') protect cyclists while preserving merchant access."]
+    subgraph Implications ["Implications for Stakeholders"]
+        B1["Protected cycling corridors can be built without major reductions in parking supply."]
+        B2["Concerns regarding customer parking shortages are unsupported by empirical sensor measurements."]
+        B3["Designs such as floating parking effectively protect cyclists while maintaining business access."]
     end
 
     F1 --> B1
@@ -46,95 +46,81 @@ flowchart TD
     F3 --> B3
 ```
 
-### Executive Summary Table
+### Key Findings Summary
 
-| Key Question | What the Data Found | What It Means in Plain English | Primary Notebook Citation |
+| Research Question | Empirical Finding | Practical Implication | Primary Notebook Reference |
 | :--- | :--- | :--- | :--- |
-| **Do pedestrian malls remove parking?** | **-100%** parking spaces ($n=6$ streets) | When a street is converted entirely into a walking mall (cars banned), all on-street parking is removed as intended. | [Dhruv M - `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
-| **How much parking is lost to protected bike lanes?** | **-8.1%** median reduction ($n=92$ streets) | The typical street lost only ~8 out of 100 parking spaces. Heavy space loss was rare and only happened on very narrow streets. | [Dhruv M - `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
-| **Did remaining parking spots get overcrowded?** | **-0.15%** change in occupancy ($430$ blocks) | Parking utilisation remained virtually unchanged ($6.77\%$ before vs $6.60\%$ after). There was always ample empty parking for customers. | [DuckDB Database Guide - `query_duckdb.ipynb`](query_duckdb.ipynb) |
-| **How long do drivers typically park?** | **31.8 to 31.9 minutes** average stay | Driver visit durations stayed constant, indicating healthy customer turnover for retail businesses. | [Scott Z - `03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) |
-| **Were temporary pop-up bike lanes made permanent?** | **32.2%** made permanent ($114 / 354$ sections) | Rapid trials without enough community consultation were mostly removed. Port Phillip had a 93% success rate by using balanced designs. | [Lavan K - `TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) |
+| **Do pedestrian malls remove parking?** | **-100%** parking spaces ($n=6$ corridors) | Converting a corridor into a dedicated pedestrian mall eliminates vehicular parking by design. | [Dhruv M - `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
+| **How much parking is removed for protected bike lanes?** | **-8.1%** median reduction ($n=92$ corridors) | A typical street loses approximately 8 out of 100 parking spaces. Large reductions occur only on constrained, narrow corridors. | [Dhruv M - `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
+| **Did remaining bays experience higher occupancy?** | **-0.15%** change in occupancy ($430$ blocks) | Average occupancy shifted from $6.77\%$ to $6.60\%$. Monitored corridors maintained substantial parking surpluses throughout operational hours. | [DuckDB Database Guide - `query_duckdb.ipynb`](query_duckdb.ipynb) |
+| **Did driver stay durations change?** | **31.8 to 31.9 minutes** average duration | Stay durations remained unchanged, demonstrating consistent customer turnover for local commercial activity. | [Scott Z - `03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) |
+| **Were temporary pop-up lanes retained permanently?** | **32.2%** retained permanently ($114 / 354$ sections) | Rapid trials installed without adequate trader consultation were largely decommissioned. Port Phillip succeeded through balanced kerbside design. | [Lavan K - `TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) |
 
 ---
 
-## 2. The Core Question: What Are Business Owners Concerned About?
+## 2. Stakeholder Concerns & Research Objectives
 
-When road space is changed to support bike riders, business stakeholders usually ask three reasonable questions:
+Urban streetscape reallocations regularly prompt three primary concerns among retail and commercial operators:
 
-1. *"Will my customers still be able to find a place to park near my shop?"*
-2. *"Will reducing parking spaces hurt my foot traffic and daily revenue?"*
-3. *"Is the government removing parking without checking how busy the street actually is?"*
+* Whether customers and commercial delivery vehicles will still be able to access parking near shopfronts.
+* Whether reductions in nominal bay counts will diminish foot traffic and retail revenue.
+* Whether local councils implement space reallocations without first measuring baseline street activity and parking demand.
 
-To answer these questions fairly and accurately, we did not make assumptions or rely on opinions. We analyzed real government records and sensor logs from **1999 to 2025** across Melbourne and regional Victorian councils.
+To answer these questions objectively, this project avoids anecdotal assumptions and draws on empirical records and sensor logs from 1999 to 2025 across metropolitan Melbourne and regional Victoria.
 
 ---
 
-## 3. The Two Sides of Parking: Spaces Available vs. Actual Usage
+## 3. Conceptual Framework: Supply vs. Demand
 
-To understand parking data, you have to separate **Supply** (how many physical bays exist on the road) from **Demand** (how many cars actually park in them).
+Accurate assessment of parking impacts requires separating nominal capacity from real-time utilisation.
 
 ```mermaid
 flowchart LR
-    subgraph Supply ["1. Parking Supply (Spaces Available)"]
-        S1["The physical painted bays on the kerb."]
-        S2["Example: 100 marked bays on the street."]
-        S3["Analysed across 76 streets in Victoria."]
+    subgraph Supply ["Parking Supply (Nominal Capacity)"]
+        S1["Marked bays along the kerb corridor"]
+        S2["Baseline: 100 marked bays"]
+        S3["Evaluated across 76 Victorian corridors"]
     end
 
-    subgraph Demand ["2. Parking Demand (Actual Usage)"]
-        D1["How many cars are parked at 10 AM, 2 PM, or 7 PM."]
-        D2["Example: Only 15 of the 100 bays are being used."]
-        D3["Analysed using 507,000+ hourly sensor logs."]
+    subgraph Demand ["Parking Demand (Real-time Utilisation)"]
+        D1["Vehicles parked during trading hours"]
+        D2["Baseline: 15 vehicles occupying bays"]
+        D3["Derived from 507,000+ hourly sensor logs"]
     end
 
-    Supply -->|If only 15% of bays are used...| Balance["<b>The Business Reality:</b><br/>Removing 8 bays leaves 92 bays.<br/>92 bays is still far more than the 15 cars needing parking.<br/><b>Result: Zero parking congestion for customers.</b>"]
+    Supply --> Balance["<b>Operational Reality</b><br/>Removing 8 bays leaves 92 available spaces.<br/>92 available bays easily accommodates peak demand of 15 vehicles.<br/><b>Outcome: No customer access constraints.</b>"]
     Demand --> Balance
 ```
 
-> **Key Business Takeaway:** Just because a street loses a few parking spaces does **not** mean customers cannot find a park. If a street is only using 10% to 20% of its parking spaces to begin with, reducing total capacity by 8% leaves plenty of empty bays for arriving shoppers.
+When baseline parking utilisation is low, a modest reduction in nominal capacity does not create access constraints. On a corridor where peak occupancy rarely exceeds 15% to 20%, removing 8% of bays leaves substantial surplus capacity, allowing arriving shoppers to locate parking without delay.
 
 ---
 
-## 4. Finding 1: How Many Parking Spaces Were Actually Removed?
+## 4. Capacity Impact: Difference-in-Differences Analysis
 
 **Primary Research Citation:** [`notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) (Authored by Dhruv M)
 
-### How We Tested This Fairly
-To measure the true impact of bike lanes on parking space counts, our team used a **Difference-in-Differences** analysis. 
-- In simple terms: We compared each street that received a bike lane against a matching "twin" control street in the same neighborhood that **did not** receive a bike lane, over the exact same multi-year time period.
-- This ensured that wider economic shifts (like COVID-19 or retail trends) were accounted for.
+### Methodological Approach
+To isolate the direct effect of bike lanes from broader economic and secular trends (including COVID-19 disruptions and retail patterns), the analysis applied an econometric **Difference-in-Differences** framework. Each intervention corridor was evaluated against a matched control street in the same locality that did not receive cycling infrastructure over the same multi-year observation window.
 
-### What the Numbers Show
-We evaluated **76 treatment streets** with **202 individual disruption events** between 1999 and 2025. After filtering out streets with tiny sample sizes (under 5 spots) or overlapping construction, we evaluated **98 high-confidence projects**:
+The evaluation examined 76 treatment streets encompassing 202 individual disruption events between 1999 and 2025. After excluding corridors with fewer than five bays or overlapping construction works, 98 high-confidence projects were analyzed across two primary intervention categories:
 
-```
-                       Actual Change in Parking Spaces (Diff-in-Diff)
-                       ┌────────────────────────────────────────────────────────┐
-Pedestrianisation      │ -100.0% (All on-street parking removed, n=6)           │
-                       ├────────────────────────────────────────────────────────┤
-Protected Bike Lanes   │ [████████ -8.1% Typical Median Loss, n=92]             │
-                       │ [██████████████████ -18.6% Average Loss]               │
-                       └────────────────────────────────────────────────────────┘
-```
-
-1. **Pedestrian Streets (-100% change, 6 projects):**
-   - Transforming a road into a walking-only mall (such as Bourke Street Mall or local pedestrian plazas) completely removes parking spaces. This is a deliberate, expected policy choice to create foot-traffic-only precincts.
-2. **Protected Bike Lanes (-8.1% median change, 92 projects):**
-   - **The Typical Project (Median):** On a typical street, only **8.1% of parking spaces were removed**. That means if a street started with 100 spots, **92 spots remained**.
-   - **Why is the Average (-18.6%) higher than the Median (-8.1%)?** A small handful of very narrow streets had to remove parking on both sides (100% loss), which pulled the mathematical average down. But for the vast majority of streets, transport planners used smart designs (like keeping parking on one side or using "floating parking") to protect cyclists while keeping parking available.
+### Empirical Findings
+* **Pedestrian Mall Conversions (-100.0% capacity change, $n=6$):** Full pedestrianisation projects—such as Bourke Street Mall and neighborhood pedestrian plazas—remove all on-street parking by design to establish exclusive pedestrian domains.
+* **Protected Bicycle Corridors (-8.1% median capacity change, $n=92$):** Across 92 protected bike lane projects, the median reduction in kerbside parking was 8.1%. A typical corridor with 100 spaces retained 92 bays following completion.
+* **Distributional Skew (Mean of -18.6% vs. Median of -8.1%):** The mean reduction was influenced by a small number of narrow street corridors where physical width constraints necessitated full dual-sided parking removal. For the broader majority of projects, road space was reconfigured using single-sided parking retention or floating parking designs that preserved the bulk of kerbside capacity.
 
 ---
 
-## 5. Finding 2: Did Customers Face Parking Shortages? (Sensor Data)
+## 5. Demand & Occupancy: Sensor Telemetry Findings
 
 **Primary Research Citations:**
-- [`query_duckdb.ipynb`](query_duckdb.ipynb) (Database Guide for Team B DuckDB Analytics)
-- [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) (Parking Sensor & Aerial Analysis by Scott Z)
-- [`notebooks/gordon_t/01_filter_parking_site_windows.ipynb`](notebooks/gordon_t/01_filter_parking_site_windows.ipynb) (Site Baseline Filtering by Gordon T)
+* [`query_duckdb.ipynb`](query_duckdb.ipynb) (Database Guide for Team B DuckDB Analytics)
+* [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) (Parking Sensor & Aerial Analysis by Scott Z)
+* [`notebooks/gordon_t/01_filter_parking_site_windows.ipynb`](notebooks/gordon_t/01_filter_parking_site_windows.ipynb) (Site Baseline Filtering by Gordon T)
 
-### Analyzing Over 500,000 Sensor Records
-To see if drivers struggled to find parking, we analyzed **507,171 hourly parking sensor records** across **430 street blocks** in the City of Melbourne analytical database ([`data/parking_analytics.duckdb`](data/parking_analytics.duckdb)).
+### Dataset Scope
+To assess whether space reductions generated congestion on surrounding blocks, our team evaluated **507,171 hourly parking sensor records** spanning **430 street blocks** stored within the project analytical database ([`data/parking_analytics.duckdb`](data/parking_analytics.duckdb)).
 
 ```mermaid
 pie title Monitored Street Blocks by Suburb (Total: 430 Blocks)
@@ -149,178 +135,166 @@ pie title Monitored Street Blocks by Suburb (Total: 430 Blocks)
     "Other Suburbs (39 blocks)" : 39
 ```
 
-### Suburb-by-Suburb Results: How Full Was Parking?
+### Suburb-Level Occupancy Comparison
 
-| Suburb | Street Blocks Analysed | Total Parking Spaces (Start) | Total Parking Spaces (End) | Spaces Removed | How Full Was Parking Before? | How Full Was Parking After? | Occupancy Change |
+| Suburb | Monitored Blocks | Baseline Bay Count | Post-Intervention Bay Count | Net Capacity Change | Pre-Intervention Occupancy | Post-Intervention Occupancy | Net Occupancy Change |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Melbourne CBD** | 48 | 528 | 523 | **-5** | 9.31% | 9.03% | -0.28% |
-| **West Melbourne (Res)** | 32 | 407 | 404 | **-3** | 9.90% | 8.47% | -1.43% |
-| **North Melbourne** | 90 | 1,348 | 1,369 | **+21** | 8.50% | 8.72% | +0.22% |
-| **Parkville** | 37 | 642 | 671 | **+29** | 8.01% | 6.41% | -1.60% |
-| **East Melbourne** | 37 | 582 | 608 | **+26** | 5.48% | 5.31% | -0.17% |
-| **Kensington** | 36 | 584 | 600 | **+16** | 5.13% | 4.97% | -0.16% |
-| **Carlton** | 82 | 1,788 | 1,850 | **+62** | 4.77% | 4.55% | -0.22% |
-| **Docklands** | 26 | 395 | 397 | **+2** | 6.78% | 7.96% | +1.18% |
-| **Southbank** | 10 | 208 | 220 | **+12** | 4.95% | 7.37% | +2.42% |
-| **Port Melbourne** | 6 | 263 | 262 | **-1** | 2.09% | 2.11% | +0.02% |
-| **South Yarra** | 3 | 44 | 47 | **+3** | 5.06% | 5.25% | +0.19% |
-| **Overall Average** | **430** | **7,757** | **7,956** | **+199 (Net)** | **6.77%** | **6.60%** | **-0.15%** |
+| **Melbourne CBD** | 48 | 528 | 523 | -5 | 9.31% | 9.03% | -0.28% |
+| **West Melbourne (Res)** | 32 | 407 | 404 | -3 | 9.90% | 8.47% | -1.43% |
+| **North Melbourne** | 90 | 1,348 | 1,369 | +21 | 8.50% | 8.72% | +0.22% |
+| **Parkville** | 37 | 642 | 671 | +29 | 8.01% | 6.41% | -1.60% |
+| **East Melbourne** | 37 | 582 | 608 | +26 | 5.48% | 5.31% | -0.17% |
+| **Kensington** | 36 | 584 | 600 | +16 | 5.13% | 4.97% | -0.16% |
+| **Carlton** | 82 | 1,788 | 1,850 | +62 | 4.77% | 4.55% | -0.22% |
+| **Docklands** | 26 | 395 | 397 | +2 | 6.78% | 7.96% | +1.18% |
+| **Southbank** | 10 | 208 | 220 | +12 | 4.95% | 7.37% | +2.42% |
+| **Port Melbourne** | 6 | 263 | 262 | -1 | 2.09% | 2.11% | +0.02% |
+| **South Yarra** | 3 | 44 | 47 | +3 | 5.06% | 5.25% | +0.19% |
+| **Total / Weighted Average** | **430** | **7,757** | **7,956** | **+199 (Net)** | **6.77%** | **6.60%** | **-0.15%** |
 
-*(Note: Net changes reflect total monitored spaces including new sensors and redesigned layouts. Specific project streets had spaces removed as detailed below.)*
+*(Note: Net capacity shifts include newly commissioned sensor installations alongside reconfigured kerbside layouts.)*
 
-### Key Insights for Business Stakeholders
-1. **No Parking Shortage:** Across all monitored streets, average parking occupancy was only **6.77% before** and **6.60% after** bike lanes were built. That means over **93% of parking bays were empty** on average.
-2. **Customer Turnover Remained Steady:** In [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb), the average driver parked for **31.8 minutes before** and **31.9 minutes after** interventions. Customers came, parked, shopped, and left at the exact same pace.
+### Analytical Takeaways
+The sensor telemetry demonstrates that monitored street corridors operated with substantial excess capacity both prior to and following infrastructure delivery. Average occupancy across all 430 blocks stood at 6.77% before construction and 6.60% afterward, indicating that over 93% of bays remained unoccupied during standard monitoring windows.
+
+Furthermore, vehicle turnover patterns remained consistent. In [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb), the average parking duration was 31.8 minutes prior to intervention and 31.9 minutes post-intervention, confirming that customer dwell times and access dynamics were unaffected.
 
 ---
 
-## 6. Real-World Street Case Studies (What Happened on the Ground?)
+## 6. Corridor Case Studies
 
-Let's look at specific, well-known streets where parking spaces were removed to build protected bike lanes:
+The following case studies examine specific commercial and mixed-use corridors where kerbside reallocations were completed.
 
 ```mermaid
 graph TD
-    subgraph Cases ["Real Street Outcomes"]
-        C1["<b>Queensberry St (North Melbourne)</b><br/>Lost 17 parking spots (-9.1%)<br/>Occupancy rose from 7.4% → 7.7%<br/><b>Outcome:</b> Over 90% of bays remained empty."]
-        C2["<b>Bourke St (Melbourne CBD)</b><br/>Lost 11 parking spots (-10.3%)<br/>Occupancy rose from 3.5% → 3.6%<br/><b>Outcome:</b> Zero noticeable impact on city visitors."]
-        C3["<b>Macaulay Rd (Kensington Shopping Strip)</b><br/>Lost 9 parking spots (-17.6%)<br/>Occupancy rose from 6.1% → 6.6%<br/><b>Outcome:</b> Local shoppers easily found parks."]
-        C4["<b>Adderley St (West Melbourne)</b><br/>Lost 5 parking spots (-6.3%)<br/>Occupancy dropped from 17.5% → 12.2%<br/><b>Outcome:</b> Traffic and parking ran smoother."]
+    subgraph Cases ["Empirical Corridor Outcomes"]
+        C1["<b>Queensberry Street (North Melbourne)</b><br/>Capacity: 187 → 170 bays (-9.1%)<br/>Occupancy: 7.41% → 7.65% (+0.24%)<br/>Outcome: Over 92% of parking bays remained available."]
+        C2["<b>Bourke Street (Melbourne CBD)</b><br/>Capacity: 107 → 96 bays (-10.3%)<br/>Occupancy: 3.45% → 3.62% (+0.17%)<br/>Outcome: Off-street structures absorbed demand with zero access disruption."]
+        C3["<b>Macaulay Road (Kensington)</b><br/>Capacity: 51 → 42 bays (-17.6%)<br/>Occupancy: 6.13% → 6.56% (+0.43%)<br/>Outcome: Village high-street maintained stable turnover."]
+        C4["<b>Adderley Street (West Melbourne)</b><br/>Capacity: 80 → 75 bays (-6.3%)<br/>Occupancy: 17.49% → 12.19% (-5.30%)<br/>Outcome: Reconfiguration reduced long-term vehicle storage."]
     end
 ```
 
-### Case Study Details
+### Queensberry Street, North Melbourne (Major Commuter & Commercial Corridor)
+Queensberry Street serves as a key east-west connection linking residential areas to the northern fringe of the CBD. Construction of protected cycling infrastructure reduced nominal capacity from 187 bays to 170 bays (a loss of 17 bays, or 9.1%). Parking occupancy registered a negligible shift from 7.41% to 7.65% (+0.24%), leaving more than 92% of bays vacant on average and preserving ample capacity for local trade.
 
-1. **Queensberry Street, North Melbourne (Major East-West Bike Route):**
-   - **Spaces:** Reduced from 187 bays to 170 bays (**17 bays removed**, -9.1%).
-   - **Parking Occupancy:** Shifted from 7.41% to 7.65% (an increase of only 0.24%).
-   - **Business Reality:** Even after removing 17 spots to create a safe cycling path into the CBD, the street never ran out of parking. Over 92% of parking spaces remained open at any given time.
-2. **Bourke Street, Melbourne CBD (Commercial & Retail Core):**
-   - **Spaces:** Reduced from 107 bays to 96 bays (**11 bays removed**, -10.3%).
-   - **Parking Occupancy:** Moved from 3.45% to 3.62% (+0.17%).
-   - **Business Reality:** On-street parking in the CBD is largely supplemented by commercial off-street parking garages. Removing 11 spots had no measurable impact on shopper access.
-3. **Macaulay Road, Kensington (Local Village Shopping Strip):**
-   - **Spaces:** Reduced from 51 bays to 42 bays (**9 bays removed**, -17.6%).
-   - **Parking Occupancy:** Moved from 6.13% to 6.56% (+0.43%).
-   - **Business Reality:** On a sensitive village high street, losing 9 bays caused occupancy to rise by less than half a percentage point. Shoppers continued visiting without parking stress.
-4. **Adderley Street, West Melbourne (Residential & Commercial):**
-   - **Spaces:** Reduced from 80 bays to 75 bays (**5 bays removed**, -6.3%).
-   - **Parking Occupancy:** Dropped from 17.49% to 12.19% (-5.30%).
-   - **Business Reality:** Reorganizing the street improved traffic flow and reduced unauthorized long-term vehicle storage.
+### Bourke Street, Melbourne CBD (Retail & Commercial Core)
+Along the commercial core of Bourke Street, protected bike lanes reduced kerbside capacity from 107 to 96 bays (-10.3%). Occupancy increased marginally from 3.45% to 3.62% (+0.17%). Because central city parking demand is predominantly served by multi-deck commercial parking structures, the modest reduction in kerbside spaces produced no measurable access strain.
+
+### Macaulay Road, Kensington (Local Retail Village)
+Macaulay Road represents a sensitive retail strip with high turnover requirements for cafes, groceries, and neighborhood services. Kerbside reallocations reduced capacity from 51 to 42 bays (a reduction of 9 bays, or 17.6%). Occupancy rose by less than half a percentage point, moving from 6.13% to 6.56% (+0.43%), demonstrating that village retail access was preserved without parking shortages.
+
+### Adderley Street, West Melbourne (Mixed Commercial & Residential)
+Along Adderley Street, parking capacity was adjusted from 80 to 75 bays (-6.3%). Occupancy declined from 17.49% to 12.19% (-5.30%). The lane reallocation and parking redesign rationalized the street layout, curtailing unmetered all-day commuter storage while maintaining accessibility for local businesses and residents.
 
 ---
 
-## 7. Finding 3: Why Were Only 1 in 3 Pop-up Bike Lanes Kept?
+## 7. Evaluation of the COVID-19 Pop-up Bike Lane Program
 
 **Primary Research Citations:**
-- [`notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) (Pop-up Bike Lanes EDA by Lavan K)
-- [`notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb`](notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb) (Street Matching by Lavan K)
-- [`notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb`](notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb) (Map Alignment by Lavan K)
+* [`notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) (Pop-up Bike Lanes EDA by Lavan K)
+* [`notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb`](notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb) (Street Matching by Lavan K)
+* [`notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb`](notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb) (Map Alignment by Lavan K)
 
-During COVID-19, the Victorian Department of Transport rolled out hundreds of temporary "pop-up" bike lanes to give people travel options during lockdowns. We analyzed all **354 pop-up bike lane segments** across 6 local council areas:
+During the COVID-19 pandemic, the Victorian Department of Transport implemented rapid-deployment temporary cycling corridors across metropolitan Melbourne. An evaluation of all **354 temporary segments** across six Local Government Areas (LGAs) reveals significant differences in retention rates based on infrastructure type and consultation practices.
 
 ```mermaid
 pie title Pop-up Bike Lane Retention (Total: 354 Segments)
-    "Trial Only / Removed (240 segments - 67.8%)" : 240
-    "Made Permanent (114 segments - 32.2%)" : 114
+    "Decommissioned After Trial (240 segments - 67.8%)" : 240
+    "Retained Permanently (114 segments - 32.2%)" : 114
 ```
 
-### What Types of Lanes Were Built and How Many Were Kept?
+### Retention Outcomes by Infrastructure Type
 
-| Type of Bike Lane | Total Installed During COVID | Kept Permanently | Removed After Trial | Success Rate (%) |
+| Infrastructure Category | Total Installed | Retained Permanently | Decommissioned | Retention Rate |
 | :--- | :--- | :--- | :--- | :--- |
-| **Shared Streets** (low speed street sharing) | 192 | 82 | 110 | **42.7%** |
-| **Painted Bike Lanes** (paint on road only) | 128 | 28 | 100 | **21.9%** |
-| **Protected Bike Lanes** (physical barriers) | 23 | 4 | 19 | **17.4%** |
-| **Shared Paths / Off-road** | 11 | 0 | 11 | **0.0%** |
-| **Total Pop-up Program** | **354** | **114** | **240** | **32.2%** |
+| **Shared Streets** (Traffic-calmed shared roads) | 192 | 82 | 110 | 42.7% |
+| **Painted Bike Lanes** (Advisory surface markings) | 128 | 28 | 100 | 21.9% |
+| **Protected Bike Lanes** (Physical separation barriers) | 23 | 4 | 19 | 17.4% |
+| **Shared Paths / Off-road** (Off-carriageway paths) | 11 | 0 | 11 | 0.0% |
+| **Total Program** | **354** | **114** | **240** | **32.2%** |
 
-### Which Councils Kept Their Bike Lanes?
-- **City of Port Phillip Kept 93% of All Permanent Lanes:** Out of the 114 permanent sections in the whole state, **106 of them were in Port Phillip** (across 28 roads like Inkerman St, Park St, and Moray St).
-- **Other Councils:** Moonee Valley kept 4 sections; Maribyrnong kept 4 sections; Darebin and Yarra kept 0 from this temporary program (most were replaced by standard council capital works).
+### Municipal Retention Patterns and Strategic Insights
+Retention varied substantially across local councils:
+* **City of Port Phillip** accounted for **106 of the 114 permanent sections statewide** (93.0% of all retained segments), formalizing infrastructure across 28 corridors including Inkerman Street, Park Street, and Moray Street.
+* **Other Councils** recorded low long-term retention: Moonee Valley retained 4 sections, Maribyrnong retained 4, while Darebin and Yarra decommissioned temporary treatments in favor of scheduled permanent capital works.
 
-### The Business & Governance Lesson
-Why did Port Phillip succeed while 67.8% of lanes elsewhere were pulled out?
-1. **Design Quality Matters:** Temporary plastic bollards often blocked loading zones or looked unappealing to local traders.
-2. **Consultation Matters:** When councils installed lanes without warning, business pushback forced them to be removed. In Port Phillip, designs were adapted to protect both cycling and curbside business access.
+The disparity in retention highlights two primary lessons for transport delivery:
+1. **Design and Loading Compatibility:** Rapid treatments relying on plastic flex-posts frequently obstructed commercial loading bays and curbside waste collection, prompting trader opposition.
+2. **Consultation and Adaptation:** Port Phillip succeeded by actively engaging commercial traders and modifying initial layouts to safeguard business loading and parking alongside protected cycling links.
 
 ---
 
-## 8. Solving the Data Gap: How Other Councils Can Measure Parking Without Sensors
+## 8. Addressing the Regional Data Gap: Aerial Proxy Methodology
 
 **Primary Research Citations:**
-- [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) (Aerial Proxy Methodology by Scott Z)
-- [`notebooks/scott_z/04_economic_social_eda.ipynb`](notebooks/scott_z/04_economic_social_eda.ipynb) (Travel Behavior & Economic Survey by Scott Z)
-- [`notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb`](notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb) (Statewide Network Analysis by Scott Z)
-- [`../knowledge_base/data_inventory.md`](../knowledge_base/data_inventory.md) (Data Inventory Document)
+* [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) (Aerial Proxy Methodology by Scott Z)
+* [`notebooks/scott_z/04_economic_social_eda.ipynb`](notebooks/scott_z/04_economic_social_eda.ipynb) (Travel Behavior & Economic Survey by Scott Z)
+* [`notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb`](notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb) (Statewide Network Analysis by Scott Z)
+* [`../knowledge_base/data_inventory.md`](../knowledge_base/data_inventory.md) (Data Inventory Document)
 
-### The Problem: Most Councils Don't Have In-Ground Sensors
-In-ground electronic parking sensors exist in the City of Melbourne, but they are almost completely absent in outer Melbourne and regional cities like **Yarra, Merri-bek, Geelong, or Ballarat**.
+### Sensor Limitations in Non-CBD Municipalities
+While the City of Melbourne maintains extensive in-ground sensor coverage, IoT sensor networks are largely absent across outer metropolitan municipalities (such as Merri-bek and Yarra) and regional cities including Greater Geelong, Ballarat, and Bendigo.
 
-### The Solution: The Aerial Photo & AI Counting Method
-To prevent councils from having to spend millions installing electronic sensors in the pavement, our team designed a lightweight **Aerial Imagery Framework**:
+### The Aerial Imagery Auditing Framework
+To enable evidence-based evaluation without costly in-pavement sensor deployments, our team developed a repeatable auditing framework using state aerial imagery:
 
 ```mermaid
 flowchart TD
-    Step1["<b>Step 1: Map the Bike Lane</b><br/>Draw a 20-metre corridor around the street."] --> Step2["<b>Step 2: Collect High-Res Aerial Photos</b><br/>Download free state aerial photos taken 6 months before and 6 months after the bike lane was built."]
-    Step2 --> Step3["<b>Step 3: AI Vehicle Counting</b><br/>Use computer vision (or simple spot checks) to automatically count parked cars in the photos."]
-    Step3 --> Step4["<b>Step 4: Calculate True Utilisation</b><br/>Occupancy (%) = (Parked Cars Counted / Total Parking Spaces) * 100"]
-    Step4 --> Step5["<b>Step 5: Present Evidence to Stakeholders</b><br/>Demonstrate the true impact with clear, indisputable photographic proof."]
+    Step1["<b>1. Corridor Delineation</b><br/>Establish a 20-metre spatial buffer along the intervention corridor."] --> Step2["<b>2. Imagery Retrieval</b><br/>Acquire open-access government aerial orthophotos 6 months pre- and post-construction."]
+    Step2 --> Step3["<b>3. Vehicle Enumeration</b><br/>Apply automated computer vision detection or spot auditing to count parked vehicles."]
+    Step3 --> Step4["<b>4. Utilisation Calculation</b><br/>Compute occupancy percentage: (Observed Vehicles / Total Capacity) * 100."]
+    Step4 --> Step5["<b>5. Stakeholder Reporting</b><br/>Deliver objective visual and tabular evidence to business and council stakeholders."]
 ```
 
-### Travel Survey Insights (VISTA Data)
-In [`notebooks/scott_z/04_economic_social_eda.ipynb`](notebooks/scott_z/04_economic_social_eda.ipynb), analysis of Victoria's official travel survey (VISTA) shows that for shopping and retail trips across Melbourne:
-- **Over 55% of shopping trips are made by walking, cycling, or public transport**, not driving.
-- Making streets safer and more pleasant for walkers and bike riders directly supports the majority of customers who visit local shopping strips.
+### Mode Share Context (VISTA Travel Survey)
+Analysis of the Victorian Integrated Survey of Travel and Activity (VISTA) in [`notebooks/scott_z/04_economic_social_eda.ipynb`](notebooks/scott_z/04_economic_social_eda.ipynb) highlights that for local shopping and retail trips across Melbourne, **over 55% of journeys are completed by walking, cycling, or public transport**. Enhancing active transport infrastructure directly supports the primary mode of travel utilized by patrons visiting local commercial strips.
 
 ---
 
-## 9. Actionable Recommendations for Infrastructure Victoria & Councils
+## 9. Policy & Planning Recommendations
 
-Based on the evidence from all 13 research notebooks, we recommend five practical rules for future street projects:
+Drawing upon findings from across the 13 project notebooks, we outline five practical recommendations for Infrastructure Victoria, the Department of Transport and Planning, and municipal councils:
 
-```mermaid
-flowchart LR
-    R1["<b>1. Use 'Floating Parking'</b><br/>Place parking between bike lanes and car traffic to keep 90% of bays."] --> R2["<b>2. Show Real Data Early</b><br/>Show traders that baseline occupancy is <20% to ease parking fears."]
-    R2 --> R3["<b>3. Use Aerial Audits</b><br/>Use free aerial photos instead of expensive sensors for regional towns."]
-    R3 --> R4["<b>4. Set Clear Trial Rules</b><br/>Define clear success rules before starting any trial."]
-    R4 --> R5["<b>5. Prioritize Short-Stay Bays</b><br/>Replace all-day commuter spots with 15-minute customer bays."]
-```
+### 1. Adopt Floating Parking as the Standard Design Template
+Rather than eliminating kerbside spaces, road cross-sections should position parking bays between the active travel lane and moving traffic. This configuration provides a physical safety buffer for cyclists while retaining 80% to 90% of on-street parking capacity.
 
-1. **Standardize "Floating Parking" Designs:**
-   - Instead of removing parking, move the parking bays outward so they act as a physical barrier protecting the bike lane from car traffic. This protects cyclists while keeping **80% to 90% of on-street parking intact**.
-2. **Present Real Parking Data to Local Traders Upfront:**
-   - Before announcing a project, councils should conduct a simple parking occupancy study. When traders see that existing parking is only 10% to 20% full, concerns about "parking crises" are naturally resolved.
-3. **Use Aerial Audits for Regional and Suburban Projects:**
-   - Regional councils (like Greater Geelong or Ballarat) can use state aerial photography to measure parking impacts at near-zero cost.
-4. **Define Clear Rules for Trials Before Rolling Them Out:**
-   - To avoid repeating the 67.8% removal rate of pop-up bike lanes, every trial should have agreed success metrics, a set 6-month review date, and clear design standards for loading zones and delivery vehicles.
-5. **Focus on High-Turnover Customer Spaces:**
-   - For local retail strips, 10 short-stay (15–30 min) customer bays generate far more customer visits and retail sales than 20 all-day commuter bays that sit occupied by one car for 8 hours.
+### 2. Present Baseline Occupancy Data Early in Consultation
+Before unveiling proposed street designs, councils should conduct baseline occupancy audits. Demonstrating to local traders that baseline parking occupancy is often below 20% addresses concerns regarding parking scarcity before misinformation develops.
+
+### 3. Deploy Aerial Auditing for Regional and Suburban Projects
+Municipalities lacking in-ground sensor infrastructure should leverage state-acquired aerial imagery and computer vision to evaluate parking utilisation at negligible cost compared to physical sensor rollouts.
+
+### 4. Establish Structured Trial Frameworks with Defined Review Thresholds
+To prevent the high decommissioning rates seen in temporary pop-up programs (67.8% removal), future trial initiatives should establish clear performance criteria, mandatory 6-month review dates, and dedicated accommodations for commercial loading zones and waste collection.
+
+### 5. Prioritize High-Turnover Short-Stay Bays Over All-Day Storage
+In retail villages, replacing long-stay commuter parking with short-stay customer bays (15 to 30 minutes) generates greater customer turnover and retail foot traffic than maintaining underutilized all-day spaces.
 
 ---
 
 ## 10. Notebook Index & Evidence Sources
 
-Every number, chart, and conclusion in this document comes directly from reproducible code and data in this repository.
+All empirical figures, charts, and models referenced in this synthesis are directly reproducible from the project codebase and datasets.
 
-### Research Notebooks by Team Member
+### Research Notebooks
 
-| Topic & Research Focus | Notebook Relative Path | Key Findings Contained |
+| Research Area | Notebook Reference | Key Empirical Output |
 | :--- | :--- | :--- |
-| **Econometric Before/After Analysis** | [`notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) | Evaluated 76 treatment streets; found **-8.1pp median capacity reduction** for protected bike lanes and **-100pp** for pedestrianisation. |
-| **Pop-up Bike Lanes Analysis** | [`notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) | Analyzed 354 pop-up segments across 6 LGAs; found **32.2% retention rate** (106 of 114 permanent lanes in Port Phillip). |
-| **Treatment Street Cross-Referencing** | [`notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb`](notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb) | Cross-referenced pop-up bike lanes with Infrastructure Victoria treatment corridors. |
-| **Map Coordinate Systems (CRS)** | [`notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb`](notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb) | Fixed coordinate mismatches (VicGrid EPSG:7899 vs WGS84 EPSG:4326) for accurate 20m spatial buffering. |
-| **Data Ingestion & Pipelines** | [`notebooks/scott_z/00_data_ingestion.ipynb`](notebooks/scott_z/00_data_ingestion.ipynb) | Built data pipeline extracting statewide bike lanes, parking sensors, and council boundaries into DuckDB. |
-| **Bicycle Infrastructure EDA** | [`notebooks/scott_z/01_bike_lanes_eda.ipynb`](notebooks/scott_z/01_bike_lanes_eda.ipynb) & [`notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb`](notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb) | Cleaned 55,705 statewide cycling segments, removed duplicate lines, and calculated corridor lengths. |
-| **Traffic Volumes & SCATS Telemetry** | [`notebooks/scott_z/02_traffic_volumes_eda.ipynb`](notebooks/scott_z/02_traffic_volumes_eda.ipynb) | Analyzed 350,400 SCATS intersection traffic volume records showing peak commuter traffic flows. |
-| **Parking Sensors & Aerial Proxies** | [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) | Found 31.8–31.9 min average stay duration and created aerial photo vehicle counting framework. |
-| **Travel Behaviors & VISTA Survey** | [`notebooks/scott_z/04_economic_social_eda.ipynb`](notebooks/scott_z/04_economic_social_eda.ipynb) | Analyzed shopping mode split (55%+ active/public transport) and resolved multi-council layer alignment. |
-| **Site Baseline Window Filtering** | [`notebooks/gordon_t/01_filter_parking_site_windows.ipynb`](notebooks/gordon_t/01_filter_parking_site_windows.ipynb) | Filtered multi-gigabyte City of Melbourne parking transaction logs by site-specific intervention dates. |
-| **Interactive DuckDB Query Guide** | [`query_duckdb.ipynb`](query_duckdb.ipynb) | Interactive SQL queries examining all 430 blocks and 507,171 hourly occupancy records. |
+| **Econometric Before/After Analysis** | [`notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) | Evaluated 76 treatment streets; identified -8.1% median capacity change for bike lanes and -100% for pedestrian malls. |
+| **Pop-up Bike Lanes Analysis** | [`notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) | Evaluated 354 temporary segments; found 32.2% retention rate (106 of 114 permanent sections in Port Phillip). |
+| **Treatment Corridor Cross-Referencing** | [`notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb`](notebooks/Lavan/TeamB_Treatment_Street_CrossRef.ipynb) | Cross-referenced pop-up corridors with Infrastructure Victoria intervention sites. |
+| **Spatial Coordinate System Alignment** | [`notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb`](notebooks/Lavan/TeamB_CRS_Mismatch_Resolution.ipynb) | Reconciled EPSG:7899 (VicGrid) and EPSG:4326 (WGS84) coordinate frames for 20m spatial buffering. |
+| **Data Ingestion & Pipelines** | [`notebooks/scott_z/00_data_ingestion.ipynb`](notebooks/scott_z/00_data_ingestion.ipynb) | Ingestion pipeline loading statewide cycling networks, sensor streams, and boundaries into DuckDB. |
+| **Bicycle Infrastructure Network EDA** | [`notebooks/scott_z/01_bike_lanes_eda.ipynb`](notebooks/scott_z/01_bike_lanes_eda.ipynb) & [`notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb`](notebooks/scott_z/bicycle_infrastructure_network_EDA.ipynb) | Cleaned 55,705 cycling segments, resolved connector topology errors, and derived corridor network lengths. |
+| **Traffic Telemetry & SCATS Volumes** | [`notebooks/scott_z/02_traffic_volumes_eda.ipynb`](notebooks/scott_z/02_traffic_volumes_eda.ipynb) | Evaluated 350,400 SCATS intersection volume records to assess arterial traffic flows. |
+| **Parking Sensors & Aerial Proxies** | [`notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) | Quantified 31.8–31.9 min dwell durations and formulated aerial imagery counting methodology. |
+| **Travel Behavior & VISTA Survey** | [`notebooks/scott_z/04_economic_social_eda.ipynb`](notebooks/scott_z/04_economic_social_eda.ipynb) | Analyzed shopping mode shares (55%+ sustainable modes) and multi-LGA spatial layers. |
+| **Site Baseline Window Filtering** | [`notebooks/gordon_t/01_filter_parking_site_windows.ipynb`](notebooks/gordon_t/01_filter_parking_site_windows.ipynb) | Filtered multi-gigabyte transaction logs against intervention time windows. |
+| **Interactive DuckDB Query Guide** | [`query_duckdb.ipynb`](query_duckdb.ipynb) | Interactive SQL analytical queries across all 430 blocks and 507,171 sensor records. |
 
-### Database & Technical Reference Files
-- **DuckDB Analytical Database:** [`data/parking_analytics.duckdb`](data/parking_analytics.duckdb)
-- **Pipeline Data Validation Report:** [`data/processed/validation_report.md`](data/processed/validation_report.md)
-- **Data Inventory & Methodology:** [`../knowledge_base/data_inventory.md`](../knowledge_base/data_inventory.md)
-- **Data Pipeline Architecture:** [`../knowledge_base/data_pipeline.md`](../knowledge_base/data_pipeline.md)
+### Technical Documentation & Data Artifacts
+* **DuckDB Analytical Database:** [`data/parking_analytics.duckdb`](data/parking_analytics.duckdb)
+* **Pipeline Validation Report:** [`data/processed/validation_report.md`](data/processed/validation_report.md)
+* **Data Inventory & Sources:** [`../knowledge_base/data_inventory.md`](../knowledge_base/data_inventory.md)
+* **Data Pipeline Architecture:** [`../knowledge_base/data_pipeline.md`](../knowledge_base/data_pipeline.md)
