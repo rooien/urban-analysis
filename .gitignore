@@ -16,5 +16,8 @@ __pycache__
 *.env
 *.duckdb
 *.parquet
-team_b/data/
-
+# Ignore data files under team_b/data but track directory structure
+team_b/data/**
+!team_b/data/
+!team_b/data/**/
+!team_b/data/**/__init__.py

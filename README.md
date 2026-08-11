@@ -115,7 +115,7 @@ The project includes a robust, end-to-end data pipeline to ingest, clean, and tr
 - **Dynamic Capacity Engine**: Calculating parking bay capacities monthly based on maximum unique broadcasting devices to avoid static count discrepancies.
 - **SCATS Traffic Simulation**: Simulating 15-minute traffic flows at intersection sensors to establish baseline volumes under sandboxed execution constraints.
 
-For a detailed breakdown of the pipelines and transformations, see the [`team_b/DATA_INGESTION.md`](file:///Users/szanevra/repositories/Victoria-Urban-Planning/team_b/DATA_INGESTION.md) documentation.
+For a detailed breakdown of the pipelines and transformations, see the [Data Pipeline](knowledge_base/data_pipeline.md) documentation.
 
 ## Directory Structure
 
@@ -140,8 +140,11 @@ Victoria-Urban-Planning/
 │   ├── api/            # FastAPI backend application
 │   └── config.py       # Centralized config loader
 ├── CODING_STANDARDS.md # Shared coding guidelines
-├── DATA.md             # Detailed dataset inventory
 ├── README.md           # Project documentation and setup guide
+├── knowledge_base/     # Informational documentation
+│   ├── data_architecture_report.md
+│   ├── data_inventory.md
+│   └── data_pipeline.md
 ├── config.yaml         # Configuration file for data paths and sources
 ├── requirements.txt    # Python baseline dependencies
 ├── run_app.py          # App orchestrator bootstrapper
