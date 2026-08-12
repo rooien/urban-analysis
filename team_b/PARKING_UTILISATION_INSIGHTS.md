@@ -50,8 +50,8 @@ flowchart TD
 
 | Research Question | Empirical Finding | Practical Implication | Primary Notebook Reference |
 | :--- | :--- | :--- | :--- |
-| **Do pedestrian malls remove parking?** | **-100%** parking spaces ($n=6$ corridors) | Converting a corridor into a dedicated pedestrian mall eliminates vehicular parking by design. | [Dhruv M - `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
-| **How much parking is removed for protected bike lanes?** | **-8.1%** median reduction ($n=92$ corridors) | A typical street loses approximately 8 out of 100 parking spaces. Large reductions occur only on constrained, narrow corridors. | [Dhruv M - `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
+| **Do pedestrian malls remove parking?** | **-100%** parking spaces ($n=6$ corridors) | Converting a corridor into a dedicated pedestrian mall eliminates vehicular parking by design. | [Dhruv M and Gurnoor S- `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
+| **How much parking is removed for protected bike lanes?** | **-8.1%** median reduction ($n=92$ corridors) | A typical street loses approximately 8 out of 100 parking spaces. Large reductions occur only on constrained, narrow corridors. | [Dhruv M and Gurnoor S- `SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) |
 | **Did remaining bays experience higher occupancy?** | **-0.15%** change in occupancy ($430$ blocks) | Average occupancy shifted from $6.77\%$ to $6.60\%$. Monitored corridors maintained substantial parking surpluses throughout operational hours. | [DuckDB Database Guide - `query_duckdb.ipynb`](query_duckdb.ipynb) |
 | **Did driver stay durations change?** | **31.8 to 31.9 minutes** average duration | Stay durations remained unchanged, demonstrating consistent customer turnover for local commercial activity. | [Scott Z - `03_parking_and_aerial_imagery_eda.ipynb`](notebooks/scott_z/03_parking_and_aerial_imagery_eda.ipynb) |
 | **Were temporary pop-up lanes retained permanently?** | **32.2%** retained permanently ($114 / 354$ sections) | Rapid trials installed without adequate trader consultation were largely decommissioned. Port Phillip succeeded through balanced kerbside design. | [Lavan K - `TeamB_PopupBikeLanes_EDA.ipynb`](notebooks/Lavan/TeamB_PopupBikeLanes_EDA.ipynb) |
@@ -98,7 +98,7 @@ When baseline parking utilisation is low, a modest reduction in nominal capacity
 
 ## 4. Capacity Impact: Difference-in-Differences Analysis
 
-**Primary Research Citation:** [`notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) (Authored by Dhruv M)
+**Primary Research Citation:** [`notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb`](notebooks/dhruv_m/SIT374_USIA_EDA1.ipynb) (Authored by Dhruv M and Gurnoor S)
 
 ### Methodological Approach
 To isolate the direct effect of bike lanes from broader economic and secular trends (including COVID-19 disruptions and retail patterns), the analysis applied an econometric **Difference-in-Differences** framework. Each intervention corridor was evaluated against a matched control street in the same locality that did not receive cycling infrastructure over the same multi-year observation window.
