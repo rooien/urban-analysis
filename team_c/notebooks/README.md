@@ -60,7 +60,7 @@ data/raw/
 1. **Policy Impact:** On-street parking demand collapsed by **60% to 80%** precisely aligned with Victorian Stage 3 Stay-at-Home orders, strongly tracking Google Workplace and Retail Mobility indices ($r = 0.68 - 0.75$).
 2. **Duration Surge & Turnover Collapse:** During lockdowns, average parking duration more than doubled on Albert St (47 min $\rightarrow$ 98 min) and Southbank Blvd (16 min $\rightarrow$ 42 min) as kerbsides shifted to essential/residential stays.
 3. **Thoroughfare vs. Destination Divergence:** Elizabeth Street sustained high arterial through-traffic (~75% of baseline) despite local parking reductions, confirming its function as a transit/movement spine.
-4. **Weather Independence:** Regression against rainfall and temperature showed near-zero correlation ($r \approx 0$), proving environmental factors do not confound parking demand trends.
+4. **Weather Independence:** Regression against rainfall and temperature showed near-zero correlation ($r \approx 0$), proving environmental factors do not govern parking demand trends.
 5. **Modern Kerbside Capacity:** 2026 live telemetry shows ~18% occupancy on Albert Street, confirming available kerbside space for active transport reallocation.
 
 ---
