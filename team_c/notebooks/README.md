@@ -4,7 +4,7 @@ This directory contains Jupyter notebooks developed by **Team C** for the **Vict
 
 ---
 
-## 📋 Notebook Catalog
+## Notebook Catalog
 
 | Notebook | Purpose | Key Outputs / Figures |
 |---|---|---|
@@ -14,7 +14,7 @@ This directory contains Jupyter notebooks developed by **Team C** for the **Vict
 
 ---
 
-## 🏛️ COVID-19 Study Eras
+## COVID-19 Study Eras
 
 The analysis formalizes four distinct regulatory and operational periods:
 
@@ -27,14 +27,14 @@ The analysis formalizes four distinct regulatory and operational periods:
 
 ---
 
-## 🗺️ Spatial Standards & CRS Notice
+## Spatial Standards & CRS Notice
 
 * **Standard Project CRS:** `EPSG:7899` (**GDA2020 / VicGrid**).
 * **Reprojection:** Point sensor coordinates (`EPSG:4326` WGS84) and municipal shapefiles must be reprojected to `EPSG:7899` before buffering or spatial joins to prevent geometric distortion and ensure accurate distance calculations.
 
 ---
 
-## 📦 Required Raw Datasets (`data/raw/`)
+## Required Raw Datasets (`data/raw/`)
 
 Before executing the notebooks, ensure the following datasets are present in `data/raw/`:
 
@@ -52,10 +52,10 @@ data/raw/
 ```
 
 *(Note: Raw data files are excluded from Git tracking via `.gitignore` due to large file sizes).*
-
+*(Note: you can replace live_harvester_august_2026.csv with a new dataset that you harvest using the DataCollector.ipynb Notebook).*
 ---
 
-## 📊 Summary of Key Empirical Findings
+## Findings Summary
 
 1. **Policy Impact:** On-street parking demand collapsed by **60% to 80%** precisely aligned with Victorian Stage 3 Stay-at-Home orders, strongly tracking Google Workplace and Retail Mobility indices ($r = 0.68 - 0.75$).
 2. **Duration Surge & Turnover Collapse:** During lockdowns, average parking duration more than doubled on Albert St (47 min $\rightarrow$ 98 min) and Southbank Blvd (16 min $\rightarrow$ 42 min) as kerbsides shifted to essential/residential stays.
@@ -65,7 +65,7 @@ data/raw/
 
 ---
 
-## 🚀 Execution Instructions
+## Execution Instructions
 
 1. Activate your virtual environment:
    ```bash
