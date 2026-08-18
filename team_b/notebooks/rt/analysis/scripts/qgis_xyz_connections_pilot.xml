@@ -1,0 +1,28 @@
+<!--
+Bulk XYZ connection list for the Strand-2 imagery pilot (Elizabeth St / Moorabool St).
+Before importing: open in a text editor, Find & Replace "YOUR_API_KEY" with your real
+Nearmap key, save, then in QGIS use Layer > Data Source Manager > XYZ Tiles > Load
+Connections and select this file. All 20 will appear as saved connections.
+-->
+<qgsXYZTilesConnections version="1.0">
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2019-04-07" password="" name="ElizSt_before_2019-04-07" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2019-08-31" password="" name="ElizSt_before_2019-08-31" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2019-12-17" password="" name="ElizSt_before_2019-12-17" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2020-02-17" password="" name="ElizSt_before_2020-02-17" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2020-11-08" password="" name="ElizSt_after_2020-11-08" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-01-22" password="" name="ElizSt_after_2021-01-22" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-03-11" password="" name="ElizSt_after_2021-03-11" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-04-29" password="" name="ElizSt_after_2021-04-29" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-09-01" password="" name="ElizSt_after_2021-09-01" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-09-23" password="" name="ElizSt_after_2021-09-23" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-09-26" password="" name="ElizSt_after_2021-09-26" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2020-11-25" password="" name="Moorabool_before_2020-11-25" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-01-11" password="" name="Moorabool_before_2021-01-11" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-03-11" password="" name="Moorabool_before_2021-03-11" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-05-22" password="" name="Moorabool_before_2021-05-22" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2021-07-31" password="" name="Moorabool_before_2021-07-31" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2022-01-20" password="" name="Moorabool_after_2022-01-20" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2022-04-14" password="" name="Moorabool_after_2022-04-14" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2022-08-08" password="" name="Moorabool_after_2022-08-08" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+<xyztiles url="https://api.nearmap.com/tiles/v3/Vert/%7Bz%7D/%7Bx%7D/%7By%7D.img?apikey=YOUR_API_KEY&amp;until=2022-12-10" password="" name="Moorabool_after_2022-12-10" referer="" zmax="21" authcfg="" username="" zmin="0"/>
+</qgsXYZTilesConnections>
