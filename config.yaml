@@ -12,10 +12,11 @@ data_sources:
   pedestrian_counting_system: "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/pedestrian-counting-system-monthly-counts-per-hour/exports/geojson"
 
 paths:
-  data_dir: "data"
-  raw_dir: "data/raw"
-  processed_dir: "data/processed"
-  database: "data/parking_analytics.duckdb"
+  data_dir: "team_b/data"
+  raw_dir: "team_b/data/raw"
+  processed_dir: "team_b/data/processed"
+  database: "team_b/data/parking_analytics.duckdb"
+
 
 processing:
   # Buffer distances (in meters) used for geospatial proximity matching and spatial joins
@@ -45,5 +46,6 @@ processing:
   # Anchor prefers DisruptionStartDate / DisruptionEndDate, else DateOfIntervention/InitialCapture
   site_windows:
     window_months: 2
-    sites_db: "data/raw/sites_db.csv"
+    sites_db: "team_b/data/raw/sites_db.csv"
     parking_years: [2013, 2014]
+
