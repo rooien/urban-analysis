@@ -1,0 +1,14 @@
+CHECK,SECTION,ESTIMATE,SIGNIFICANT,NOTES
+George's preliminary (exact-dup-cleaned),Baseline,-34.96%,Yes (naive),Original headline figure
+This notebook's baseline (pre-dedup),2,-34.98%,Yes (naive),"Validation check, matches George within 0.02pp"
+Block bootstrap (autocorrelation-aware),3,-341 riders/day,Yes (95% CI excludes 0),"CI [-454.59, -217.78]"
+Weekly aggregation (gap-safe check),3,-34.44%,Yes (p=1.86e-09),Consistent with daily result
+"Lockdown excluded, After only (Sensitivity A)",4,-27.11%,Yes (95% CI excludes 0),Largest deviation from original
+"Lockdown excluded, both periods (Sensitivity B)",4,-32.65%,Yes (95% CI excludes 0),Closer to original
+Month-matched (Jan-Jul only),5,-31.06%,Yes (p=4.24e-18),Corrects for Before having zero Aug-Dec days
+Weekday only (month-matched),5,-35.78%,Yes (p=3.53e-30),"Naive split, not yet regression-controlled"
+Weekend only (month-matched),5,+12.37%,Yes (p=0.0033),Opposite direction to weekday
+"Regression, no trend term",6,-26.71%,Yes (p=1.86e-08),"Trend/intervention r=0.858, both versions reported"
+"Regression, with trend term",6,-16.08%,No (p=0.104),CI crosses zero
+"Regression, weekday effect (interaction model)",6,-283.30 riders/day,Yes (p=0.007),"Controls month, weekday, trend"
+"Regression, weekend effect (interaction model)",6,+190.49 riders/day,Yes (p=0.011),"Opposite sign to weekday, both significant"

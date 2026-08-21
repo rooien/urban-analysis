@@ -1,0 +1,3 @@
+GROUP,EFFECT_RIDERS_DAY,CI_LOW,CI_HIGH,P_VALUE
+Weekday (post-intervention),-283.3,-487.49,-79.11,0.007
+"Weekend (post-intervention, combined)",190.49,43.84,337.14,0.011
