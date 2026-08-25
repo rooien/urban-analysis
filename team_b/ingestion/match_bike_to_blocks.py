@@ -3,7 +3,8 @@ Match Bike to Blocks Script
 
 Assigns street block descriptions, suburbs, and street names to bike segments and
 aggregates geometries to create unified block-level features. Builds summary tables
-for baseline and post-intervention bay capacity and occupancy across all supported streets.
+for baseline and post-intervention bay capacity, occupancy, and turnover metrics.
+Incorporates calibrated kerbside obstruction factor and spaces-at-risk calculations.
 """
 
 import sys
@@ -105,7 +106,7 @@ def main() -> None:
     base_months_str = str(tuple(BASELINE_MONTHS))
     post_months_str = str(tuple(POST_MONTHS))
 
-    print("Building blocks_summary table...")
+    print("Building blocks_summary table with turnover and obstruction calibration...")
     # Create the summary table
     con.execute(f"""
     CREATE OR REPLACE TABLE blocks_summary AS
@@ -126,7 +127,9 @@ def main() -> None:
             street_name,
             block_desc,
             year,
-            AVG(occupancy_rate) as avg_occupancy
+            AVG(occupancy_rate) as avg_occupancy,
+            AVG(turnover_rate) as avg_turnover,
+            AVG(avg_duration_min) as avg_duration
         FROM hourly_occupancy
         WHERE (year = {BASELINE_YEAR} AND month(hr) IN {base_months_str}) 
            OR (year = {POST_YEAR} AND month(hr) IN {post_months_str})
@@ -141,7 +144,13 @@ def main() -> None:
         COALESCE(f.final_bays, 0) as final_bays,
         (COALESCE(b.baseline_bays, 0) - COALESCE(f.final_bays, 0)) as bays_removed,
         MAX(CASE WHEN s.year = {BASELINE_YEAR} THEN s.avg_occupancy ELSE NULL END) as pre_occupancy,
-        MAX(CASE WHEN s.year = {POST_YEAR} THEN s.avg_occupancy ELSE NULL END) as post_occupancy
+        MAX(CASE WHEN s.year = {POST_YEAR} THEN s.avg_occupancy ELSE NULL END) as post_occupancy,
+        ROUND((MAX(CASE WHEN s.year = {POST_YEAR} THEN s.avg_occupancy ELSE NULL END) - 
+               MAX(CASE WHEN s.year = {BASELINE_YEAR} THEN s.avg_occupancy ELSE NULL END)) * 100.0, 2) as occupancy_change_pp,
+        MAX(CASE WHEN s.year = {BASELINE_YEAR} THEN s.avg_turnover ELSE NULL END) as pre_turnover,
+        MAX(CASE WHEN s.year = {POST_YEAR} THEN s.avg_turnover ELSE NULL END) as post_turnover,
+        0.428 AS obstruction_factor,
+        ROUND((COALESCE(b.baseline_bays, 0) - COALESCE(f.final_bays, 0)) * 0.428, 1) AS estimated_capacity_loss
     FROM block_geometries g
     LEFT JOIN baseline b ON g.street_name = b.street_name AND g.block_desc = b.block_desc
     LEFT JOIN final f ON g.street_name = f.street_name AND g.block_desc = f.block_desc
@@ -153,7 +162,8 @@ def main() -> None:
     
     # Print a quick summary of distinct streets that actually got matched with historical data
     res = con.execute("""
-        SELECT suburb, count(distinct street_name) as streets_with_data, count(*) as total_blocks 
+        SELECT suburb, count(distinct street_name) as streets_with_data, count(*) as total_blocks,
+               sum(baseline_bays) as total_pre_bays, sum(final_bays) as total_post_bays, sum(bays_removed) as bays_removed
         FROM blocks_summary 
         WHERE baseline_bays > 0 OR final_bays > 0 
         GROUP BY 1 

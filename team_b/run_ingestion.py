@@ -2,8 +2,8 @@
 """
 Victoria Urban Planning - Ingestion Pipeline Orchestrator (Team B)
 
-Orchestrates all Stream B ingestion, spatial processing, aggregation, 
-and validation steps sequentially.
+Orchestrates all Stream B ingestion, spatial processing, weather telemetry,
+aggregation, and validation steps sequentially.
 """
 
 import os
@@ -50,13 +50,12 @@ def main() -> None:
     print("=" * 60)
     print("This script runs the full end-to-end data pipeline to build")
     print("the DuckDB database for all supported streets and suburbs.")
-    print("This includes downloading GeoJSON layers, filtering 80M+ rows")
-    # Tell user about downloading if files are missing
-    print("of sensor events, simulating SCATS volumes, and running validations.\n")
+    print("This includes downloading GeoJSON layers, filtering sensor events,")
+    print("ingesting hourly weather and SCATS volumes, and running validations.\n")
 
     pipeline_start = time.time()
 
-    # Step 1: Download Base GeoJSONs
+    # Step 1: Download Base GeoJSONs and Raw Archives
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "download_base_data.py"))
 
     # Step 2: Match Bike Lanes with Suburbs and Parking Bays
@@ -66,16 +65,19 @@ def main() -> None:
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "filter_supported_events.py"), ["2013"])
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "filter_supported_events.py"), ["2014"])
 
-    # Step 4: Process Traffic Volumes (SCATS)
+    # Step 4: Process Weather Telemetry (Open-Meteo Hourly Meteorological Data)
+    run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "process_weather.py"))
+
+    # Step 5: Process Traffic Volumes (SCATS & Vehicle Classification)
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "process_scats_traffic.py"))
 
-    # Step 5: Aggregate Hourly Occupancy across all supported blocks
+    # Step 6: Aggregate Hourly Occupancy & Turnover across all supported blocks
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "aggregate_occupancy.py"))
 
-    # Step 6: Assign Blocks to Bike Lanes and Build Blocks Summary
+    # Step 7: Assign Blocks to Bike Lanes, Calibrate Capacity, and Build Summary
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "match_bike_to_blocks.py"))
 
-    # Step 7: Run Pipeline Validation & Generate Report
+    # Step 8: Run Pipeline Validation & Generate Report
     run_script(os.path.join(ROOT_DIR, "team_b", "ingestion", "validate_pipeline.py"))
 
     total_duration = time.time() - pipeline_start
