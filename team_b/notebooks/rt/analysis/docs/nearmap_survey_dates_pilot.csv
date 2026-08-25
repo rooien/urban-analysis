@@ -1,0 +1,29 @@
+street_segment_id,street_name,captureDate,day_of_week,fy_quarter,period,coverage
+9168,ELIZABETH STREET,2019-04-07,Sunday,1819Q4,before,both ends
+9168,ELIZABETH STREET,2019-08-31,Saturday,1920Q1,before,both ends
+9168,ELIZABETH STREET,2019-12-17,Tuesday,1920Q2,before,both ends
+9168,ELIZABETH STREET,2020-02-17,Monday,1920Q3,before,both ends
+9168,ELIZABETH STREET,2020-04-28,Tuesday,1920Q4,during construction (exclude),both ends
+9168,ELIZABETH STREET,2020-06-04,Thursday,1920Q4,during construction (exclude),End A only
+9168,ELIZABETH STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
+9168,ELIZABETH STREET,2020-11-02,Monday,2021Q2,after,End A only
+9168,ELIZABETH STREET,2020-11-08,Sunday,2021Q2,after,both ends
+9168,ELIZABETH STREET,2021-01-22,Friday,2021Q3,after,both ends
+9168,ELIZABETH STREET,2021-03-11,Thursday,2021Q3,after,both ends
+9168,ELIZABETH STREET,2021-04-29,Thursday,2021Q4,after,both ends
+9168,ELIZABETH STREET,2021-06-21,Monday,2021Q4,after,End A only
+9168,ELIZABETH STREET,2021-07-27,Tuesday,2122Q1,after,End A only
+9168,ELIZABETH STREET,2021-09-01,Wednesday,2122Q1,after,both ends
+9168,ELIZABETH STREET,2021-09-23,Thursday,2122Q1,after,both ends
+9168,ELIZABETH STREET,2021-09-26,Sunday,2122Q1,after,both ends
+10838,MOORABOOL STREET,2020-11-25,Wednesday,2021Q2,before,both ends
+10838,MOORABOOL STREET,2021-01-11,Monday,2021Q3,before,both ends
+10838,MOORABOOL STREET,2021-03-11,Thursday,2021Q3,before,both ends
+10838,MOORABOOL STREET,2021-05-22,Saturday,2021Q4,before,both ends
+10838,MOORABOOL STREET,2021-07-31,Saturday,2122Q1,before,both ends
+10838,MOORABOOL STREET,2021-10-06,Wednesday,2122Q2,during construction (exclude),both ends
+10838,MOORABOOL STREET,2021-11-22,Monday,2122Q2,during construction (exclude),both ends
+10838,MOORABOOL STREET,2022-01-20,Thursday,2122Q3,after,both ends
+10838,MOORABOOL STREET,2022-04-14,Thursday,2122Q4,after,both ends
+10838,MOORABOOL STREET,2022-08-08,Monday,2223Q1,after,both ends
+10838,MOORABOOL STREET,2022-12-10,Saturday,2223Q2,after,both ends
