@@ -4,6 +4,7 @@ Aggregate Occupancy Script
 Aggregates the filtered event-level data into hourly occupancy rates per block,
 computing the occupied minutes against the monthly bay capacity for baseline
 and post-intervention years, across all supported streets and suburbs.
+Cleans sensor duration anomalies (<0s or >24h) and computes turnover and duration metrics.
 """
 
 import sys
@@ -12,6 +13,7 @@ import duckdb
 import geopandas as gpd
 import pandas as pd
 import re
+import time
 
 # Ensure project root is in PYTHONPATH
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -61,13 +63,14 @@ def get_block_key(desc: str) -> str:
 def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, year: int) -> None:
     """
     Aggregates hourly occupancy for a specific year and inserts it into the database.
+    Applies data quality cleansing (duration bounds 0 to 86400s) and calculates turnover metrics.
     """
     parquet_path = os.path.join(PROCESSED_DIR, f"matched_events_{year}.parquet")
     if not os.path.exists(parquet_path):
         print(f"Parquet not found for {year}: {parquet_path}")
         return
 
-    print(f"Aggregating hourly occupancy for {year}...")
+    print(f"Aggregating hourly occupancy and turnover for {year}...")
     start_date = f"{year}-01-01 00:00:00"
     end_date = f"{year}-12-31 23:00:00"
 
@@ -75,14 +78,14 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
     con_mem = duckdb.connect()
     con_mem.register("mapping_df", mapping_df)
 
-    print("Building block mapping in Parquet data...")
-    # Join the Parquet file with the mapping table and save a temporary mapped Parquet to speed up aggregation
+    print("Building block mapping and filtering sensor anomalies in Parquet data...")
     temp_parquet = os.path.join(PROCESSED_DIR, f"temp_mapped_events_{year}.parquet")
     
     norm_st = "REGEXP_REPLACE(REPLACE(REPLACE(UPPER(TRIM(StreetName)), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\\\s+', ' ', 'g')"
     norm_b1 = "REGEXP_REPLACE(REPLACE(REPLACE(UPPER(TRIM(BetweenStreet1)), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\\\s+', ' ', 'g')"
     norm_b2 = "REGEXP_REPLACE(REPLACE(REPLACE(UPPER(TRIM(BetweenStreet2)), 'LITTLE ', 'LT '), 'SAINT ', 'ST '), '\\\\s+', ' ', 'g')"
 
+    # Filter durations: drop < 0 (sensor logging reversal) and > 86400 (midnight backfill anomaly)
     query_map = f"""
     COPY (
         WITH events AS (
@@ -91,9 +94,9 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
                 StreetName,
                 BetweenStreet1,
                 BetweenStreet2,
-                ArrivalTime,
-                DepartureTime,
-                DurationSeconds,
+                ArrivalTime::TIMESTAMP AS ArrivalTime,
+                DepartureTime::TIMESTAMP AS DepartureTime,
+                TRY_CAST(DurationSeconds AS BIGINT) AS DurationSeconds,
                 {norm_st} AS norm_street,
                 CASE 
                     WHEN BetweenStreet2 IS NOT NULL AND TRIM(BetweenStreet2) != '' AND TRIM(UPPER(BetweenStreet2)) != 'DEAD END'
@@ -105,11 +108,15 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
                     ELSE 'FROM ' || {norm_b1}
                 END AS block_key
             FROM read_parquet('{parquet_path}')
+            WHERE DepartureTime > ArrivalTime
+              AND TRY_CAST(DurationSeconds AS BIGINT) > 0
+              AND TRY_CAST(DurationSeconds AS BIGINT) <= 86400
         )
         SELECT 
             e.DeviceId,
             e.ArrivalTime,
             e.DepartureTime,
+            e.DurationSeconds,
             m.suburb,
             m.street_name,
             m.roadsegmentdescription AS block_desc
@@ -119,13 +126,12 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
          AND e.block_key = m.block_key
     ) TO '{temp_parquet}' (FORMAT PARQUET);
     """
-    import time
     start = time.time()
     con_mem.execute(query_map)
     print(f"Mapping blocks took {time.time() - start:.2f} seconds.")
     con_mem.close()
 
-    # Now run the hourly aggregation using the main database connection
+    # Run hourly aggregation with turnover count and average stay duration
     query_agg = f"""
     INSERT INTO hourly_occupancy
     WITH events AS (
@@ -154,7 +160,9 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
             h.m,
             SUM(
                 epoch(LEAST(e.DepartureTime, h.hr + interval '1 hour') - GREATEST(e.ArrivalTime, h.hr)) / 60.0
-            ) AS occupied_minutes
+            ) AS occupied_minutes,
+            COUNT(DISTINCT e.DeviceId || '_' || e.ArrivalTime) AS events_count,
+            AVG(e.DurationSeconds / 60.0) AS avg_duration_min
         FROM hours h
         JOIN events e 
           ON e.ArrivalTime < h.hr + interval '1 hour' 
@@ -170,14 +178,17 @@ def aggregate_year(con_db: duckdb.DuckDBPyConnection, mapping_df: pd.DataFrame, 
         o.occupied_minutes,
         (b.bay_count * 60.0) AS total_minutes,
         LEAST(1.0, o.occupied_minutes / (b.bay_count * 60.0)) AS occupancy_rate,
-        b.bay_count
+        b.bay_count,
+        COALESCE(o.events_count, 0) AS events_count,
+        ROUND(COALESCE(o.events_count, 0) * 1.0 / GREATEST(1, b.bay_count), 3) AS turnover_rate,
+        ROUND(COALESCE(o.avg_duration_min, 0.0), 1) AS avg_duration_min
     FROM occupancy_calc o
     JOIN monthly_blocks b 
       ON o.block_desc = b.block_desc 
      AND o.m = b.m
     """
     
-    print("Running hourly aggregation query...")
+    print("Running hourly occupancy and turnover aggregation query...")
     start = time.time()
     con_db.execute(query_agg)
     print(f"Aggregation took {time.time() - start:.2f} seconds.")
@@ -213,9 +224,9 @@ def main() -> None:
 
     con = duckdb.connect(DB_PATH)
     
-    # Create tables if not exist
+    # Create tables with enhanced metrics
     con.execute("""
-    CREATE TABLE IF NOT EXISTS hourly_occupancy (
+    CREATE OR REPLACE TABLE hourly_occupancy (
         year INTEGER,
         suburb VARCHAR,
         street_name VARCHAR,
@@ -224,7 +235,10 @@ def main() -> None:
         occupied_minutes DOUBLE,
         total_minutes DOUBLE,
         occupancy_rate DOUBLE,
-        bay_count INTEGER
+        bay_count INTEGER,
+        events_count INTEGER,
+        turnover_rate DOUBLE,
+        avg_duration_min DOUBLE
     )
     """)
     
@@ -233,10 +247,10 @@ def main() -> None:
     aggregate_year(con, mapping_df, BASELINE_YEAR)
     aggregate_year(con, mapping_df, POST_YEAR)
 
-    res = con.execute("SELECT year, count(*), count(distinct street_name) FROM hourly_occupancy GROUP BY 1").fetchall()
-    print("Aggregation Summary (Year, Rows, Distinct Streets):")
+    res = con.execute("SELECT year, count(*), count(distinct street_name), avg(occupancy_rate), avg(turnover_rate), avg(avg_duration_min) FROM hourly_occupancy GROUP BY 1").fetchall()
+    print("\nAggregation Summary (Year, Rows, Distinct Streets, Avg Occ, Avg Turnover, Avg Duration Min):")
     for row in res:
-        print(row)
+        print(f"  Year {row[0]}: {row[1]:,} rows across {row[2]} streets | Mean Occ: {row[3]*100:.1f}%, Mean Turnover: {row[4]:.2f} events/bay/hr, Mean Stay: {row[5]:.1f} min")
 
     con.close()
     print(f"Database saved to {DB_PATH}")
