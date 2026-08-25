@@ -1,2 +1,7 @@
+data/raw/
+data/interim/
+*.zip
+*.parquet
+__pycache__/
 # Raw Nearmap coverage-API response cache -- regenerable, not meaningful to version
 data/coverage_cache/

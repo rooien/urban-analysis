@@ -1,0 +1,18 @@
+# USIA analysis pipeline — Python 3.12+ (3.14 works; no fiona, so no GDAL build step)
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Geospatial. geopandas 1.x uses pyogrio, which ships GDAL in the wheel.
+# Do NOT add fiona — it has no cp314 wheel and forces a source build.
+geopandas>=1.0.0
+shapely>=2.0.0
+pyogrio>=0.7.0
+pyproj>=3.5.0
+
+# Parquet caching of the hourly occupancy intermediates (02_sensor_utilisation.py)
+pyarrow>=14.0.0
+
+# Notebook environment
+jupyterlab>=4.0.0
+ipykernel>=6.0.0

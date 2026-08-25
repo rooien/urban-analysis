@@ -26,6 +26,11 @@ data/raw/
 
 *token.json
 *.env
+*duckdb
+processed*
+raw*
+.ipynb_checkpoints/
+.ipynb_checkpoints/
 *.duckdb
 *.parquet
 # Ignore data files under team_b/data but track directory structure
