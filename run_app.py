@@ -61,10 +61,11 @@ def activate_venv() -> None:
         not os.path.exists(venv_setup) or 
         os.path.getmtime(REQUIREMENTS_FILE) > os.path.getmtime(venv_setup)
     )
+    venv_bin = "Scripts" if os.name == "nt" else "bin"
 
     if needs_install:
         print("[*] Installing/Updating backend dependencies from requirements.txt...")
-        pip_exe = os.path.join(VENV_PATH, "bin", "pip")
+        pip_exe = os.path.join(VENV_PATH, venv_bin, "pip")
         subprocess.run(
             [pip_exe, "install", "-r", REQUIREMENTS_FILE], 
             check=True, 
@@ -77,7 +78,7 @@ def activate_venv() -> None:
     # Update environment variables to activate the venv for all child processes
     os.environ["VIRTUAL_ENV"] = VENV_PATH
     os.environ["PATH"] = (
-        os.path.join(VENV_PATH, "bin") + 
+        os.path.join.(VENV_PATH, venv_bin) +
         os.path.pathsep + 
         os.environ.get("PATH", "")
     )
@@ -133,7 +134,8 @@ def check_dependencies() -> None:
     if not os.path.exists(os.path.join(FRONTEND_DIR, "node_modules")):
         print("[*] Frontend dependencies (node_modules) not found.")
         print("[*] Running 'npm install' in frontend directory...")
-        subprocess.run(["npm", "install"], cwd=FRONTEND_DIR, check=True)
+        npm_cmd = "npm.cmd" if os.name == "nt" else "npm"
+        subprocess.run([npm_cmd, "install"], cwd=FRONTEND_DIR, check=True)
         print("[*] Frontend dependencies installed successfully.")
 
     # Check backend database (load path from config.yaml safely)
@@ -183,17 +185,25 @@ def stop_process(proc: subprocess.Popen, name: str) -> None:
     """
     if proc and proc.poll() is None:
         try:
-            # Kill the entire process group
-            pgid = os.getpgid(proc.pid)
-            os.killpg(pgid, signal.SIGTERM)
-            proc.Wait(timeout=5)
+            if os.name == "nt":
+                proc.terminate()
+            else:
+                pgid = os.getpgid(proc.pid)
+                os.killpg(pgid, signal.SIGTERM)
+
+            proc.wait(timeout=5)
+
         except subprocess.TimeoutExpired:
             print(f"[!] {name} did not stop gracefully. Forcing termination...")
-            pgid = os.getpgid(proc.pid)
-            os.killpg(pgid, signal.SIGKILL)
+
+            if os.name == "nt":
+                proc.kill()
+            else:
+                pgid = os.getpgid(proc.pid)
+                os.killpg(pgid, signal.SIGKILL)
+
         except Exception as e:
             print(f"[!] Error stopping {name}: {e}")
-
 
 def main() -> None:
     """
@@ -244,7 +254,11 @@ def main() -> None:
     try:
         # Step 5: Start Backend API
         print(f"\n[*] Starting Backend API (Uvicorn) on port {backend_port}...")
-        uvicorn_exe = os.path.join(VENV_PATH, "bin", "uvicorn")
+        uvicorn_exe = os.path.join(
+            VENV_PATH,
+            "Scripts" if os.name = "nt" else "bin",
+            "uvicorn.exe" if os.name = "nt" else "uvicorn"
+            )
         api_cmd = [
             uvicorn_exe, 
             "src.api.main:app", 
@@ -259,7 +273,7 @@ def main() -> None:
 
         # Step 6: Start Frontend App
         print(f"\n[*] Starting Frontend App (Vite) on port {frontend_port}...")
-        frontend_cmd = ["npm", "run", "dev"]
+        frontend_cmd = ["npm.cmd" if os.name == "nt" else "npm", "run", "dev"]
         frontend_process = start_process(frontend_cmd, cwd=FRONTEND_DIR)
 
         print("\n" + "=" * 60)
