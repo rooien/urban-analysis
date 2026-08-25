@@ -36,7 +36,7 @@ Understanding the impacts on businesses, parking utilization, and movement patte
 ## Stream Structure
 The project is divided into four stakeholder-focused streams:
 1. Cycling and public transport mode shift
-2. Traffic volumes and parking
+2. Traffic volumes and parking (Stream B)
 3. Pedestrian counts
 4. Temporal patterns
 
@@ -45,11 +45,55 @@ The project is divided into four stakeholder-focused streams:
 ## Tech Stack
 - **Backend:** Python (FastAPI, DuckDB, pandas, geopandas, shapely, uvicorn)
 - **Frontend:** React, Vite, MapLibre GL, Recharts
-- **Languages:** Python, JavaScript, R (planned)
+- **Languages:** Python, JavaScript
 - **Visualization:** Custom React Dashboard
 - **GIS Tools:** QGIS or ArcGIS
 - **Notebooks:** JupyterLab (for data exploration)
 
+## Architecture & Key Components
+
+The diagram below illustrates the end-to-end architecture and key building blocks of the application, showcasing the ingestion pipeline, data storage, application serving, and orchestration layers.
+
+```mermaid
+flowchart TD
+    %% Subgraphs for layering
+    subgraph Client ["Client and Browser"]
+        B["React Dashboard on Port 5173"]
+        MC["MapContainer with MapLibre GL"]
+        ID["ImpactDashboard with Recharts"]
+        B --> MC
+        B --> ID
+    end
+
+    subgraph AppServers ["Application Serving"]
+        direction LR
+        FE["Vite Dev Server"] -->|Serves Application| B
+        BE["FastAPI Backend on Port 8000"] -->|REST API for GeoJSON and Metrics| MC
+        BE -->|REST API for Hourly Occupancy| ID
+    end
+
+    subgraph Storage ["Data Storage"]
+        DB[(DuckDB Database)]
+        BE -->|Queries| DB
+    end
+
+    subgraph Orchestration ["Orchestration and Control"]
+        RUN["run_app.py"] -->|Starts concurrently| FE
+        RUN -->|Starts concurrently| BE
+        STOP["stop_app.py"] -->|Gracefully terminates| FE
+        STOP -->|Gracefully terminates| BE
+        CFG{"config.yaml"} -.->|Provides Ports and Paths| RUN
+        CFG -.->|Provides Ports and Paths| STOP
+        CFG -.->|Provides Shared Constants| BE
+        CFG -.->|Generates dotenv file| FE
+    end
+
+    subgraph DataPipeline ["Data Ingestion Pipeline (Team B)"]
+        RAW[/Raw Data GeoJSON and CSV/] -->|Extracted and Transformed| ING["Python Scripts in team_b/ingestion"]
+        ING -->|Loads Aggregated Data| DB
+        CFG -.->|Provides Spatial Buffers and Years| ING
+    end
+```
 
 ## Data Sources & CRS Warning
 We are using public datasets from:
@@ -62,42 +106,56 @@ We are using public datasets from:
 **Important CRS Warning:**
 Datasets from different sources (e.g., VicRoads vs. PTV) are unlikely to share the same spatial coordinate systems (CRS). You must define and document CRS reprojections in your notebooks/scripts. Do not assume all datasets share the same ground truth.
 
-*Note: ABS Census data releases in August. Population data integration will be deferred until after the release to avoid mid-sprint disruption. Use proxy labeling approaches where ground truth is absent, and document proxy methods in the `src/` directory.*
+## Data Ingestion, Cleaning & Transformations (Stream B)
+The project includes a robust, end-to-end data pipeline to ingest, clean, and transform spatial layers and transactional sensor logs into an analytical DuckDB database. Key transformations include:
+- **Spatial Reprojection**: Normalizing all layers to a metric-based grid projection (`EPSG:7899`) for accurate 20m spatial buffering, then reprojecting back to `EPSG:4326` for web rendering.
+- **Topology Filtering**: Stripping virtual centroid connector links from the bicycle network layer to remove visual mapping spikes.
+- **Intersection Suppression**: Excluding parking bays located directly at intersections (e.g., descriptions starting with "Intersection of") to ensure block consistency.
+- **Street & Block Normalization**: Unified uppercase normalization, whitespace trimming, and alphabetical sorting of cross-streets (e.g. `BETWEEN QUEEN AND ELIZABETH` unifies `BETWEEN ELIZABETH AND QUEEN`) to allow clean joins between spatial layers and sensor logs.
+- **Dynamic Capacity Engine**: Calculating parking bay capacities monthly based on maximum unique broadcasting devices to avoid static count discrepancies.
+- **SCATS Traffic Simulation**: Simulating 15-minute traffic flows at intersection sensors to establish baseline volumes under sandboxed execution constraints.
+
+For a detailed breakdown of the pipelines and transformations, see the [Data Pipeline](knowledge_base/data_pipeline.md) documentation.
 
 ## Directory Structure
 
-Please adhere to this structure to keep the repo organized and facilitate collaboration across streams:
-
 ```
 Victoria-Urban-Planning/
-├── .github/            # GitHub configuration (e.g., Pull Request templates)
-├── data/
-│   ├── raw/            # Original, untouched datasets
-│   ├── processed/      # Cleaned and transformed datasets
-│   └── parking_analytics.duckdb # DuckDB database for parking analytics
-├── team_a/             # Stream 1: Cycling and public transport mode shift / Stream 3: Pedestrian counts
-│   ├── notebooks/      # Stream 1 & 3 research and EDA notebooks
-│   └── __init__.py
+├── .github/            # GitHub configuration
+├── team_a/             # Stream 1 & 3 research and notebooks
 ├── team_b/             # Stream 2: Traffic volumes and parking
+│   ├── data/           # Data folder (gitignored)
+│   │   ├── raw/        # Raw input datasets
+│   │   ├── processed/  # Intermediate geojsons/parquets
+│   │   └── parking_analytics.duckdb # DuckDB analytical database
+│   ├── ingestion/      # Data processing and ingestion scripts
 │   ├── notebooks/      # Stream 2 research and EDA notebooks
-│   └── __init__.py
-├── team_c/             # Stream 4: Temporal patterns
-│   ├── notebooks/      # Stream 4 research and EDA notebooks
-│   └── __init__.py
-├── CODING_STANDARDS.md # Shared coding guidelines and best practices
-├── DATA.md             # Detailed dataset inventory and proxy methodology
+│   └── run_ingestion.py # Ingestion Orchestrator CLI runner
+├── team_c/             # Stream 4 research and notebooks
+├── frontend/           # React + Vite dashboard application
+│   ├── src/
+│   ├── package.json
+│   └── ...
+├── src/
+│   ├── api/            # FastAPI backend application
+│   └── config.py       # Centralized config loader
+├── CODING_STANDARDS.md # Shared coding guidelines
 ├── README.md           # Project documentation and setup guide
+├── knowledge_base/     # Informational documentation
+│   ├── data_architecture_report.md
+│   ├── data_inventory.md
+│   └── data_pipeline.md
 ├── config.yaml         # Configuration file for data paths and sources
 ├── requirements.txt    # Python baseline dependencies
-├── run_ingestion.py    # Pipeline orchestration runner
-└── scratchpad.txt      # Temporary scratchpad for notes and queries
+├── run_app.py          # App orchestrator bootstrapper
+└── stop_app.py         # App termination script
 ```
 
 ## Installation, Setup & Execution
 
-To explore the datasets, run the data ingestion workflow, and perform exploratory data analysis (EDA), follow these steps to set up the Python environment and launch JupyterLab.
+### Automated Orchestration (Recommended)
 
-### 1. Environment Setup
+The `run_app.py` script automatically bootstraps the entire application. It creates and activates the Python virtual environment, installs backend and frontend dependencies, generates the frontend `.env` file from `config.yaml`, and starts both services concurrently.
 
 1. **Clone the Repository:**
    ```bash
@@ -105,38 +163,65 @@ To explore the datasets, run the data ingestion workflow, and perform explorator
    cd Victoria-Urban-Planning
    ```
 
-2. **Create the Python Virtual Environment:**
+2. **Run the Orchestrator:**
    ```bash
-   python3 -m venv .venv
+   python run_app.py
+   ```
+   *Note: Ensure you have Python 3 and Node.js/npm installed locally.*
+
+3. **Run the Data Ingestion Pipeline (First Time Only):**
+   If the database file is not present, build and populate it by executing the orchestrator:
+   ```bash
+   python team_b/run_ingestion.py
    ```
 
-3. **Activate the Virtual Environment:**
-   - **macOS/Linux:**
-     ```bash
-     source .venv/bin/activate
-     ```
-   - **Windows:**
-     ```cmd
-     .venv\Scripts\activate
-     ```
-
-4. **Install Dependencies:**
+4. **Stopping the Application:**
+   To gracefully terminate both background services and free up the ports, run:
    ```bash
-   pip install -r requirements.txt
+   python stop_app.py
    ```
 
-### 2. Running JupyterLab & Data Exploration
+---
 
-Launch JupyterLab to interact with the notebooks:
+### Manual Setup (For Development)
+
+If you prefer to manage the services independently or execute data exploration notebooks, follow these manual steps:
+
+#### 1. Backend Setup & Execution
 ```bash
+# Create the Virtual Environment
+python3 -m venv .venv
+
+# Activate the Virtual Environment
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install Dependencies
+pip install -r requirements.txt
+
+# Run Ingestion Pipeline
+python team_b/run_ingestion.py
+
+# Start the Backend API
+uvicorn src.api.main:app --reload
+```
+The API will be running at `http://localhost:8000`. You can view the interactive documentation at `http://localhost:8000/docs`.
+
+#### 2. Frontend Setup & Execution
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The dashboard will be running at `http://localhost:5173`. 
+
+*Note: Make sure to copy the `ports` and `historical` values from `config.yaml` into a `frontend/.env` file if running manually.*
+
+#### 3. Launch JupyterLab
+If you want to run the data exploration notebooks, activate your virtual environment and run:
+```bash
+source .venv/bin/activate
 jupyter lab
 ```
-
-### 3. Data Ingestion & Pipeline Orchestration
-
-For Stream 2 (Traffic Volumes & Parking), you can run the full ingestion pipeline by navigating to the Stream 2 workspace:
-1. Open the [00_data_ingestion.ipynb](team_b/notebooks/scott_z/00_data_ingestion.ipynb) notebook.
-2. Run the cells sequentially to download base GeoJSON datasets, download and extract historical parking sensor CSVs, and execute the end-to-end ETL processing steps to build the DuckDB database.
 
 ## Git Workflow & Collaboration Guide
 

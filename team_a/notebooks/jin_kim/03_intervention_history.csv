@@ -1,0 +1,20 @@
+SiteID,StreetSegmentID,StreetInScope,DateOfIntervention/InitialCapture,InterventionSummary
+site_id_6,5881,WELLINGTION STREET,20150205,Painted bike lane
+site_id_6,5881,WELLINGTION STREET,20150913,Protected bike lane 
+site_id_6,5881,WELLINGTION STREET,20190831,Post-protected bike lane (no change)
+site_id_45,8218,HEIDELBERG ROAD,20201108,Painted bike lane
+site_id_45,8218,HEIDELBERG ROAD,20210122,Protected bike lane
+site_id_45,8221,HEIDELBERG ROAD,20201108,Painted bike lane
+site_id_45,8221,HEIDELBERG ROAD,20210122,Protected bike lane
+site_id_5,9801,ALBERT STREET,20091012,No bike lane of any type
+site_id_5,9801,ALBERT STREET,20100621,Painted bike lane
+site_id_5,9801,ALBERT STREET,20100621,Painted bike lane
+site_id_5,9801,ALBERT STREET,20110628,Pre-protected bike lane (no change)
+site_id_5,9801,ALBERT STREET,20150913,Pre-protected bike lane (no change)
+site_id_5,9801,ALBERT STREET,20170207,Pre-protected bike lane (no change)
+site_id_5,9801,ALBERT STREET,20180217,Pre-protected bike lane (no change)
+site_id_5,9801,ALBERT STREET,20200604,Protected bike lane
+site_id_5,9801,ALBERT STREET,20230424,Post-protected bike lane (no change)
+site_id_43,10838,MOORABOOL STREET,20151029,No bike lane of any type
+site_id_43,10838,MOORABOOL STREET,20161028,Painted bike lane
+site_id_43,10838,MOORABOOL STREET,20211122,Protected bike lane
