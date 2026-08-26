@@ -121,7 +121,9 @@ For a detailed breakdown of the pipelines and transformations, see the [Data Pip
 
 ```
 Victoria-Urban-Planning/
-├── .github/            # GitHub configuration
+├── .github/            # GitHub configuration & PR templates
+├── docs/               # Project documentation & Git workflow guide
+│   └── GIT_WORKFLOW.md # Comprehensive GitHub Forking & Branching Guide
 ├── team_a/             # Stream 1 & 3 research and notebooks
 ├── team_b/             # Stream 2: Traffic volumes and parking
 │   ├── data/           # Data folder (gitignored)
@@ -157,10 +159,13 @@ Victoria-Urban-Planning/
 
 The `run_app.py` script automatically bootstraps the entire application. It creates and activates the Python virtual environment, installs backend and frontend dependencies, generates the frontend `.env` file from `config.yaml`, and starts both services concurrently.
 
-1. **Clone the Repository:**
+1. **Fork and Clone the Repository:**
+   - Fork `https://github.com/Chameleon-company/Victoria-Urban-Planning` to your personal GitHub account.
+   - Clone your personal fork and configure the `upstream` remote:
    ```bash
-   git clone https://github.com/Chameleon-company/Victoria-Urban-Planning.git
+   git clone https://github.com/<your-github-username>/Victoria-Urban-Planning.git
    cd Victoria-Urban-Planning
+   git remote add upstream https://github.com/Chameleon-company/Victoria-Urban-Planning.git
    ```
 
 2. **Run the Orchestrator:**
@@ -225,58 +230,113 @@ jupyter lab
 
 ## Git Workflow & Collaboration Guide
 
-### Rules
-1. Never commit directly to the `main` branch.
-2. Use the Branch Naming Convention.
-3. PRs with merge conflicts will not be approved or merged. You are responsible for resolving conflicts locally.
+Our team follows the **GitHub Forking Strategy** combined with the **Feature Branch Pattern**. All contributors work within their own personal fork and use isolated feature branches before submitting Pull Requests (PRs) to the central repository.
+
+For the exhaustive reference with sequence diagrams, FAQs, and troubleshooting, read the full [GitHub Forking & Collaboration Guide](docs/GIT_WORKFLOW.md).
+
+```mermaid
+flowchart LR
+    subgraph Central ["Central Repo (upstream)"]
+        UM["upstream/main"]
+    end
+
+    subgraph Fork ["Personal Fork (origin)"]
+        FM["origin/main"]
+        FB["origin/feature/..."]
+    end
+
+    subgraph Local ["Local Workspace"]
+        LM["local main"]
+        LB["local feature/..."]
+    end
+
+    UM -->|"git fetch upstream"| LM
+    LM -.->|"git push origin main"| FM
+    LM -->|"git checkout -b"| LB
+    LB -->|"git push origin"| FB
+    FB ==>|"Open Pull Request"| UM
+```
+
+### Core Rules
+1. **Never commit directly to `main`** (neither locally nor on upstream).
+2. **Always branch from updated `main`** (synchronized with `upstream/main`).
+3. **Follow the Branch Naming Convention** for all branches created in your fork.
+4. **Rebase against `upstream/main` before pushing** to keep history linear and resolve conflicts locally.
+5. **PRs with merge conflicts will not be merged.** You are responsible for local conflict resolution.
 
 ### Branch Naming Convention
-Branches must use the following format:
-- `feature/<your-initials>/<description>`
-- `bugfix/<your-initials>/<description>`
+Branches created in your local clone/fork must follow this pattern:
+- `feature/<your-initials>/<description>` (e.g., `feature/sz/parking-pipeline`)
+- `bugfix/<your-initials>/<description>` (e.g., `bugfix/sz/crs-transform-fix`)
+- `docs/<your-initials>/<description>` (e.g., `docs/sz/git-forking-guide`)
 
-Examples:
-- `feature/sz/add-traffic-pipeline`
-- `bugfix/sz/fix-crs-reprojection`
+---
 
-### Step-by-Step Workflow
+### Step-by-Step Developer Workflow
 
-**1. Start Fresh**
-Always create your branch from the latest `main`:
+#### 1. Initial One-Time Setup (Fork & Remotes)
+```bash
+# 1. Fork the repo on GitHub: https://github.com/Chameleon-company/Victoria-Urban-Planning
+# 2. Clone your personal fork:
+git clone https://github.com/<your-github-username>/Victoria-Urban-Planning.git
+cd Victoria-Urban-Planning
+
+# 3. Add the central repository as upstream remote:
+git remote add upstream https://github.com/Chameleon-company/Victoria-Urban-Planning.git
+
+# 4. Verify remotes:
+git remote -v
+```
+
+#### 2. Start a New Task (Sync & Branch)
+Always sync your local `main` with the central upstream repository before starting work:
 ```bash
 git checkout main
-git pull origin main
+git fetch upstream
+git merge upstream/main --ff-only
+git push origin main  # Keep personal fork main synchronized
+
+# Create a dedicated feature branch
 git checkout -b feature/<your-initials>/<description>
 ```
 
-**2. Work and Commit**
-Make your changes, then add and commit with a clear message:
+#### 3. Develop, Test, and Commit
+Make your changes, ensure adherence to [Coding Standards](CODING_STANDARDS.md), and commit with descriptive messages:
 ```bash
-git add .
-git commit -m "Add traffic volume parsing for Metro Melbourne"
+git add <modified-files>
+git commit -m "feat(api): add parking occupancy metrics endpoint"
 ```
 
-**3. Rebase Against `main`**
-Before pushing, you must rebase on top of the latest `main` to pull in changes and resolve conflicts locally:
+#### 4. Rebase Against `upstream/main`
+Before pushing, rebase your feature branch on top of the latest upstream commits:
 ```bash
-git fetch origin
-git rebase origin/main
+git fetch upstream
+git rebase upstream/main
 ```
-If there are merge conflicts, Git will pause. Open the files, fix the issues, and run:
-```bash
-git add <fixed-files>
-git rebase --continue
-```
+*If merge conflicts occur:* Edit the files to resolve conflicts, stage them (`git add <resolved-files>`), and run `git rebase --continue`. (Or `git rebase --abort` if needed).
 
-**4. Push and Open a PR**
-Push your branch and open a PR on GitHub:
+#### 5. Push to Your Fork (`origin`)
 ```bash
-git push -u origin <your-branch-name>
+git push -u origin feature/<your-initials>/<description>
 ```
-*(If you already pushed before rebasing, use `git push --force-with-lease origin <your-branch-name>`)*
+*(If rebasing after an initial push, use `git push --force-with-lease origin feature/<your-initials>/<description>`)*.
 
-**5. Review and Merge**
-Assign reviewers from your stream. Once approved, the PR can be merged.
+#### 6. Open a Pull Request on GitHub
+1. Go to `https://github.com/Chameleon-company/Victoria-Urban-Planning`.
+2. Click **"Compare & pull request"**.
+3. Confirm base: `Chameleon-company/Victoria-Urban-Planning:main` and compare: `<your-username>:feature/<your-initials>/<description>`.
+4. Complete the PR template checklist and assign stream reviewers.
+
+#### 7. Post-Merge Cleanup
+Once your PR has been merged into upstream `main`:
+```bash
+git checkout main
+git fetch upstream
+git merge upstream/main --ff-only
+git push origin main
+git branch -d feature/<your-initials>/<description>
+git push origin --delete feature/<your-initials>/<description>
+```
 
 ## Coding Standards
 All contributors are expected to follow our shared coding standards covering PEP 8, Tidyverse, docstrings, and security. Please read the full [Coding Standards & Best Practices Guide](CODING_STANDARDS.md) before writing code.
