@@ -1,6 +1,6 @@
 # Coding Standards & Best Practices
 
-To ensure the codebase remains clean and maintainable across all 4 streams and 30+ contributors, we follow these coding standards. Compliance will be reviewed as part of the Pull Request (PR) process.
+To ensure the codebase remains clean and maintainable across all 4 streams and 30+ contributors, we follow these coding standards. Compliance will be reviewed as part of the Pull Request (PR) process. For instructions on the branching and forking workflow, see the [Git Workflow & Collaboration Guide](docs/GIT_WORKFLOW.md).
 
 ## General Principles
 - **Readability counts:** Write code for humans first, computers second.
