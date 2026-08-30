@@ -38,3 +38,8 @@ team_b/data/**
 !team_b/data/
 !team_b/data/**/
 !team_b/data/**/__init__.py
+
+team_a/data/**
+!team_a/data/
+!team_a/data/**/
+!team_a/data/**/__init__.py

@@ -125,6 +125,8 @@ Victoria-Urban-Planning/
 ├── docs/               # Project documentation & Git workflow guide
 │   └── GIT_WORKFLOW.md # Comprehensive GitHub Forking & Branching Guide
 ├── team_a/             # Stream 1 & 3 research and notebooks
+│   ├── data/           # Data folder (gitignored)
+│   ├── notebooks/      # Research and EDA notebooks
 ├── team_b/             # Stream 2: Traffic volumes and parking
 │   ├── data/           # Data folder (gitignored)
 │   │   ├── raw/        # Raw input datasets
