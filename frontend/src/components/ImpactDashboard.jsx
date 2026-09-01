@@ -13,7 +13,7 @@ import {
 } from 'recharts';
 import styles from './ImpactDashboard.module.css';
 
-const API_PORT = import.meta.env.VITE_API_PORT || '8000';
+const API_PORT = import.meta.env.VITE_API_PORT || '7000';
 const API_BASE_URL = `http://localhost:${API_PORT}`;
 const BASELINE_YEAR = import.meta.env.VITE_BASELINE_YEAR || '2013';
 const POST_YEAR = import.meta.env.VITE_POST_YEAR || '2014';

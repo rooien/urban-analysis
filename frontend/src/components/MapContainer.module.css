@@ -234,7 +234,7 @@
 
 .streetFocusBadge {
   position: absolute;
-  top: 140px;
+  top: var(--panel-top, 195px);
   left: 20px;
   z-index: 10;
   background: var(--bg-surface);

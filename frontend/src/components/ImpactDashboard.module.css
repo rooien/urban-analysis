@@ -1,6 +1,6 @@
 .dashboardPanel {
   position: absolute;
-  top: 140px;
+  top: var(--panel-top, 195px);
   right: 20px;
   bottom: 20px;
   width: 420px;

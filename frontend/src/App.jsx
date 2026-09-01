@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
+import ExecutiveBriefing from './components/ExecutiveBriefing';
 import MapContainer from './components/MapContainer';
 import ImpactDashboard from './components/ImpactDashboard';
 
-const API_PORT = import.meta.env.VITE_API_PORT || '8000';
+const API_PORT = import.meta.env.VITE_API_PORT || '7000';
 const API_BASE_URL = `http://localhost:${API_PORT}`;
 
 function App() {
   const [locations, setLocations] = useState([]);
   const [selectedSuburb, setSelectedSuburb] = useState('');
   const [selectedStreet, setSelectedStreet] = useState('');
+  const [activeTab, setActiveTab] = useState('briefing');
   const [blocksGeoJson, setBlocksGeoJson] = useState(null);
   const [selectedBlock, setSelectedBlock] = useState(null);
+  const [executiveData, setExecutiveData] = useState(null);
+  const [hourlyData, setHourlyData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   // Fetch supported locations on mount
@@ -40,9 +44,37 @@ function App() {
   const handleSuburbChange = (suburb) => {
     setSelectedSuburb(suburb);
     setSelectedStreet('All Streets');
+    setSelectedBlock(null);
   };
 
-  // Fetch blocks when street or suburb changes
+  // Fetch Executive Summary and Hourly Data when filters change
+  useEffect(() => {
+    if (!selectedSuburb) return;
+    
+    let execUrl = `${API_BASE_URL}/api/executive-summary?suburb=${encodeURIComponent(selectedSuburb)}`;
+    let occUrl = `${API_BASE_URL}/api/blocks/occupancy?suburb=${encodeURIComponent(selectedSuburb)}`;
+    
+    if (selectedStreet && selectedStreet !== 'All Streets') {
+      execUrl += `&street=${encodeURIComponent(selectedStreet)}`;
+      occUrl += `&street=${encodeURIComponent(selectedStreet)}`;
+    }
+
+    Promise.all([
+      fetch(execUrl).then(r => r.json()),
+      fetch(occUrl).then(r => r.json())
+    ])
+      .then(([execRes, occRes]) => {
+        if (execRes.status === 'success') {
+          setExecutiveData(execRes);
+        }
+        if (occRes.status === 'success') {
+          setHourlyData(occRes.data);
+        }
+      })
+      .catch(err => console.error('Error fetching executive metrics:', err));
+  }, [selectedSuburb, selectedStreet]);
+
+  // Fetch blocks GeoJSON for Map Explorer
   useEffect(() => {
     if (!selectedSuburb) return;
     
@@ -73,14 +105,21 @@ function App() {
   useEffect(() => {
     if (selectedSuburb) {
       const streetLabel = selectedStreet && selectedStreet !== 'All Streets' ? selectedStreet : selectedSuburb;
-      document.title = `${streetLabel} Bike Lanes | Urban Impact Dashboard`;
+      document.title = `${streetLabel} Bike Lanes | Executive Urban Planning`;
     } else {
-      document.title = 'Urban Mobility Impact Dashboard';
+      document.title = 'Victoria Urban Planning - Executive Analytics';
     }
   }, [selectedSuburb, selectedStreet]);
 
   const handleBlockClick = (blockDesc) => {
     setSelectedBlock(blockDesc);
+  };
+
+  const handleSelectCorridor = (corridor) => {
+    if (corridor.suburb) setSelectedSuburb(corridor.suburb);
+    if (corridor.street) setSelectedStreet(corridor.street);
+    if (corridor.fullDesc) setSelectedBlock(corridor.fullDesc);
+    setActiveTab('explorer');
   };
 
   return (
@@ -91,24 +130,38 @@ function App() {
         selectedStreet={selectedStreet}
         onSuburbChange={handleSuburbChange}
         onStreetChange={setSelectedStreet}
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        summaryMetrics={executiveData?.metrics}
       />
       
-      <MapContainer 
-        blocksGeoJson={blocksGeoJson}
-        loading={loading}
-        onBlockClick={handleBlockClick}
-        selectedBlock={selectedBlock}
-        selectedStreet={selectedStreet}
-        selectedSuburb={selectedSuburb}
-      />
-      
-      <ImpactDashboard 
-        suburb={selectedSuburb}
-        street={selectedStreet}
-        selectedBlock={selectedBlock}
-        onBlockClick={handleBlockClick}
-        blocksGeoJson={blocksGeoJson}
-      />
+      {activeTab === 'briefing' && (
+        <ExecutiveBriefing 
+          executiveData={executiveData}
+          hourlyData={hourlyData}
+          onSelectCorridor={handleSelectCorridor}
+        />
+      )}
+
+      {activeTab === 'explorer' && (
+        <>
+          <MapContainer 
+            blocksGeoJson={blocksGeoJson}
+            loading={loading}
+            onBlockClick={handleBlockClick}
+            selectedBlock={selectedBlock}
+            selectedStreet={selectedStreet}
+            selectedSuburb={selectedSuburb}
+          />
+          <ImpactDashboard 
+            suburb={selectedSuburb}
+            street={selectedStreet}
+            selectedBlock={selectedBlock}
+            onBlockClick={handleBlockClick}
+            blocksGeoJson={blocksGeoJson}
+          />
+        </>
+      )}
     </div>
   );
 }

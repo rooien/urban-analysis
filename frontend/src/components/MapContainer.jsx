@@ -55,7 +55,7 @@ const MapContainer = ({ blocksGeoJson, loading, onBlockClick, selectedBlock, sel
           mapRef.current.getMap().fitBounds(
             [[minLng, minLat], [maxLng, maxLat]],
             { 
-              padding: { top: 120, bottom: 80, left: 80, right: 460 }, 
+              padding: { top: 195, bottom: 80, left: 80, right: 460 }, 
               duration: 1200 
             }
           );

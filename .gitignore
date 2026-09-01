@@ -13,7 +13,7 @@ scratch/
 __pycache__
 .ipynb_checkpoints/
 *.ipynb_checkpoints*
-
+reports*
 # Microsoft Office temporary lock files
 ~$*
 *.tmp
@@ -38,8 +38,3 @@ team_b/data/**
 !team_b/data/
 !team_b/data/**/
 !team_b/data/**/__init__.py
-
-team_a/data/**
-!team_a/data/
-!team_a/data/**/
-!team_a/data/**/__init__.py

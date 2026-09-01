@@ -36,6 +36,17 @@
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-full: 9999px;
+
+  /* Layout Spacing & Header Offsets */
+  --header-offset: 195px;
+  --panel-top: 195px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --header-offset: 245px;
+    --panel-top: 245px;
+  }
 }
 
 * {
