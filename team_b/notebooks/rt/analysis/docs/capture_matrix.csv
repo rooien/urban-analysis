@@ -1,895 +1,895 @@
 street_segment_id,street_name,captureDate,day_of_week,fy_quarter,period,coverage
-123,GHERINGHAP STREET,2020-11-25,Wednesday,2021Q2,before,both ends
-123,GHERINGHAP STREET,2021-01-11,Monday,2021Q3,before,both ends
-123,GHERINGHAP STREET,2021-03-11,Thursday,2021Q3,before,both ends
-123,GHERINGHAP STREET,2021-05-22,Saturday,2021Q4,before,both ends
-123,GHERINGHAP STREET,2021-07-31,Saturday,2122Q1,before,both ends
-123,GHERINGHAP STREET,2021-10-06,Wednesday,2122Q2,during construction (exclude),both ends
-123,GHERINGHAP STREET,2021-11-22,Monday,2122Q2,during construction (exclude),both ends
-123,GHERINGHAP STREET,2022-01-20,Thursday,2122Q3,after,both ends
-123,GHERINGHAP STREET,2022-04-14,Thursday,2122Q4,after,both ends
-123,GHERINGHAP STREET,2022-08-08,Monday,2223Q1,after,both ends
-123,GHERINGHAP STREET,2022-12-10,Saturday,2223Q2,after,both ends
-125,GHERINGHAP STREET,2020-11-25,Wednesday,2021Q2,before,both ends
-125,GHERINGHAP STREET,2021-01-11,Monday,2021Q3,before,both ends
-125,GHERINGHAP STREET,2021-03-11,Thursday,2021Q3,before,both ends
-125,GHERINGHAP STREET,2021-05-22,Saturday,2021Q4,before,both ends
-125,GHERINGHAP STREET,2021-07-31,Saturday,2122Q1,before,both ends
-125,GHERINGHAP STREET,2021-10-06,Wednesday,2122Q2,during construction (exclude),both ends
-125,GHERINGHAP STREET,2021-11-22,Monday,2122Q2,during construction (exclude),both ends
-125,GHERINGHAP STREET,2022-01-20,Thursday,2122Q3,after,both ends
-125,GHERINGHAP STREET,2022-04-14,Thursday,2122Q4,after,both ends
-125,GHERINGHAP STREET,2022-08-08,Monday,2223Q1,after,both ends
-125,GHERINGHAP STREET,2022-12-10,Saturday,2223Q2,after,both ends
-858,RATHDOWNE STREET,2020-02-17,Monday,1920Q3,before,both ends
-858,RATHDOWNE STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-858,RATHDOWNE STREET,2020-06-04,Thursday,1920Q4,before,both ends
-858,RATHDOWNE STREET,2020-09-07,Monday,2021Q1,before,both ends
-858,RATHDOWNE STREET,2020-11-02,Monday,2021Q2,before,both ends
-858,RATHDOWNE STREET,2020-11-08,Sunday,2021Q2,before,both ends
-858,RATHDOWNE STREET,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-858,RATHDOWNE STREET,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-858,RATHDOWNE STREET,2021-04-29,Thursday,2021Q4,during construction (exclude),both ends
-858,RATHDOWNE STREET,2021-06-21,Monday,2021Q4,during construction (exclude),both ends
-858,RATHDOWNE STREET,2021-07-27,Tuesday,2122Q1,after,both ends
-858,RATHDOWNE STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-858,RATHDOWNE STREET,2021-09-23,Thursday,2122Q1,after,both ends
-858,RATHDOWNE STREET,2021-09-26,Sunday,2122Q1,after,both ends
-858,RATHDOWNE STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-858,RATHDOWNE STREET,2021-10-31,Sunday,2122Q2,after,both ends
-858,RATHDOWNE STREET,2021-12-24,Friday,2122Q2,after,both ends
-858,RATHDOWNE STREET,2022-02-12,Saturday,2122Q3,after,both ends
-858,RATHDOWNE STREET,2022-04-17,Sunday,2122Q4,after,both ends
-858,RATHDOWNE STREET,2022-06-28,Tuesday,2122Q4,after,both ends
-1659,ABBOTSFORD STREET,2019-08-31,Saturday,1920Q1,before,both ends
-1659,ABBOTSFORD STREET,2019-11-25,Monday,1920Q2,before,End A only
-1659,ABBOTSFORD STREET,2019-12-17,Tuesday,1920Q2,before,both ends
-1659,ABBOTSFORD STREET,2020-02-17,Monday,1920Q3,before,both ends
-1659,ABBOTSFORD STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-1659,ABBOTSFORD STREET,2020-06-04,Thursday,1920Q4,before,both ends
-1659,ABBOTSFORD STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-1659,ABBOTSFORD STREET,2020-11-02,Monday,2021Q2,during construction (exclude),both ends
-1659,ABBOTSFORD STREET,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-1659,ABBOTSFORD STREET,2021-01-22,Friday,2021Q3,after,both ends
-1659,ABBOTSFORD STREET,2021-03-11,Thursday,2021Q3,after,both ends
-1659,ABBOTSFORD STREET,2021-04-29,Thursday,2021Q4,after,both ends
-1659,ABBOTSFORD STREET,2021-06-21,Monday,2021Q4,after,both ends
-1659,ABBOTSFORD STREET,2021-07-27,Tuesday,2122Q1,after,both ends
-1659,ABBOTSFORD STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-1659,ABBOTSFORD STREET,2021-09-23,Thursday,2122Q1,after,both ends
-1659,ABBOTSFORD STREET,2021-09-26,Sunday,2122Q1,after,both ends
-1659,ABBOTSFORD STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-1659,ABBOTSFORD STREET,2021-10-31,Sunday,2122Q2,after,both ends
-1659,ABBOTSFORD STREET,2021-12-24,Friday,2122Q2,after,both ends
-1660,ABBOTSFORD STREET,2019-08-31,Saturday,1920Q1,before,both ends
-1660,ABBOTSFORD STREET,2019-12-17,Tuesday,1920Q2,before,both ends
-1660,ABBOTSFORD STREET,2020-02-17,Monday,1920Q3,before,both ends
-1660,ABBOTSFORD STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-1660,ABBOTSFORD STREET,2020-06-04,Thursday,1920Q4,before,both ends
-1660,ABBOTSFORD STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-1660,ABBOTSFORD STREET,2020-11-02,Monday,2021Q2,during construction (exclude),both ends
-1660,ABBOTSFORD STREET,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-1660,ABBOTSFORD STREET,2021-01-22,Friday,2021Q3,after,both ends
-1660,ABBOTSFORD STREET,2021-03-11,Thursday,2021Q3,after,both ends
-1660,ABBOTSFORD STREET,2021-04-29,Thursday,2021Q4,after,both ends
-1660,ABBOTSFORD STREET,2021-06-21,Monday,2021Q4,after,both ends
-1660,ABBOTSFORD STREET,2021-07-27,Tuesday,2122Q1,after,both ends
-1660,ABBOTSFORD STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-1660,ABBOTSFORD STREET,2021-09-23,Thursday,2122Q1,after,both ends
-1660,ABBOTSFORD STREET,2021-09-26,Sunday,2122Q1,after,both ends
-1660,ABBOTSFORD STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-1660,ABBOTSFORD STREET,2021-10-31,Sunday,2122Q2,after,both ends
-1660,ABBOTSFORD STREET,2021-12-24,Friday,2122Q2,after,both ends
-1661,ABBOTSFORD STREET,2019-08-31,Saturday,1920Q1,before,both ends
-1661,ABBOTSFORD STREET,2019-12-17,Tuesday,1920Q2,before,both ends
-1661,ABBOTSFORD STREET,2020-02-17,Monday,1920Q3,before,both ends
-1661,ABBOTSFORD STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-1661,ABBOTSFORD STREET,2020-06-04,Thursday,1920Q4,before,both ends
-1661,ABBOTSFORD STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-1661,ABBOTSFORD STREET,2020-11-02,Monday,2021Q2,during construction (exclude),both ends
-1661,ABBOTSFORD STREET,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-1661,ABBOTSFORD STREET,2021-01-22,Friday,2021Q3,after,both ends
-1661,ABBOTSFORD STREET,2021-03-11,Thursday,2021Q3,after,both ends
-1661,ABBOTSFORD STREET,2021-04-29,Thursday,2021Q4,after,both ends
-1661,ABBOTSFORD STREET,2021-06-21,Monday,2021Q4,after,both ends
-1661,ABBOTSFORD STREET,2021-07-27,Tuesday,2122Q1,after,both ends
-1661,ABBOTSFORD STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-1661,ABBOTSFORD STREET,2021-09-23,Thursday,2122Q1,after,both ends
-1661,ABBOTSFORD STREET,2021-09-26,Sunday,2122Q1,after,both ends
-1661,ABBOTSFORD STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-1661,ABBOTSFORD STREET,2021-10-31,Sunday,2122Q2,after,both ends
-1661,ABBOTSFORD STREET,2021-12-24,Friday,2122Q2,after,both ends
-1662,ABBOTSFORD STREET,2012-04-12,Thursday,1112Q4,before,both ends
-1662,ABBOTSFORD STREET,2012-07-08,Sunday,1213Q1,before,both ends
-1662,ABBOTSFORD STREET,2012-10-02,Tuesday,1213Q2,before,both ends
-1662,ABBOTSFORD STREET,2012-10-23,Tuesday,1213Q2,before,both ends
-1662,ABBOTSFORD STREET,2012-12-26,Wednesday,1213Q2,before,both ends
-1662,ABBOTSFORD STREET,2013-01-04,Friday,1213Q3,before,both ends
-1662,ABBOTSFORD STREET,2013-02-14,Thursday,1213Q3,before,both ends
-1662,ABBOTSFORD STREET,2013-03-06,Wednesday,1213Q3,before,both ends
-1662,ABBOTSFORD STREET,2013-04-05,Friday,1213Q4,during construction (exclude),both ends
-1662,ABBOTSFORD STREET,2013-05-08,Wednesday,1213Q4,during construction (exclude),both ends
-1662,ABBOTSFORD STREET,2013-06-21,Friday,1213Q4,during construction (exclude),both ends
-1662,ABBOTSFORD STREET,2013-09-04,Wednesday,1314Q1,during construction (exclude),both ends
-1662,ABBOTSFORD STREET,2013-10-19,Saturday,1314Q2,after,both ends
-1662,ABBOTSFORD STREET,2014-01-09,Thursday,1314Q3,after,both ends
-1662,ABBOTSFORD STREET,2014-03-04,Tuesday,1314Q3,after,both ends
-1662,ABBOTSFORD STREET,2014-05-15,Thursday,1314Q4,after,both ends
-1662,ABBOTSFORD STREET,2014-08-03,Sunday,1415Q1,after,both ends
-1662,ABBOTSFORD STREET,2014-09-05,Friday,1415Q1,after,both ends
-1663,ABBOTSFORD STREET,2012-04-12,Thursday,1112Q4,before,both ends
-1663,ABBOTSFORD STREET,2012-07-08,Sunday,1213Q1,before,both ends
-1663,ABBOTSFORD STREET,2012-10-02,Tuesday,1213Q2,before,both ends
-1663,ABBOTSFORD STREET,2012-10-23,Tuesday,1213Q2,before,both ends
-1663,ABBOTSFORD STREET,2012-12-26,Wednesday,1213Q2,before,both ends
-1663,ABBOTSFORD STREET,2013-01-04,Friday,1213Q3,before,both ends
-1663,ABBOTSFORD STREET,2013-02-14,Thursday,1213Q3,before,both ends
-1663,ABBOTSFORD STREET,2013-03-06,Wednesday,1213Q3,before,both ends
-1663,ABBOTSFORD STREET,2013-04-05,Friday,1213Q4,during construction (exclude),both ends
-1663,ABBOTSFORD STREET,2013-05-08,Wednesday,1213Q4,during construction (exclude),both ends
-1663,ABBOTSFORD STREET,2013-06-21,Friday,1213Q4,during construction (exclude),both ends
-1663,ABBOTSFORD STREET,2013-09-04,Wednesday,1314Q1,during construction (exclude),both ends
-1663,ABBOTSFORD STREET,2013-10-19,Saturday,1314Q2,after,both ends
-1663,ABBOTSFORD STREET,2014-01-09,Thursday,1314Q3,after,both ends
-1663,ABBOTSFORD STREET,2014-03-04,Tuesday,1314Q3,after,both ends
-1663,ABBOTSFORD STREET,2014-05-15,Thursday,1314Q4,after,both ends
-1663,ABBOTSFORD STREET,2014-08-03,Sunday,1415Q1,after,both ends
-1663,ABBOTSFORD STREET,2014-09-05,Friday,1415Q1,after,both ends
-1753,CECIL STREET,2009-10-12,Monday,0910Q2,before,both ends
-1753,CECIL STREET,2009-11-06,Friday,0910Q2,before,both ends
-1753,CECIL STREET,2009-11-13,Friday,0910Q2,before,both ends
-1753,CECIL STREET,2010-01-07,Thursday,0910Q3,before,both ends
-1753,CECIL STREET,2010-02-20,Saturday,0910Q3,before,both ends
-1753,CECIL STREET,2010-04-16,Friday,0910Q4,before,both ends
-1753,CECIL STREET,2010-06-21,Monday,0910Q4,before,both ends
-1753,CECIL STREET,2010-07-11,Sunday,1011Q1,before,both ends
-1753,CECIL STREET,2010-10-01,Friday,1011Q2,during construction (exclude),both ends
-1753,CECIL STREET,2010-10-20,Wednesday,1011Q2,during construction (exclude),both ends
-1753,CECIL STREET,2010-11-20,Saturday,1011Q2,during construction (exclude),both ends
-1753,CECIL STREET,2011-01-29,Saturday,1011Q3,during construction (exclude),both ends
-1753,CECIL STREET,2011-04-06,Wednesday,1011Q4,during construction (exclude),both ends
-1753,CECIL STREET,2011-06-28,Tuesday,1011Q4,during construction (exclude),both ends
-1753,CECIL STREET,2011-08-20,Saturday,1112Q1,after,both ends
-1753,CECIL STREET,2011-10-18,Tuesday,1112Q2,after,both ends
-1753,CECIL STREET,2011-11-17,Thursday,1112Q2,after,both ends
-1753,CECIL STREET,2011-12-05,Monday,1112Q2,after,both ends
-1753,CECIL STREET,2012-01-17,Tuesday,1112Q3,after,both ends
-1753,CECIL STREET,2012-02-15,Wednesday,1112Q3,after,both ends
-1753,CECIL STREET,2012-03-12,Monday,1112Q3,after,both ends
-1753,CECIL STREET,2012-04-12,Thursday,1112Q4,after,both ends
-2269,ACLAND STREET,2015-05-01,Friday,1415Q4,before,both ends
-2269,ACLAND STREET,2015-05-17,Sunday,1415Q4,before,both ends
-2269,ACLAND STREET,2015-05-26,Tuesday,1415Q4,before,both ends
-2269,ACLAND STREET,2015-09-13,Sunday,1516Q1,before,both ends
-2269,ACLAND STREET,2015-10-04,Sunday,1516Q2,before,both ends
-2269,ACLAND STREET,2015-12-14,Monday,1516Q2,before,both ends
-2269,ACLAND STREET,2015-12-15,Tuesday,1516Q2,before,both ends
-2269,ACLAND STREET,2016-01-18,Monday,1516Q3,before,both ends
-2269,ACLAND STREET,2016-02-05,Friday,1516Q3,before,both ends
-2269,ACLAND STREET,2016-03-20,Sunday,1516Q3,before,both ends
-2269,ACLAND STREET,2016-04-19,Tuesday,1516Q4,during construction (exclude),both ends
-2269,ACLAND STREET,2016-08-28,Sunday,1617Q1,during construction (exclude),both ends
-2269,ACLAND STREET,2016-10-08,Saturday,1617Q2,after,both ends
-2269,ACLAND STREET,2016-12-22,Thursday,1617Q2,after,both ends
-2269,ACLAND STREET,2016-12-23,Friday,1617Q2,after,both ends
-2269,ACLAND STREET,2017-02-07,Tuesday,1617Q3,after,both ends
-2269,ACLAND STREET,2017-05-04,Thursday,1617Q4,after,both ends
-2269,ACLAND STREET,2017-08-09,Wednesday,1718Q1,after,both ends
-3124,KAVANAGH STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-3124,KAVANAGH STREET,2020-06-04,Thursday,1920Q4,before,both ends
-3124,KAVANAGH STREET,2020-09-07,Monday,2021Q1,before,both ends
-3124,KAVANAGH STREET,2020-11-02,Monday,2021Q2,before,both ends
-3124,KAVANAGH STREET,2020-11-08,Sunday,2021Q2,before,both ends
-3124,KAVANAGH STREET,2021-01-22,Friday,2021Q3,before,both ends
-3124,KAVANAGH STREET,2021-03-11,Thursday,2021Q3,before,both ends
-3124,KAVANAGH STREET,2021-04-29,Thursday,2021Q4,during construction (exclude),both ends
-3124,KAVANAGH STREET,2021-06-21,Monday,2021Q4,during construction (exclude),both ends
-3124,KAVANAGH STREET,2021-07-27,Tuesday,2122Q1,after,both ends
-3124,KAVANAGH STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-3124,KAVANAGH STREET,2021-09-23,Thursday,2122Q1,after,both ends
-3124,KAVANAGH STREET,2021-09-26,Sunday,2122Q1,after,both ends
-3124,KAVANAGH STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-3124,KAVANAGH STREET,2021-10-31,Sunday,2122Q2,after,both ends
-3124,KAVANAGH STREET,2021-12-24,Friday,2122Q2,after,both ends
-3124,KAVANAGH STREET,2022-02-12,Saturday,2122Q3,after,both ends
-3124,KAVANAGH STREET,2022-04-17,Sunday,2122Q4,after,both ends
-3124,KAVANAGH STREET,2022-06-28,Tuesday,2122Q4,after,both ends
-3536,PIER STREET,2019-08-31,Saturday,1920Q1,before,both ends
-3536,PIER STREET,2019-11-25,Monday,1920Q2,before,both ends
-3536,PIER STREET,2019-12-17,Tuesday,1920Q2,before,both ends
-3536,PIER STREET,2020-02-17,Monday,1920Q3,before,both ends
-3536,PIER STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-3536,PIER STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-3536,PIER STREET,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-3536,PIER STREET,2021-01-22,Friday,2021Q3,after,both ends
-3536,PIER STREET,2021-03-11,Thursday,2021Q3,after,both ends
-3536,PIER STREET,2021-04-29,Thursday,2021Q4,after,both ends
-3536,PIER STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-3536,PIER STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-3536,PIER STREET,2021-12-01,Wednesday,2122Q2,after,both ends
-3536,PIER STREET,2021-12-24,Friday,2122Q2,after,both ends
-4751,FRENCH STREET,2020-11-02,Monday,2021Q2,before,both ends
-4751,FRENCH STREET,2020-11-08,Sunday,2021Q2,before,both ends
-4751,FRENCH STREET,2021-01-22,Friday,2021Q3,before,both ends
-4751,FRENCH STREET,2021-03-11,Thursday,2021Q3,before,both ends
-4751,FRENCH STREET,2021-04-29,Thursday,2021Q4,before,both ends
-4751,FRENCH STREET,2021-06-21,Monday,2021Q4,before,both ends
-4751,FRENCH STREET,2021-07-27,Tuesday,2122Q1,before,both ends
-4751,FRENCH STREET,2021-09-01,Wednesday,2122Q1,before,both ends
-4751,FRENCH STREET,2021-09-26,Sunday,2122Q1,before,both ends
-4751,FRENCH STREET,2021-10-27,Wednesday,2122Q2,during construction (exclude),both ends
-4751,FRENCH STREET,2021-12-24,Friday,2122Q2,during construction (exclude),both ends
-4751,FRENCH STREET,2022-02-12,Saturday,2122Q3,after,both ends
-4751,FRENCH STREET,2022-04-17,Sunday,2122Q4,after,both ends
-4751,FRENCH STREET,2022-06-28,Tuesday,2122Q4,after,both ends
-4751,FRENCH STREET,2022-07-21,Thursday,2223Q1,after,both ends
-4751,FRENCH STREET,2022-09-14,Wednesday,2223Q1,after,both ends
-4751,FRENCH STREET,2022-12-03,Saturday,2223Q2,after,both ends
-4751,FRENCH STREET,2023-01-01,Sunday,2223Q3,after,both ends
-4752,FRENCH STREET,2020-11-02,Monday,2021Q2,before,both ends
-4752,FRENCH STREET,2020-11-08,Sunday,2021Q2,before,both ends
-4752,FRENCH STREET,2021-01-22,Friday,2021Q3,before,both ends
-4752,FRENCH STREET,2021-03-11,Thursday,2021Q3,before,both ends
-4752,FRENCH STREET,2021-04-29,Thursday,2021Q4,before,both ends
-4752,FRENCH STREET,2021-06-21,Monday,2021Q4,before,both ends
-4752,FRENCH STREET,2021-07-27,Tuesday,2122Q1,before,both ends
-4752,FRENCH STREET,2021-09-01,Wednesday,2122Q1,before,both ends
-4752,FRENCH STREET,2021-09-26,Sunday,2122Q1,before,both ends
-4752,FRENCH STREET,2021-10-27,Wednesday,2122Q2,during construction (exclude),both ends
-4752,FRENCH STREET,2021-12-24,Friday,2122Q2,during construction (exclude),both ends
-4752,FRENCH STREET,2022-02-12,Saturday,2122Q3,after,both ends
-4752,FRENCH STREET,2022-04-17,Sunday,2122Q4,after,both ends
-4752,FRENCH STREET,2022-06-28,Tuesday,2122Q4,after,both ends
-4752,FRENCH STREET,2022-07-21,Thursday,2223Q1,after,both ends
-4752,FRENCH STREET,2022-09-14,Wednesday,2223Q1,after,both ends
-4752,FRENCH STREET,2022-12-03,Saturday,2223Q2,after,both ends
-4752,FRENCH STREET,2023-01-01,Sunday,2223Q3,after,both ends
-5082,WALKER STREET,2009-11-06,Friday,0910Q2,before,both ends
-5082,WALKER STREET,2009-11-13,Friday,0910Q2,before,both ends
-5082,WALKER STREET,2010-01-07,Thursday,0910Q3,before,both ends
-5082,WALKER STREET,2010-02-20,Saturday,0910Q3,before,both ends
-5082,WALKER STREET,2010-04-16,Friday,0910Q4,before,both ends
-5082,WALKER STREET,2010-06-22,Tuesday,0910Q4,before,both ends
-5082,WALKER STREET,2010-07-11,Sunday,1011Q1,before,both ends
-5082,WALKER STREET,2010-10-03,Sunday,1011Q2,during construction (exclude),both ends
-5082,WALKER STREET,2010-10-20,Wednesday,1011Q2,during construction (exclude),both ends
-5082,WALKER STREET,2010-11-20,Saturday,1011Q2,during construction (exclude),both ends
-5082,WALKER STREET,2010-12-24,Friday,1011Q2,during construction (exclude),both ends
-5082,WALKER STREET,2011-01-20,Thursday,1011Q3,during construction (exclude),both ends
-5082,WALKER STREET,2011-04-06,Wednesday,1011Q4,during construction (exclude),both ends
-5082,WALKER STREET,2011-04-29,Friday,1011Q4,during construction (exclude),both ends
-5082,WALKER STREET,2011-06-28,Tuesday,1011Q4,during construction (exclude),both ends
-5082,WALKER STREET,2011-08-20,Saturday,1112Q1,during construction (exclude),both ends
-5082,WALKER STREET,2011-10-18,Tuesday,1112Q2,during construction (exclude),both ends
-5082,WALKER STREET,2011-11-17,Thursday,1112Q2,during construction (exclude),both ends
-5082,WALKER STREET,2011-12-05,Monday,1112Q2,during construction (exclude),both ends
-5082,WALKER STREET,2012-01-16,Monday,1112Q3,after,both ends
-5082,WALKER STREET,2012-02-01,Wednesday,1112Q3,after,both ends
-5082,WALKER STREET,2012-03-12,Monday,1112Q3,after,both ends
-5082,WALKER STREET,2012-03-20,Tuesday,1112Q3,after,both ends
-5082,WALKER STREET,2012-04-12,Thursday,1112Q4,after,both ends
-5082,WALKER STREET,2012-10-04,Thursday,1213Q2,after,both ends
-5082,WALKER STREET,2012-10-24,Wednesday,1213Q2,after,both ends
-5082,WALKER STREET,2012-11-19,Monday,1213Q2,after,both ends
-5082,WALKER STREET,2012-12-23,Sunday,1213Q2,after,both ends
-5083,WALKER STREET,2013-01-20,Sunday,1213Q3,before,both ends
-5083,WALKER STREET,2013-02-13,Wednesday,1213Q3,before,both ends
-5083,WALKER STREET,2013-03-05,Tuesday,1213Q3,before,both ends
-5083,WALKER STREET,2013-04-04,Thursday,1213Q4,before,both ends
-5083,WALKER STREET,2013-05-09,Thursday,1213Q4,before,both ends
-5083,WALKER STREET,2013-06-20,Thursday,1213Q4,before,both ends
-5083,WALKER STREET,2013-07-10,Wednesday,1314Q1,before,both ends
-5083,WALKER STREET,2013-08-30,Friday,1314Q1,before,both ends
-5083,WALKER STREET,2013-10-18,Friday,1314Q2,before,both ends
-5083,WALKER STREET,2014-01-08,Wednesday,1314Q3,during construction (exclude),both ends
-5083,WALKER STREET,2014-03-03,Monday,1314Q3,during construction (exclude),both ends
-5083,WALKER STREET,2014-04-16,Wednesday,1314Q4,during construction (exclude),both ends
-5083,WALKER STREET,2014-05-14,Wednesday,1314Q4,during construction (exclude),both ends
-5083,WALKER STREET,2014-08-04,Monday,1415Q1,after,both ends
-5083,WALKER STREET,2014-09-22,Monday,1415Q1,after,both ends
-5083,WALKER STREET,2014-11-03,Monday,1415Q2,after,both ends
-5083,WALKER STREET,2015-02-06,Friday,1415Q3,after,both ends
-5083,WALKER STREET,2015-05-26,Tuesday,1415Q4,after,both ends
-5629,SOUTHBANK BOULEVARD,2021-01-22,Friday,2021Q3,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-03-11,Thursday,2021Q3,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-04-29,Thursday,2021Q4,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-06-21,Monday,2021Q4,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-07-27,Tuesday,2122Q1,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-09-01,Wednesday,2122Q1,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-09-23,Thursday,2122Q1,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-09-26,Sunday,2122Q1,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-10-27,Wednesday,2122Q2,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-10-31,Sunday,2122Q2,before,both ends
-5629,SOUTHBANK BOULEVARD,2021-12-24,Friday,2122Q2,before,both ends
-5629,SOUTHBANK BOULEVARD,2022-02-12,Saturday,2122Q3,during construction (exclude),both ends
-5629,SOUTHBANK BOULEVARD,2022-04-17,Sunday,2122Q4,during construction (exclude),both ends
-5629,SOUTHBANK BOULEVARD,2022-06-28,Tuesday,2122Q4,during construction (exclude),both ends
-5629,SOUTHBANK BOULEVARD,2022-07-21,Thursday,2223Q1,after,both ends
-5629,SOUTHBANK BOULEVARD,2022-09-14,Wednesday,2223Q1,after,both ends
-5629,SOUTHBANK BOULEVARD,2022-12-03,Saturday,2223Q2,after,both ends
-5629,SOUTHBANK BOULEVARD,2023-01-01,Sunday,2223Q3,after,both ends
-5629,SOUTHBANK BOULEVARD,2023-04-24,Monday,2223Q4,after,both ends
-5637,SOUTHBANK BOULEVARD,2017-05-04,Thursday,1617Q4,before,both ends
-5637,SOUTHBANK BOULEVARD,2017-08-09,Wednesday,1718Q1,before,both ends
-5637,SOUTHBANK BOULEVARD,2017-10-10,Tuesday,1718Q2,before,both ends
-5637,SOUTHBANK BOULEVARD,2017-11-23,Thursday,1718Q2,before,both ends
-5637,SOUTHBANK BOULEVARD,2018-01-16,Tuesday,1718Q3,before,both ends
-5637,SOUTHBANK BOULEVARD,2018-02-17,Saturday,1718Q3,before,both ends
-5637,SOUTHBANK BOULEVARD,2018-04-04,Wednesday,1718Q4,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2018-08-23,Thursday,1819Q1,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2018-10-19,Friday,1819Q2,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2019-01-11,Friday,1819Q3,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2019-02-23,Saturday,1819Q3,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2019-04-07,Sunday,1819Q4,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2019-08-31,Saturday,1920Q1,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2019-12-17,Tuesday,1920Q2,during construction (exclude),both ends
-5637,SOUTHBANK BOULEVARD,2020-02-17,Monday,1920Q3,after,both ends
-5637,SOUTHBANK BOULEVARD,2020-04-28,Tuesday,1920Q4,after,both ends
-5637,SOUTHBANK BOULEVARD,2020-06-04,Thursday,1920Q4,after,both ends
-5637,SOUTHBANK BOULEVARD,2020-09-07,Monday,2021Q1,after,both ends
-5637,SOUTHBANK BOULEVARD,2020-11-02,Monday,2021Q2,after,both ends
-5637,SOUTHBANK BOULEVARD,2020-11-08,Sunday,2021Q2,after,both ends
-5638,SOUTHBANK BOULEVARD,2017-10-10,Tuesday,1718Q2,before,both ends
-5638,SOUTHBANK BOULEVARD,2017-11-23,Thursday,1718Q2,before,both ends
-5638,SOUTHBANK BOULEVARD,2018-01-16,Tuesday,1718Q3,before,both ends
-5638,SOUTHBANK BOULEVARD,2018-02-17,Saturday,1718Q3,before,both ends
-5638,SOUTHBANK BOULEVARD,2018-04-04,Wednesday,1718Q4,before,both ends
-5638,SOUTHBANK BOULEVARD,2018-08-23,Thursday,1819Q1,before,both ends
-5638,SOUTHBANK BOULEVARD,2018-10-19,Friday,1819Q2,during construction (exclude),both ends
-5638,SOUTHBANK BOULEVARD,2019-01-11,Friday,1819Q3,during construction (exclude),both ends
-5638,SOUTHBANK BOULEVARD,2019-02-23,Saturday,1819Q3,during construction (exclude),both ends
-5638,SOUTHBANK BOULEVARD,2019-04-07,Sunday,1819Q4,after,both ends
-5638,SOUTHBANK BOULEVARD,2019-08-31,Saturday,1920Q1,after,both ends
-5638,SOUTHBANK BOULEVARD,2019-12-17,Tuesday,1920Q2,after,both ends
-5638,SOUTHBANK BOULEVARD,2020-02-17,Monday,1920Q3,after,both ends
-5639,SOUTHBANK BOULEVARD,2018-04-04,Wednesday,1718Q4,before,both ends
-5639,SOUTHBANK BOULEVARD,2018-08-23,Thursday,1819Q1,before,both ends
-5639,SOUTHBANK BOULEVARD,2018-10-19,Friday,1819Q2,before,both ends
-5639,SOUTHBANK BOULEVARD,2019-01-11,Friday,1819Q3,before,both ends
-5639,SOUTHBANK BOULEVARD,2019-02-23,Saturday,1819Q3,before,both ends
-5639,SOUTHBANK BOULEVARD,2019-04-07,Sunday,1819Q4,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2019-08-31,Saturday,1920Q1,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2019-12-17,Tuesday,1920Q2,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2020-02-17,Monday,1920Q3,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2020-04-28,Tuesday,1920Q4,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2020-06-04,Thursday,1920Q4,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2020-11-02,Monday,2021Q2,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-5639,SOUTHBANK BOULEVARD,2021-04-29,Thursday,2021Q4,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-06-21,Monday,2021Q4,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-07-27,Tuesday,2122Q1,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-09-01,Wednesday,2122Q1,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-09-23,Thursday,2122Q1,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-09-26,Sunday,2122Q1,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-10-27,Wednesday,2122Q2,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-10-31,Sunday,2122Q2,after,both ends
-5639,SOUTHBANK BOULEVARD,2021-12-24,Friday,2122Q2,after,both ends
-5639,SOUTHBANK BOULEVARD,2022-02-12,Saturday,2122Q3,after,both ends
-5882,WELLINGTON STREET,2014-01-09,Thursday,1314Q3,before,both ends
-5882,WELLINGTON STREET,2014-03-04,Tuesday,1314Q3,before,both ends
-5882,WELLINGTON STREET,2014-05-15,Thursday,1314Q4,before,both ends
-5882,WELLINGTON STREET,2014-08-03,Sunday,1415Q1,before,both ends
-5882,WELLINGTON STREET,2014-09-05,Friday,1415Q1,before,both ends
-5882,WELLINGTON STREET,2014-10-21,Tuesday,1415Q2,before,both ends
-5882,WELLINGTON STREET,2014-11-29,Saturday,1415Q2,before,both ends
-5882,WELLINGTON STREET,2015-02-05,Thursday,1415Q3,during construction (exclude),both ends
-5882,WELLINGTON STREET,2015-05-01,Friday,1415Q4,during construction (exclude),both ends
-5882,WELLINGTON STREET,2015-09-13,Sunday,1516Q1,during construction (exclude),both ends
-5882,WELLINGTON STREET,2015-12-14,Monday,1516Q2,after,both ends
-5882,WELLINGTON STREET,2016-02-05,Friday,1516Q3,after,both ends
-5882,WELLINGTON STREET,2016-03-20,Sunday,1516Q3,after,both ends
-5883,WELLINGTON STREET,2018-04-04,Wednesday,1718Q4,before,both ends
-5883,WELLINGTON STREET,2018-08-23,Thursday,1819Q1,before,both ends
-5883,WELLINGTON STREET,2018-10-19,Friday,1819Q2,before,both ends
-5883,WELLINGTON STREET,2019-01-11,Friday,1819Q3,before,both ends
-5883,WELLINGTON STREET,2019-02-23,Saturday,1819Q3,before,both ends
-5883,WELLINGTON STREET,2019-04-07,Sunday,1819Q4,during construction (exclude),both ends
-5883,WELLINGTON STREET,2019-08-31,Saturday,1920Q1,during construction (exclude),both ends
-5883,WELLINGTON STREET,2019-12-17,Tuesday,1920Q2,after,both ends
-5883,WELLINGTON STREET,2020-02-17,Monday,1920Q3,after,both ends
-5883,WELLINGTON STREET,2020-04-28,Tuesday,1920Q4,after,both ends
-5883,WELLINGTON STREET,2020-06-04,Thursday,1920Q4,after,both ends
-5883,WELLINGTON STREET,2020-09-07,Monday,2021Q1,after,both ends
-6289,MORAY STREET,2017-05-04,Thursday,1617Q4,before,both ends
-6289,MORAY STREET,2017-08-09,Wednesday,1718Q1,before,both ends
-6289,MORAY STREET,2017-10-10,Tuesday,1718Q2,before,both ends
-6289,MORAY STREET,2017-11-23,Thursday,1718Q2,before,both ends
-6289,MORAY STREET,2018-01-16,Tuesday,1718Q3,before,both ends
-6289,MORAY STREET,2018-02-17,Saturday,1718Q3,before,both ends
-6289,MORAY STREET,2018-04-04,Wednesday,1718Q4,during construction (exclude),both ends
-6289,MORAY STREET,2018-08-23,Thursday,1819Q1,during construction (exclude),both ends
-6289,MORAY STREET,2018-10-19,Friday,1819Q2,during construction (exclude),both ends
-6289,MORAY STREET,2019-01-11,Friday,1819Q3,after,both ends
-6289,MORAY STREET,2019-02-23,Saturday,1819Q3,after,both ends
-6289,MORAY STREET,2019-04-07,Sunday,1819Q4,after,both ends
-6289,MORAY STREET,2019-08-31,Saturday,1920Q1,after,both ends
-6289,MORAY STREET,2019-12-17,Tuesday,1920Q2,after,both ends
-6290,MORAY STREET,2017-05-04,Thursday,1617Q4,before,both ends
-6290,MORAY STREET,2017-08-09,Wednesday,1718Q1,before,both ends
-6290,MORAY STREET,2017-10-10,Tuesday,1718Q2,before,both ends
-6290,MORAY STREET,2017-11-23,Thursday,1718Q2,before,both ends
-6290,MORAY STREET,2018-01-16,Tuesday,1718Q3,before,both ends
-6290,MORAY STREET,2018-02-17,Saturday,1718Q3,before,both ends
-6290,MORAY STREET,2018-04-04,Wednesday,1718Q4,during construction (exclude),both ends
-6290,MORAY STREET,2018-08-23,Thursday,1819Q1,during construction (exclude),both ends
-6290,MORAY STREET,2018-10-19,Friday,1819Q2,during construction (exclude),both ends
-6290,MORAY STREET,2019-01-11,Friday,1819Q3,after,both ends
-6290,MORAY STREET,2019-02-23,Saturday,1819Q3,after,both ends
-6290,MORAY STREET,2019-04-07,Sunday,1819Q4,after,both ends
-6290,MORAY STREET,2019-08-31,Saturday,1920Q1,after,both ends
-6290,MORAY STREET,2019-12-17,Tuesday,1920Q2,after,both ends
-6624,ST KILDA ROAD,2021-07-27,Tuesday,2122Q1,before,both ends
-6624,ST KILDA ROAD,2021-09-01,Wednesday,2122Q1,before,both ends
-6624,ST KILDA ROAD,2021-09-23,Thursday,2122Q1,before,both ends
-6624,ST KILDA ROAD,2021-09-26,Sunday,2122Q1,before,both ends
-6624,ST KILDA ROAD,2021-10-27,Wednesday,2122Q2,before,both ends
-6624,ST KILDA ROAD,2021-10-31,Sunday,2122Q2,before,both ends
-6624,ST KILDA ROAD,2021-12-24,Friday,2122Q2,before,both ends
-6624,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6624,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6624,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6624,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,during construction (exclude),both ends
-6624,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,during construction (exclude),both ends
-6624,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,during construction (exclude),both ends
-6624,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,after,both ends
-6624,ST KILDA ROAD,2023-04-24,Monday,2223Q4,after,both ends
-6624,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6624,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6624,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6624,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6625,ST KILDA ROAD,2021-07-27,Tuesday,2122Q1,before,both ends
-6625,ST KILDA ROAD,2021-09-01,Wednesday,2122Q1,before,both ends
-6625,ST KILDA ROAD,2021-09-23,Thursday,2122Q1,before,both ends
-6625,ST KILDA ROAD,2021-09-26,Sunday,2122Q1,before,both ends
-6625,ST KILDA ROAD,2021-10-27,Wednesday,2122Q2,before,both ends
-6625,ST KILDA ROAD,2021-10-31,Sunday,2122Q2,before,both ends
-6625,ST KILDA ROAD,2021-12-24,Friday,2122Q2,before,both ends
-6625,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6625,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6625,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6625,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,during construction (exclude),both ends
-6625,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,during construction (exclude),both ends
-6625,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,during construction (exclude),both ends
-6625,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,after,both ends
-6625,ST KILDA ROAD,2023-04-24,Monday,2223Q4,after,both ends
-6625,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6625,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6625,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6625,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6626,ST KILDA ROAD,2021-07-27,Tuesday,2122Q1,before,both ends
-6626,ST KILDA ROAD,2021-09-01,Wednesday,2122Q1,before,both ends
-6626,ST KILDA ROAD,2021-09-23,Thursday,2122Q1,before,both ends
-6626,ST KILDA ROAD,2021-09-26,Sunday,2122Q1,before,both ends
-6626,ST KILDA ROAD,2021-10-27,Wednesday,2122Q2,before,both ends
-6626,ST KILDA ROAD,2021-10-31,Sunday,2122Q2,before,both ends
-6626,ST KILDA ROAD,2021-12-24,Friday,2122Q2,before,both ends
-6626,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6626,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6626,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6626,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,during construction (exclude),both ends
-6626,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,during construction (exclude),both ends
-6626,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,during construction (exclude),both ends
-6626,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,during construction (exclude),both ends
-6626,ST KILDA ROAD,2023-04-24,Monday,2223Q4,during construction (exclude),both ends
-6626,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,during construction (exclude),both ends
-6626,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,during construction (exclude),both ends
-6626,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,during construction (exclude),both ends
-6626,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6626,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6626,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6626,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6626,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-6626,ST KILDA ROAD,2024-07-23,Tuesday,2425Q1,after,both ends
-6626,ST KILDA ROAD,2024-08-04,Sunday,2425Q1,after,both ends
-6630,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,before,both ends
-6630,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,before,both ends
-6630,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,before,both ends
-6630,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,before,both ends
-6630,ST KILDA ROAD,2023-04-24,Monday,2223Q4,before,both ends
-6630,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,during construction (exclude),both ends
-6630,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,during construction (exclude),both ends
-6630,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,during construction (exclude),both ends
-6630,ST KILDA ROAD,2023-11-10,Friday,2324Q2,during construction (exclude),both ends
-6630,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6630,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6630,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6630,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-6630,ST KILDA ROAD,2024-07-23,Tuesday,2425Q1,after,both ends
-6630,ST KILDA ROAD,2024-08-04,Sunday,2425Q1,after,both ends
-6630,ST KILDA ROAD,2024-10-09,Wednesday,2425Q2,after,both ends
-6630,ST KILDA ROAD,2024-12-01,Sunday,2425Q2,after,both ends
-6631,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6631,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6631,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6631,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,before,both ends
-6631,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,before,both ends
-6631,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,before,both ends
-6631,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,during construction (exclude),both ends
-6631,ST KILDA ROAD,2023-04-24,Monday,2223Q4,during construction (exclude),both ends
-6631,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6631,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6631,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6631,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6631,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6631,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6631,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6631,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-6632,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6632,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6632,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6632,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,before,both ends
-6632,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,before,both ends
-6632,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,before,both ends
-6632,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,during construction (exclude),both ends
-6632,ST KILDA ROAD,2023-04-24,Monday,2223Q4,during construction (exclude),both ends
-6632,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6632,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6632,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6632,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6632,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6632,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6632,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6632,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-6633,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6633,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6633,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6633,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,before,both ends
-6633,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,before,both ends
-6633,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,before,both ends
-6633,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,during construction (exclude),both ends
-6633,ST KILDA ROAD,2023-04-24,Monday,2223Q4,during construction (exclude),both ends
-6633,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6633,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6633,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6633,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6633,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6633,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6633,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6633,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-6634,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6634,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6634,ST KILDA ROAD,2022-05-21,Saturday,2122Q4,before,End A only
-6634,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6634,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,before,both ends
-6634,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,before,both ends
-6634,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,before,both ends
-6634,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,during construction (exclude),both ends
-6634,ST KILDA ROAD,2023-04-24,Monday,2223Q4,during construction (exclude),both ends
-6634,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6634,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6634,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6634,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6634,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6634,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6634,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6634,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-6635,ST KILDA ROAD,2022-02-12,Saturday,2122Q3,before,both ends
-6635,ST KILDA ROAD,2022-04-17,Sunday,2122Q4,before,both ends
-6635,ST KILDA ROAD,2022-05-21,Saturday,2122Q4,before,both ends
-6635,ST KILDA ROAD,2022-06-28,Tuesday,2122Q4,before,both ends
-6635,ST KILDA ROAD,2022-07-21,Thursday,2223Q1,before,both ends
-6635,ST KILDA ROAD,2022-09-14,Wednesday,2223Q1,before,both ends
-6635,ST KILDA ROAD,2022-12-03,Saturday,2223Q2,before,both ends
-6635,ST KILDA ROAD,2023-01-01,Sunday,2223Q3,during construction (exclude),both ends
-6635,ST KILDA ROAD,2023-04-24,Monday,2223Q4,during construction (exclude),both ends
-6635,ST KILDA ROAD,2023-07-06,Thursday,2324Q1,after,both ends
-6635,ST KILDA ROAD,2023-08-23,Wednesday,2324Q1,after,both ends
-6635,ST KILDA ROAD,2023-09-03,Sunday,2324Q1,after,both ends
-6635,ST KILDA ROAD,2023-11-10,Friday,2324Q2,after,both ends
-6635,ST KILDA ROAD,2024-02-03,Saturday,2324Q3,after,both ends
-6635,ST KILDA ROAD,2024-03-17,Sunday,2324Q3,after,both ends
-6635,ST KILDA ROAD,2024-05-16,Thursday,2324Q4,after,both ends
-6635,ST KILDA ROAD,2024-06-23,Sunday,2324Q4,after,both ends
-7658,DAWSON STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-7658,DAWSON STREET,2020-09-07,Monday,2021Q1,before,both ends
-7658,DAWSON STREET,2020-11-08,Sunday,2021Q2,before,both ends
-7658,DAWSON STREET,2021-01-22,Friday,2021Q3,before,both ends
-7658,DAWSON STREET,2021-03-11,Thursday,2021Q3,before,both ends
-7658,DAWSON STREET,2021-04-29,Thursday,2021Q4,during construction (exclude),both ends
-7658,DAWSON STREET,2021-05-02,Sunday,2021Q4,during construction (exclude),End A only
-7658,DAWSON STREET,2021-09-01,Wednesday,2122Q1,during construction (exclude),both ends
-7658,DAWSON STREET,2021-09-23,Thursday,2122Q1,during construction (exclude),both ends
-7658,DAWSON STREET,2021-09-26,Sunday,2122Q1,during construction (exclude),both ends
-7658,DAWSON STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-7658,DAWSON STREET,2021-10-31,Sunday,2122Q2,after,both ends
-7658,DAWSON STREET,2021-12-24,Friday,2122Q2,after,both ends
-7658,DAWSON STREET,2022-02-12,Saturday,2122Q3,after,both ends
-7658,DAWSON STREET,2022-04-17,Sunday,2122Q4,after,both ends
-7658,DAWSON STREET,2022-09-14,Wednesday,2223Q1,after,both ends
-7748,FITZROY STREET,2009-10-12,Monday,0910Q2,during construction (exclude),both ends
-7748,FITZROY STREET,2009-11-06,Friday,0910Q2,during construction (exclude),both ends
-7748,FITZROY STREET,2009-11-13,Friday,0910Q2,during construction (exclude),both ends
-7748,FITZROY STREET,2010-01-07,Thursday,0910Q3,after,both ends
-7748,FITZROY STREET,2010-02-20,Saturday,0910Q3,after,both ends
-7748,FITZROY STREET,2010-04-16,Friday,0910Q4,after,both ends
-7748,FITZROY STREET,2010-06-21,Monday,0910Q4,after,both ends
-7748,FITZROY STREET,2010-07-11,Sunday,1011Q1,after,both ends
-7748,FITZROY STREET,2010-10-01,Friday,1011Q2,after,both ends
-7748,FITZROY STREET,2010-10-20,Wednesday,1011Q2,after,both ends
-7748,FITZROY STREET,2010-11-20,Saturday,1011Q2,after,both ends
-7749,FITZROY STREET,2009-10-12,Monday,0910Q2,during construction (exclude),both ends
-7749,FITZROY STREET,2009-11-06,Friday,0910Q2,during construction (exclude),both ends
-7749,FITZROY STREET,2009-11-13,Friday,0910Q2,during construction (exclude),both ends
-7749,FITZROY STREET,2010-01-07,Thursday,0910Q3,after,both ends
-7749,FITZROY STREET,2010-02-20,Saturday,0910Q3,after,both ends
-7749,FITZROY STREET,2010-04-16,Friday,0910Q4,after,both ends
-7749,FITZROY STREET,2010-06-21,Monday,0910Q4,after,both ends
-7749,FITZROY STREET,2010-07-11,Sunday,1011Q1,after,both ends
-7749,FITZROY STREET,2010-10-01,Friday,1011Q2,after,both ends
-7749,FITZROY STREET,2010-10-20,Wednesday,1011Q2,after,both ends
-7749,FITZROY STREET,2010-11-20,Saturday,1011Q2,after,both ends
-8218,HEIDELBERG ROAD,2019-12-17,Tuesday,1920Q2,before,both ends
-8218,HEIDELBERG ROAD,2020-02-17,Monday,1920Q3,before,both ends
-8218,HEIDELBERG ROAD,2020-04-28,Tuesday,1920Q4,before,both ends
-8218,HEIDELBERG ROAD,2020-09-07,Monday,2021Q1,before,both ends
-8218,HEIDELBERG ROAD,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-8218,HEIDELBERG ROAD,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-8218,HEIDELBERG ROAD,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-8218,HEIDELBERG ROAD,2021-04-29,Thursday,2021Q4,after,both ends
-8218,HEIDELBERG ROAD,2021-09-01,Wednesday,2122Q1,after,both ends
-8218,HEIDELBERG ROAD,2021-09-23,Thursday,2122Q1,after,both ends
-8218,HEIDELBERG ROAD,2021-09-26,Sunday,2122Q1,after,both ends
-8218,HEIDELBERG ROAD,2021-10-27,Wednesday,2122Q2,after,both ends
-8218,HEIDELBERG ROAD,2021-10-31,Sunday,2122Q2,after,both ends
-8218,HEIDELBERG ROAD,2021-12-24,Friday,2122Q2,after,both ends
-8218,HEIDELBERG ROAD,2022-02-12,Saturday,2122Q3,after,both ends
-8219,HEIDELBERG ROAD,2019-12-17,Tuesday,1920Q2,before,both ends
-8219,HEIDELBERG ROAD,2020-02-17,Monday,1920Q3,before,both ends
-8219,HEIDELBERG ROAD,2020-04-28,Tuesday,1920Q4,before,both ends
-8219,HEIDELBERG ROAD,2020-09-07,Monday,2021Q1,before,both ends
-8219,HEIDELBERG ROAD,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-8219,HEIDELBERG ROAD,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-8219,HEIDELBERG ROAD,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-8219,HEIDELBERG ROAD,2021-04-29,Thursday,2021Q4,after,both ends
-8219,HEIDELBERG ROAD,2021-09-01,Wednesday,2122Q1,after,both ends
-8219,HEIDELBERG ROAD,2021-09-23,Thursday,2122Q1,after,both ends
-8219,HEIDELBERG ROAD,2021-09-26,Sunday,2122Q1,after,both ends
-8219,HEIDELBERG ROAD,2021-10-27,Wednesday,2122Q2,after,both ends
-8219,HEIDELBERG ROAD,2021-10-31,Sunday,2122Q2,after,both ends
-8219,HEIDELBERG ROAD,2021-12-24,Friday,2122Q2,after,both ends
-8219,HEIDELBERG ROAD,2022-02-12,Saturday,2122Q3,after,both ends
-8220,HEIDELBERG ROAD,2019-12-17,Tuesday,1920Q2,before,both ends
-8220,HEIDELBERG ROAD,2020-02-17,Monday,1920Q3,before,both ends
-8220,HEIDELBERG ROAD,2020-04-28,Tuesday,1920Q4,before,both ends
-8220,HEIDELBERG ROAD,2020-09-07,Monday,2021Q1,before,both ends
-8220,HEIDELBERG ROAD,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-8220,HEIDELBERG ROAD,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-8220,HEIDELBERG ROAD,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-8220,HEIDELBERG ROAD,2021-04-29,Thursday,2021Q4,after,both ends
-8220,HEIDELBERG ROAD,2021-09-01,Wednesday,2122Q1,after,both ends
-8220,HEIDELBERG ROAD,2021-09-23,Thursday,2122Q1,after,both ends
-8220,HEIDELBERG ROAD,2021-09-26,Sunday,2122Q1,after,both ends
-8220,HEIDELBERG ROAD,2021-10-27,Wednesday,2122Q2,after,both ends
-8220,HEIDELBERG ROAD,2021-10-31,Sunday,2122Q2,after,both ends
-8220,HEIDELBERG ROAD,2021-12-24,Friday,2122Q2,after,both ends
-8220,HEIDELBERG ROAD,2022-02-12,Saturday,2122Q3,after,both ends
-8221,HEIDELBERG ROAD,2019-12-17,Tuesday,1920Q2,before,both ends
-8221,HEIDELBERG ROAD,2020-02-17,Monday,1920Q3,before,both ends
-8221,HEIDELBERG ROAD,2020-04-28,Tuesday,1920Q4,before,both ends
-8221,HEIDELBERG ROAD,2020-09-07,Monday,2021Q1,before,both ends
-8221,HEIDELBERG ROAD,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-8221,HEIDELBERG ROAD,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-8221,HEIDELBERG ROAD,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-8221,HEIDELBERG ROAD,2021-04-29,Thursday,2021Q4,after,both ends
-8221,HEIDELBERG ROAD,2021-09-01,Wednesday,2122Q1,after,both ends
-8221,HEIDELBERG ROAD,2021-09-23,Thursday,2122Q1,after,both ends
-8221,HEIDELBERG ROAD,2021-09-26,Sunday,2122Q1,after,both ends
-8221,HEIDELBERG ROAD,2021-10-27,Wednesday,2122Q2,after,both ends
-8221,HEIDELBERG ROAD,2021-10-31,Sunday,2122Q2,after,both ends
-8221,HEIDELBERG ROAD,2021-12-24,Friday,2122Q2,after,both ends
-8221,HEIDELBERG ROAD,2022-02-12,Saturday,2122Q3,after,both ends
-9168,ELIZABETH STREET,2019-04-07,Sunday,1819Q4,before,both ends
-9168,ELIZABETH STREET,2019-08-31,Saturday,1920Q1,before,both ends
-9168,ELIZABETH STREET,2019-12-17,Tuesday,1920Q2,before,both ends
-9168,ELIZABETH STREET,2020-02-17,Monday,1920Q3,before,both ends
-9168,ELIZABETH STREET,2020-04-28,Tuesday,1920Q4,during construction (exclude),both ends
-9168,ELIZABETH STREET,2020-06-04,Thursday,1920Q4,during construction (exclude),End A only
-9168,ELIZABETH STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-9168,ELIZABETH STREET,2020-11-02,Monday,2021Q2,after,End A only
-9168,ELIZABETH STREET,2020-11-08,Sunday,2021Q2,after,both ends
-9168,ELIZABETH STREET,2021-01-22,Friday,2021Q3,after,both ends
-9168,ELIZABETH STREET,2021-03-11,Thursday,2021Q3,after,both ends
-9168,ELIZABETH STREET,2021-04-29,Thursday,2021Q4,after,both ends
-9168,ELIZABETH STREET,2021-06-21,Monday,2021Q4,after,End A only
-9168,ELIZABETH STREET,2021-07-27,Tuesday,2122Q1,after,End A only
-9168,ELIZABETH STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-9168,ELIZABETH STREET,2021-09-23,Thursday,2122Q1,after,both ends
-9168,ELIZABETH STREET,2021-09-26,Sunday,2122Q1,after,both ends
-9800,ALBERT STREET,2016-10-08,Saturday,1617Q2,before,both ends
-9800,ALBERT STREET,2016-12-23,Friday,1617Q2,before,both ends
-9800,ALBERT STREET,2017-02-07,Tuesday,1617Q3,before,both ends
-9800,ALBERT STREET,2017-05-04,Thursday,1617Q4,before,both ends
-9800,ALBERT STREET,2017-08-09,Wednesday,1718Q1,before,both ends
-9800,ALBERT STREET,2017-10-10,Tuesday,1718Q2,during construction (exclude),both ends
-9800,ALBERT STREET,2017-11-23,Thursday,1718Q2,during construction (exclude),both ends
-9800,ALBERT STREET,2018-01-16,Tuesday,1718Q3,during construction (exclude),both ends
-9800,ALBERT STREET,2018-02-17,Saturday,1718Q3,during construction (exclude),both ends
-9800,ALBERT STREET,2018-04-04,Wednesday,1718Q4,after,both ends
-9800,ALBERT STREET,2018-08-23,Thursday,1819Q1,after,both ends
-9800,ALBERT STREET,2018-10-19,Friday,1819Q2,after,both ends
-9800,ALBERT STREET,2019-01-11,Friday,1819Q3,after,both ends
-9800,ALBERT STREET,2019-02-23,Saturday,1819Q3,after,both ends
-9801,ALBERT STREET,2018-10-19,Friday,1819Q2,before,both ends
-9801,ALBERT STREET,2019-01-11,Friday,1819Q3,before,both ends
-9801,ALBERT STREET,2019-02-23,Saturday,1819Q3,before,both ends
-9801,ALBERT STREET,2019-04-07,Sunday,1819Q4,before,both ends
-9801,ALBERT STREET,2019-08-31,Saturday,1920Q1,before,both ends
-9801,ALBERT STREET,2019-12-17,Tuesday,1920Q2,during construction (exclude),both ends
-9801,ALBERT STREET,2020-02-17,Monday,1920Q3,during construction (exclude),both ends
-9801,ALBERT STREET,2020-04-28,Tuesday,1920Q4,during construction (exclude),both ends
-9801,ALBERT STREET,2020-06-04,Thursday,1920Q4,during construction (exclude),both ends
-9801,ALBERT STREET,2020-09-07,Monday,2021Q1,after,both ends
-9801,ALBERT STREET,2020-11-02,Monday,2021Q2,after,both ends
-9801,ALBERT STREET,2020-11-08,Sunday,2021Q2,after,both ends
-9801,ALBERT STREET,2021-01-22,Friday,2021Q3,after,both ends
-9801,ALBERT STREET,2021-03-11,Thursday,2021Q3,after,both ends
-9801,ALBERT STREET,2021-04-29,Thursday,2021Q4,after,both ends
-9801,ALBERT STREET,2021-06-21,Monday,2021Q4,after,both ends
-9802,ALBERT STREET,2009-10-12,Monday,0910Q2,before,both ends
-9802,ALBERT STREET,2009-11-06,Friday,0910Q2,before,both ends
-9802,ALBERT STREET,2009-11-13,Friday,0910Q2,before,both ends
-9802,ALBERT STREET,2010-01-07,Thursday,0910Q3,before,both ends
-9802,ALBERT STREET,2010-02-20,Saturday,0910Q3,before,both ends
-9802,ALBERT STREET,2010-04-16,Friday,0910Q4,during construction (exclude),both ends
-9802,ALBERT STREET,2010-06-21,Monday,0910Q4,during construction (exclude),both ends
-9802,ALBERT STREET,2010-07-11,Sunday,1011Q1,after,both ends
-9802,ALBERT STREET,2010-10-01,Friday,1011Q2,after,both ends
-9802,ALBERT STREET,2010-10-20,Wednesday,1011Q2,after,both ends
-9802,ALBERT STREET,2010-11-20,Saturday,1011Q2,after,both ends
-9802,ALBERT STREET,2010-12-24,Friday,1011Q2,after,both ends
-9802,ALBERT STREET,2011-01-29,Saturday,1011Q3,after,both ends
-9802,ALBERT STREET,2011-04-06,Wednesday,1011Q4,after,both ends
-9802,ALBERT STREET,2011-06-28,Tuesday,1011Q4,after,both ends
-9803,ALBERT STREET,2009-10-12,Monday,0910Q2,before,both ends
-9803,ALBERT STREET,2009-11-06,Friday,0910Q2,before,both ends
-9803,ALBERT STREET,2009-11-13,Friday,0910Q2,before,both ends
-9803,ALBERT STREET,2010-01-07,Thursday,0910Q3,before,both ends
-9803,ALBERT STREET,2010-02-20,Saturday,0910Q3,before,both ends
-9803,ALBERT STREET,2010-04-16,Friday,0910Q4,during construction (exclude),both ends
-9803,ALBERT STREET,2010-06-21,Monday,0910Q4,during construction (exclude),both ends
-9803,ALBERT STREET,2010-07-11,Sunday,1011Q1,after,both ends
-9803,ALBERT STREET,2010-10-01,Friday,1011Q2,after,both ends
-9803,ALBERT STREET,2010-10-20,Wednesday,1011Q2,after,both ends
-9803,ALBERT STREET,2010-11-20,Saturday,1011Q2,after,both ends
-9803,ALBERT STREET,2010-12-24,Friday,1011Q2,after,both ends
-9803,ALBERT STREET,2011-01-29,Saturday,1011Q3,after,both ends
-9803,ALBERT STREET,2011-04-06,Wednesday,1011Q4,after,both ends
-9803,ALBERT STREET,2011-06-28,Tuesday,1011Q4,after,both ends
-9804,ALBERT STREET,2009-10-12,Monday,0910Q2,before,both ends
-9804,ALBERT STREET,2009-11-06,Friday,0910Q2,before,both ends
-9804,ALBERT STREET,2009-11-13,Friday,0910Q2,before,both ends
-9804,ALBERT STREET,2010-01-07,Thursday,0910Q3,before,both ends
-9804,ALBERT STREET,2010-02-20,Saturday,0910Q3,before,both ends
-9804,ALBERT STREET,2010-04-16,Friday,0910Q4,during construction (exclude),both ends
-9804,ALBERT STREET,2010-06-21,Monday,0910Q4,during construction (exclude),both ends
-9804,ALBERT STREET,2010-07-11,Sunday,1011Q1,during construction (exclude),both ends
-9804,ALBERT STREET,2010-10-01,Friday,1011Q2,during construction (exclude),both ends
-9804,ALBERT STREET,2010-10-20,Wednesday,1011Q2,during construction (exclude),both ends
-9804,ALBERT STREET,2010-11-20,Saturday,1011Q2,during construction (exclude),both ends
-9804,ALBERT STREET,2010-12-24,Friday,1011Q2,during construction (exclude),both ends
-9804,ALBERT STREET,2011-01-29,Saturday,1011Q3,during construction (exclude),both ends
-9804,ALBERT STREET,2011-04-06,Wednesday,1011Q4,during construction (exclude),both ends
-9804,ALBERT STREET,2011-06-28,Tuesday,1011Q4,during construction (exclude),both ends
-9804,ALBERT STREET,2011-08-20,Saturday,1112Q1,after,both ends
-9804,ALBERT STREET,2011-10-18,Tuesday,1112Q2,after,both ends
-9804,ALBERT STREET,2011-11-17,Thursday,1112Q2,after,both ends
-9804,ALBERT STREET,2011-12-05,Monday,1112Q2,after,both ends
-9804,ALBERT STREET,2012-01-17,Tuesday,1112Q3,after,both ends
-9804,ALBERT STREET,2012-02-15,Wednesday,1112Q3,after,both ends
-9804,ALBERT STREET,2012-03-12,Monday,1112Q3,after,both ends
-9804,ALBERT STREET,2012-04-12,Thursday,1112Q4,after,both ends
-10529,SWANSTON STREET,2019-08-31,Saturday,1920Q1,before,both ends
-10529,SWANSTON STREET,2019-12-17,Tuesday,1920Q2,before,both ends
-10529,SWANSTON STREET,2020-02-17,Monday,1920Q3,before,both ends
-10529,SWANSTON STREET,2020-04-28,Tuesday,1920Q4,before,both ends
-10529,SWANSTON STREET,2020-06-04,Thursday,1920Q4,before,both ends
-10529,SWANSTON STREET,2020-09-07,Monday,2021Q1,during construction (exclude),both ends
-10529,SWANSTON STREET,2020-11-02,Monday,2021Q2,during construction (exclude),both ends
-10529,SWANSTON STREET,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-10529,SWANSTON STREET,2021-01-22,Friday,2021Q3,after,both ends
-10529,SWANSTON STREET,2021-03-11,Thursday,2021Q3,after,both ends
-10529,SWANSTON STREET,2021-04-29,Thursday,2021Q4,after,both ends
-10529,SWANSTON STREET,2021-06-21,Monday,2021Q4,after,both ends
-10529,SWANSTON STREET,2021-07-27,Tuesday,2122Q1,after,both ends
-10529,SWANSTON STREET,2021-09-01,Wednesday,2122Q1,after,both ends
-10529,SWANSTON STREET,2021-09-23,Thursday,2122Q1,after,both ends
-10529,SWANSTON STREET,2021-09-26,Sunday,2122Q1,after,both ends
-10529,SWANSTON STREET,2021-10-27,Wednesday,2122Q2,after,both ends
-10529,SWANSTON STREET,2021-10-31,Sunday,2122Q2,after,both ends
-10529,SWANSTON STREET,2021-12-24,Friday,2122Q2,after,both ends
-10838,MOORABOOL STREET,2020-11-25,Wednesday,2021Q2,before,both ends
-10838,MOORABOOL STREET,2021-01-11,Monday,2021Q3,before,both ends
-10838,MOORABOOL STREET,2021-03-11,Thursday,2021Q3,before,both ends
-10838,MOORABOOL STREET,2021-05-22,Saturday,2021Q4,before,both ends
-10838,MOORABOOL STREET,2021-07-31,Saturday,2122Q1,before,both ends
-10838,MOORABOOL STREET,2021-10-06,Wednesday,2122Q2,during construction (exclude),both ends
-10838,MOORABOOL STREET,2021-11-22,Monday,2122Q2,during construction (exclude),both ends
-10838,MOORABOOL STREET,2022-01-20,Thursday,2122Q3,after,both ends
-10838,MOORABOOL STREET,2022-04-14,Thursday,2122Q4,after,both ends
-10838,MOORABOOL STREET,2022-08-08,Monday,2223Q1,after,both ends
-10838,MOORABOOL STREET,2022-12-10,Saturday,2223Q2,after,both ends
-12016,BALLARAT ST (STH),2019-11-25,Monday,1920Q2,before,both ends
-12016,BALLARAT ST (STH),2019-12-17,Tuesday,1920Q2,before,both ends
-12016,BALLARAT ST (STH),2020-02-17,Monday,1920Q3,before,both ends
-12016,BALLARAT ST (STH),2020-04-28,Tuesday,1920Q4,before,both ends
-12016,BALLARAT ST (STH),2020-06-04,Thursday,1920Q4,before,both ends
-12016,BALLARAT ST (STH),2020-09-07,Monday,2021Q1,before,both ends
-12016,BALLARAT ST (STH),2020-11-02,Monday,2021Q2,during construction (exclude),both ends
-12016,BALLARAT ST (STH),2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-12016,BALLARAT ST (STH),2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-12016,BALLARAT ST (STH),2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-12016,BALLARAT ST (STH),2021-04-29,Thursday,2021Q4,after,both ends
-12016,BALLARAT ST (STH),2021-06-21,Monday,2021Q4,after,both ends
-12016,BALLARAT ST (STH),2021-07-27,Tuesday,2122Q1,after,both ends
-12016,BALLARAT ST (STH),2021-09-01,Wednesday,2122Q1,after,both ends
-12016,BALLARAT ST (STH),2021-10-27,Wednesday,2122Q2,after,both ends
-12016,BALLARAT ST (STH),2021-12-24,Friday,2122Q2,after,both ends
-12016,BALLARAT ST (STH),2022-02-12,Saturday,2122Q3,after,both ends
-12017,Ballarat St,2013-10-19,Saturday,1314Q2,before,both ends
-12017,Ballarat St,2014-01-09,Thursday,1314Q3,before,both ends
-12017,Ballarat St,2014-03-04,Tuesday,1314Q3,before,both ends
-12017,Ballarat St,2014-05-15,Thursday,1314Q4,before,both ends
-12017,Ballarat St,2014-08-03,Sunday,1415Q1,before,both ends
-12017,Ballarat St,2014-09-05,Friday,1415Q1,before,both ends
-12017,Ballarat St,2014-10-21,Tuesday,1415Q2,during construction (exclude),both ends
-12017,Ballarat St,2014-11-29,Saturday,1415Q2,during construction (exclude),both ends
-12017,Ballarat St,2015-02-05,Thursday,1415Q3,during construction (exclude),both ends
-12017,Ballarat St,2015-05-01,Friday,1415Q4,after,both ends
-12017,Ballarat St,2015-05-17,Sunday,1415Q4,after,both ends
-12017,Ballarat St,2015-09-13,Sunday,1516Q1,after,both ends
-12017,Ballarat St,2015-12-14,Monday,1516Q2,after,both ends
-12017,Ballarat St,2016-02-05,Friday,1516Q3,after,both ends
-12017,Ballarat St,2016-03-20,Sunday,1516Q3,after,both ends
-12018,ACLAND,2015-05-01,Friday,1415Q4,before,both ends
-12018,ACLAND,2015-05-17,Sunday,1415Q4,before,both ends
-12018,ACLAND,2015-05-26,Tuesday,1415Q4,before,both ends
-12018,ACLAND,2015-09-13,Sunday,1516Q1,before,both ends
-12018,ACLAND,2015-10-04,Sunday,1516Q2,before,both ends
-12018,ACLAND,2015-12-14,Monday,1516Q2,before,both ends
-12018,ACLAND,2015-12-15,Tuesday,1516Q2,before,both ends
-12018,ACLAND,2016-01-18,Monday,1516Q3,before,both ends
-12018,ACLAND,2016-02-05,Friday,1516Q3,before,both ends
-12018,ACLAND,2016-03-20,Sunday,1516Q3,before,End A only
-12018,ACLAND,2016-04-19,Tuesday,1516Q4,during construction (exclude),both ends
-12018,ACLAND,2016-08-28,Sunday,1617Q1,during construction (exclude),both ends
-12018,ACLAND,2016-10-08,Saturday,1617Q2,after,both ends
-12018,ACLAND,2016-11-17,Thursday,1617Q2,after,End A only
-12018,ACLAND,2016-12-22,Thursday,1617Q2,after,both ends
-12018,ACLAND,2016-12-23,Friday,1617Q2,after,both ends
-12018,ACLAND,2017-02-07,Tuesday,1617Q3,after,both ends
-12018,ACLAND,2017-02-22,Wednesday,1617Q3,after,End A only
-12018,ACLAND,2017-05-04,Thursday,1617Q4,after,both ends
-12018,ACLAND,2017-08-09,Wednesday,1718Q1,after,both ends
-12018,ACLAND,2017-09-17,Sunday,1718Q1,after,End A only
-12019,MURNONG ST,2019-11-25,Monday,1920Q2,before,both ends
-12019,MURNONG ST,2020-02-17,Monday,1920Q3,before,both ends
-12019,MURNONG ST,2020-04-28,Tuesday,1920Q4,before,both ends
-12019,MURNONG ST,2020-09-07,Monday,2021Q1,before,both ends
-12019,MURNONG ST,2020-11-08,Sunday,2021Q2,during construction (exclude),both ends
-12019,MURNONG ST,2021-01-22,Friday,2021Q3,during construction (exclude),both ends
-12019,MURNONG ST,2021-03-11,Thursday,2021Q3,during construction (exclude),both ends
-12019,MURNONG ST,2021-04-29,Thursday,2021Q4,after,both ends
-12019,MURNONG ST,2021-09-01,Wednesday,2122Q1,after,both ends
-12019,MURNONG ST,2021-10-27,Wednesday,2122Q2,after,both ends
-12019,MURNONG ST,2021-12-01,Wednesday,2122Q2,after,both ends
-12019,MURNONG ST,2021-12-24,Friday,2122Q2,after,both ends
-12019,MURNONG ST,2022-02-12,Saturday,2122Q3,after,both ends
-12021,MALOP STREET,2017-01-28,Saturday,1617Q3,before,both ends
-12021,MALOP STREET,2017-05-22,Monday,1617Q4,before,both ends
-12021,MALOP STREET,2017-09-01,Friday,1718Q1,before,both ends
-12021,MALOP STREET,2017-09-20,Wednesday,1718Q1,before,both ends
-12021,MALOP STREET,2017-10-29,Sunday,1718Q2,before,both ends
-12021,MALOP STREET,2017-12-23,Saturday,1718Q2,before,both ends
-12021,MALOP STREET,2018-02-17,Saturday,1718Q3,during construction (exclude),both ends
-12021,MALOP STREET,2018-03-22,Thursday,1718Q3,during construction (exclude),both ends
-12021,MALOP STREET,2018-05-02,Wednesday,1718Q4,during construction (exclude),both ends
-12021,MALOP STREET,2018-09-08,Saturday,1819Q1,during construction (exclude),both ends
-12021,MALOP STREET,2018-11-18,Sunday,1819Q2,after,both ends
-12021,MALOP STREET,2019-01-11,Friday,1819Q3,after,both ends
-12021,MALOP STREET,2019-02-25,Monday,1819Q3,after,both ends
-12021,MALOP STREET,2019-04-20,Saturday,1819Q4,after,both ends
-12021,MALOP STREET,2019-06-28,Friday,1819Q4,after,End A only
-12021,MALOP STREET,2019-08-30,Friday,1920Q1,after,both ends
+123,GHERINGHAP STREET,25/11/2020,Wednesday,2021Q2,before,both ends
+123,GHERINGHAP STREET,11/01/2021,Monday,2021Q3,before,both ends
+123,GHERINGHAP STREET,11/03/2021,Thursday,2021Q3,before,both ends
+123,GHERINGHAP STREET,22/05/2021,Saturday,2021Q4,before,both ends
+123,GHERINGHAP STREET,31/07/2021,Saturday,2122Q1,before,both ends
+123,GHERINGHAP STREET,6/10/2021,Wednesday,2122Q2,during construction (exclude),both ends
+123,GHERINGHAP STREET,22/11/2021,Monday,2122Q2,during construction (exclude),both ends
+123,GHERINGHAP STREET,20/01/2022,Thursday,2122Q3,after,both ends
+123,GHERINGHAP STREET,14/04/2022,Thursday,2122Q4,after,both ends
+123,GHERINGHAP STREET,8/08/2022,Monday,2223Q1,after,both ends
+123,GHERINGHAP STREET,10/12/2022,Saturday,2223Q2,after,both ends
+125,GHERINGHAP STREET,25/11/2020,Wednesday,2021Q2,before,both ends
+125,GHERINGHAP STREET,11/01/2021,Monday,2021Q3,before,both ends
+125,GHERINGHAP STREET,11/03/2021,Thursday,2021Q3,before,both ends
+125,GHERINGHAP STREET,22/05/2021,Saturday,2021Q4,before,both ends
+125,GHERINGHAP STREET,31/07/2021,Saturday,2122Q1,before,both ends
+125,GHERINGHAP STREET,6/10/2021,Wednesday,2122Q2,during construction (exclude),both ends
+125,GHERINGHAP STREET,22/11/2021,Monday,2122Q2,during construction (exclude),both ends
+125,GHERINGHAP STREET,20/01/2022,Thursday,2122Q3,after,both ends
+125,GHERINGHAP STREET,14/04/2022,Thursday,2122Q4,after,both ends
+125,GHERINGHAP STREET,8/08/2022,Monday,2223Q1,after,both ends
+125,GHERINGHAP STREET,10/12/2022,Saturday,2223Q2,after,both ends
+858,RATHDOWNE STREET,17/02/2020,Monday,1920Q3,before,both ends
+858,RATHDOWNE STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+858,RATHDOWNE STREET,4/06/2020,Thursday,1920Q4,before,both ends
+858,RATHDOWNE STREET,7/09/2020,Monday,2021Q1,before,both ends
+858,RATHDOWNE STREET,2/11/2020,Monday,2021Q2,before,both ends
+858,RATHDOWNE STREET,8/11/2020,Sunday,2021Q2,before,both ends
+858,RATHDOWNE STREET,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+858,RATHDOWNE STREET,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+858,RATHDOWNE STREET,29/04/2021,Thursday,2021Q4,during construction (exclude),both ends
+858,RATHDOWNE STREET,21/06/2021,Monday,2021Q4,during construction (exclude),both ends
+858,RATHDOWNE STREET,27/07/2021,Tuesday,2122Q1,after,both ends
+858,RATHDOWNE STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+858,RATHDOWNE STREET,23/09/2021,Thursday,2122Q1,after,both ends
+858,RATHDOWNE STREET,26/09/2021,Sunday,2122Q1,after,both ends
+858,RATHDOWNE STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+858,RATHDOWNE STREET,31/10/2021,Sunday,2122Q2,after,both ends
+858,RATHDOWNE STREET,24/12/2021,Friday,2122Q2,after,both ends
+858,RATHDOWNE STREET,12/02/2022,Saturday,2122Q3,after,both ends
+858,RATHDOWNE STREET,17/04/2022,Sunday,2122Q4,after,both ends
+858,RATHDOWNE STREET,28/06/2022,Tuesday,2122Q4,after,both ends
+1659,ABBOTSFORD STREET,31/08/2019,Saturday,1920Q1,before,both ends
+1659,ABBOTSFORD STREET,25/11/2019,Monday,1920Q2,before,End A only
+1659,ABBOTSFORD STREET,17/12/2019,Tuesday,1920Q2,before,both ends
+1659,ABBOTSFORD STREET,17/02/2020,Monday,1920Q3,before,both ends
+1659,ABBOTSFORD STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+1659,ABBOTSFORD STREET,4/06/2020,Thursday,1920Q4,before,both ends
+1659,ABBOTSFORD STREET,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+1659,ABBOTSFORD STREET,2/11/2020,Monday,2021Q2,during construction (exclude),both ends
+1659,ABBOTSFORD STREET,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+1659,ABBOTSFORD STREET,22/01/2021,Friday,2021Q3,after,both ends
+1659,ABBOTSFORD STREET,11/03/2021,Thursday,2021Q3,after,both ends
+1659,ABBOTSFORD STREET,29/04/2021,Thursday,2021Q4,after,both ends
+1659,ABBOTSFORD STREET,21/06/2021,Monday,2021Q4,after,both ends
+1659,ABBOTSFORD STREET,27/07/2021,Tuesday,2122Q1,after,both ends
+1659,ABBOTSFORD STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+1659,ABBOTSFORD STREET,23/09/2021,Thursday,2122Q1,after,both ends
+1659,ABBOTSFORD STREET,26/09/2021,Sunday,2122Q1,after,both ends
+1659,ABBOTSFORD STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+1659,ABBOTSFORD STREET,31/10/2021,Sunday,2122Q2,after,both ends
+1659,ABBOTSFORD STREET,24/12/2021,Friday,2122Q2,after,both ends
+1660,ABBOTSFORD STREET,31/08/2019,Saturday,1920Q1,before,both ends
+1660,ABBOTSFORD STREET,17/12/2019,Tuesday,1920Q2,before,both ends
+1660,ABBOTSFORD STREET,17/02/2020,Monday,1920Q3,before,both ends
+1660,ABBOTSFORD STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+1660,ABBOTSFORD STREET,4/06/2020,Thursday,1920Q4,before,both ends
+1660,ABBOTSFORD STREET,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+1660,ABBOTSFORD STREET,2/11/2020,Monday,2021Q2,during construction (exclude),both ends
+1660,ABBOTSFORD STREET,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+1660,ABBOTSFORD STREET,22/01/2021,Friday,2021Q3,after,both ends
+1660,ABBOTSFORD STREET,11/03/2021,Thursday,2021Q3,after,both ends
+1660,ABBOTSFORD STREET,29/04/2021,Thursday,2021Q4,after,both ends
+1660,ABBOTSFORD STREET,21/06/2021,Monday,2021Q4,after,both ends
+1660,ABBOTSFORD STREET,27/07/2021,Tuesday,2122Q1,after,both ends
+1660,ABBOTSFORD STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+1660,ABBOTSFORD STREET,23/09/2021,Thursday,2122Q1,after,both ends
+1660,ABBOTSFORD STREET,26/09/2021,Sunday,2122Q1,after,both ends
+1660,ABBOTSFORD STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+1660,ABBOTSFORD STREET,31/10/2021,Sunday,2122Q2,after,both ends
+1660,ABBOTSFORD STREET,24/12/2021,Friday,2122Q2,after,both ends
+1661,ABBOTSFORD STREET,31/08/2019,Saturday,1920Q1,before,both ends
+1661,ABBOTSFORD STREET,17/12/2019,Tuesday,1920Q2,before,both ends
+1661,ABBOTSFORD STREET,17/02/2020,Monday,1920Q3,before,both ends
+1661,ABBOTSFORD STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+1661,ABBOTSFORD STREET,4/06/2020,Thursday,1920Q4,before,both ends
+1661,ABBOTSFORD STREET,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+1661,ABBOTSFORD STREET,2/11/2020,Monday,2021Q2,during construction (exclude),both ends
+1661,ABBOTSFORD STREET,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+1661,ABBOTSFORD STREET,22/01/2021,Friday,2021Q3,after,both ends
+1661,ABBOTSFORD STREET,11/03/2021,Thursday,2021Q3,after,both ends
+1661,ABBOTSFORD STREET,29/04/2021,Thursday,2021Q4,after,both ends
+1661,ABBOTSFORD STREET,21/06/2021,Monday,2021Q4,after,both ends
+1661,ABBOTSFORD STREET,27/07/2021,Tuesday,2122Q1,after,both ends
+1661,ABBOTSFORD STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+1661,ABBOTSFORD STREET,23/09/2021,Thursday,2122Q1,after,both ends
+1661,ABBOTSFORD STREET,26/09/2021,Sunday,2122Q1,after,both ends
+1661,ABBOTSFORD STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+1661,ABBOTSFORD STREET,31/10/2021,Sunday,2122Q2,after,both ends
+1661,ABBOTSFORD STREET,24/12/2021,Friday,2122Q2,after,both ends
+1662,ABBOTSFORD STREET,12/04/2012,Thursday,1112Q4,before,both ends
+1662,ABBOTSFORD STREET,8/07/2012,Sunday,1213Q1,before,both ends
+1662,ABBOTSFORD STREET,2/10/2012,Tuesday,1213Q2,before,both ends
+1662,ABBOTSFORD STREET,23/10/2012,Tuesday,1213Q2,before,both ends
+1662,ABBOTSFORD STREET,26/12/2012,Wednesday,1213Q2,before,both ends
+1662,ABBOTSFORD STREET,4/01/2013,Friday,1213Q3,before,both ends
+1662,ABBOTSFORD STREET,14/02/2013,Thursday,1213Q3,before,both ends
+1662,ABBOTSFORD STREET,6/03/2013,Wednesday,1213Q3,before,both ends
+1662,ABBOTSFORD STREET,5/04/2013,Friday,1213Q4,during construction (exclude),both ends
+1662,ABBOTSFORD STREET,8/05/2013,Wednesday,1213Q4,during construction (exclude),both ends
+1662,ABBOTSFORD STREET,21/06/2013,Friday,1213Q4,during construction (exclude),both ends
+1662,ABBOTSFORD STREET,4/09/2013,Wednesday,1314Q1,during construction (exclude),both ends
+1662,ABBOTSFORD STREET,19/10/2013,Saturday,1314Q2,after,both ends
+1662,ABBOTSFORD STREET,9/01/2014,Thursday,1314Q3,after,both ends
+1662,ABBOTSFORD STREET,4/03/2014,Tuesday,1314Q3,after,both ends
+1662,ABBOTSFORD STREET,15/05/2014,Thursday,1314Q4,after,both ends
+1662,ABBOTSFORD STREET,3/08/2014,Sunday,1415Q1,after,both ends
+1662,ABBOTSFORD STREET,5/09/2014,Friday,1415Q1,after,both ends
+1663,ABBOTSFORD STREET,12/04/2012,Thursday,1112Q4,before,both ends
+1663,ABBOTSFORD STREET,8/07/2012,Sunday,1213Q1,before,both ends
+1663,ABBOTSFORD STREET,2/10/2012,Tuesday,1213Q2,before,both ends
+1663,ABBOTSFORD STREET,23/10/2012,Tuesday,1213Q2,before,both ends
+1663,ABBOTSFORD STREET,26/12/2012,Wednesday,1213Q2,before,both ends
+1663,ABBOTSFORD STREET,4/01/2013,Friday,1213Q3,before,both ends
+1663,ABBOTSFORD STREET,14/02/2013,Thursday,1213Q3,before,both ends
+1663,ABBOTSFORD STREET,6/03/2013,Wednesday,1213Q3,before,both ends
+1663,ABBOTSFORD STREET,5/04/2013,Friday,1213Q4,during construction (exclude),both ends
+1663,ABBOTSFORD STREET,8/05/2013,Wednesday,1213Q4,during construction (exclude),both ends
+1663,ABBOTSFORD STREET,21/06/2013,Friday,1213Q4,during construction (exclude),both ends
+1663,ABBOTSFORD STREET,4/09/2013,Wednesday,1314Q1,during construction (exclude),both ends
+1663,ABBOTSFORD STREET,19/10/2013,Saturday,1314Q2,after,both ends
+1663,ABBOTSFORD STREET,9/01/2014,Thursday,1314Q3,after,both ends
+1663,ABBOTSFORD STREET,4/03/2014,Tuesday,1314Q3,after,both ends
+1663,ABBOTSFORD STREET,15/05/2014,Thursday,1314Q4,after,both ends
+1663,ABBOTSFORD STREET,3/08/2014,Sunday,1415Q1,after,both ends
+1663,ABBOTSFORD STREET,5/09/2014,Friday,1415Q1,after,both ends
+1753,CECIL STREET,12/10/2009,Monday,0910Q2,before,both ends
+1753,CECIL STREET,6/11/2009,Friday,0910Q2,before,both ends
+1753,CECIL STREET,13/11/2009,Friday,0910Q2,before,both ends
+1753,CECIL STREET,7/01/2010,Thursday,0910Q3,before,both ends
+1753,CECIL STREET,20/02/2010,Saturday,0910Q3,before,both ends
+1753,CECIL STREET,16/04/2010,Friday,0910Q4,before,both ends
+1753,CECIL STREET,21/06/2010,Monday,0910Q4,before,both ends
+1753,CECIL STREET,11/07/2010,Sunday,1011Q1,before,both ends
+1753,CECIL STREET,1/10/2010,Friday,1011Q2,during construction (exclude),both ends
+1753,CECIL STREET,20/10/2010,Wednesday,1011Q2,during construction (exclude),both ends
+1753,CECIL STREET,20/11/2010,Saturday,1011Q2,during construction (exclude),both ends
+1753,CECIL STREET,29/01/2011,Saturday,1011Q3,during construction (exclude),both ends
+1753,CECIL STREET,6/04/2011,Wednesday,1011Q4,during construction (exclude),both ends
+1753,CECIL STREET,28/06/2011,Tuesday,1011Q4,during construction (exclude),both ends
+1753,CECIL STREET,20/08/2011,Saturday,1112Q1,after,both ends
+1753,CECIL STREET,18/10/2011,Tuesday,1112Q2,after,both ends
+1753,CECIL STREET,17/11/2011,Thursday,1112Q2,after,both ends
+1753,CECIL STREET,5/12/2011,Monday,1112Q2,after,both ends
+1753,CECIL STREET,17/01/2012,Tuesday,1112Q3,after,both ends
+1753,CECIL STREET,15/02/2012,Wednesday,1112Q3,after,both ends
+1753,CECIL STREET,12/03/2012,Monday,1112Q3,after,both ends
+1753,CECIL STREET,12/04/2012,Thursday,1112Q4,after,both ends
+2269,ACLAND STREET,1/05/2015,Friday,1415Q4,before,both ends
+2269,ACLAND STREET,17/05/2015,Sunday,1415Q4,before,both ends
+2269,ACLAND STREET,26/05/2015,Tuesday,1415Q4,before,both ends
+2269,ACLAND STREET,13/09/2015,Sunday,1516Q1,before,both ends
+2269,ACLAND STREET,4/10/2015,Sunday,1516Q2,before,both ends
+2269,ACLAND STREET,14/12/2015,Monday,1516Q2,before,both ends
+2269,ACLAND STREET,15/12/2015,Tuesday,1516Q2,before,both ends
+2269,ACLAND STREET,18/01/2016,Monday,1516Q3,before,both ends
+2269,ACLAND STREET,5/02/2016,Friday,1516Q3,before,both ends
+2269,ACLAND STREET,20/03/2016,Sunday,1516Q3,before,both ends
+2269,ACLAND STREET,19/04/2016,Tuesday,1516Q4,during construction (exclude),both ends
+2269,ACLAND STREET,28/08/2016,Sunday,1617Q1,during construction (exclude),both ends
+2269,ACLAND STREET,8/10/2016,Saturday,1617Q2,after,both ends
+2269,ACLAND STREET,22/12/2016,Thursday,1617Q2,after,both ends
+2269,ACLAND STREET,23/12/2016,Friday,1617Q2,after,both ends
+2269,ACLAND STREET,7/02/2017,Tuesday,1617Q3,after,both ends
+2269,ACLAND STREET,4/05/2017,Thursday,1617Q4,after,both ends
+2269,ACLAND STREET,9/08/2017,Wednesday,1718Q1,after,both ends
+3124,KAVANAGH STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+3124,KAVANAGH STREET,4/06/2020,Thursday,1920Q4,before,both ends
+3124,KAVANAGH STREET,7/09/2020,Monday,2021Q1,before,both ends
+3124,KAVANAGH STREET,2/11/2020,Monday,2021Q2,before,both ends
+3124,KAVANAGH STREET,8/11/2020,Sunday,2021Q2,before,both ends
+3124,KAVANAGH STREET,22/01/2021,Friday,2021Q3,before,both ends
+3124,KAVANAGH STREET,11/03/2021,Thursday,2021Q3,before,both ends
+3124,KAVANAGH STREET,29/04/2021,Thursday,2021Q4,during construction (exclude),both ends
+3124,KAVANAGH STREET,21/06/2021,Monday,2021Q4,during construction (exclude),both ends
+3124,KAVANAGH STREET,27/07/2021,Tuesday,2122Q1,after,both ends
+3124,KAVANAGH STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+3124,KAVANAGH STREET,23/09/2021,Thursday,2122Q1,after,both ends
+3124,KAVANAGH STREET,26/09/2021,Sunday,2122Q1,after,both ends
+3124,KAVANAGH STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+3124,KAVANAGH STREET,31/10/2021,Sunday,2122Q2,after,both ends
+3124,KAVANAGH STREET,24/12/2021,Friday,2122Q2,after,both ends
+3124,KAVANAGH STREET,12/02/2022,Saturday,2122Q3,after,both ends
+3124,KAVANAGH STREET,17/04/2022,Sunday,2122Q4,after,both ends
+3124,KAVANAGH STREET,28/06/2022,Tuesday,2122Q4,after,both ends
+3536,PIER STREET,31/08/2019,Saturday,1920Q1,before,both ends
+3536,PIER STREET,25/11/2019,Monday,1920Q2,before,both ends
+3536,PIER STREET,17/12/2019,Tuesday,1920Q2,before,both ends
+3536,PIER STREET,17/02/2020,Monday,1920Q3,before,both ends
+3536,PIER STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+3536,PIER STREET,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+3536,PIER STREET,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+3536,PIER STREET,22/01/2021,Friday,2021Q3,after,both ends
+3536,PIER STREET,11/03/2021,Thursday,2021Q3,after,both ends
+3536,PIER STREET,29/04/2021,Thursday,2021Q4,after,both ends
+3536,PIER STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+3536,PIER STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+3536,PIER STREET,1/12/2021,Wednesday,2122Q2,after,both ends
+3536,PIER STREET,24/12/2021,Friday,2122Q2,after,both ends
+4751,FRENCH STREET,2/11/2020,Monday,2021Q2,before,both ends
+4751,FRENCH STREET,8/11/2020,Sunday,2021Q2,before,both ends
+4751,FRENCH STREET,22/01/2021,Friday,2021Q3,before,both ends
+4751,FRENCH STREET,11/03/2021,Thursday,2021Q3,before,both ends
+4751,FRENCH STREET,29/04/2021,Thursday,2021Q4,before,both ends
+4751,FRENCH STREET,21/06/2021,Monday,2021Q4,before,both ends
+4751,FRENCH STREET,27/07/2021,Tuesday,2122Q1,before,both ends
+4751,FRENCH STREET,1/09/2021,Wednesday,2122Q1,before,both ends
+4751,FRENCH STREET,26/09/2021,Sunday,2122Q1,before,both ends
+4751,FRENCH STREET,27/10/2021,Wednesday,2122Q2,during construction (exclude),both ends
+4751,FRENCH STREET,24/12/2021,Friday,2122Q2,during construction (exclude),both ends
+4751,FRENCH STREET,12/02/2022,Saturday,2122Q3,after,both ends
+4751,FRENCH STREET,17/04/2022,Sunday,2122Q4,after,both ends
+4751,FRENCH STREET,28/06/2022,Tuesday,2122Q4,after,both ends
+4751,FRENCH STREET,21/07/2022,Thursday,2223Q1,after,both ends
+4751,FRENCH STREET,14/09/2022,Wednesday,2223Q1,after,both ends
+4751,FRENCH STREET,3/12/2022,Saturday,2223Q2,after,both ends
+4751,FRENCH STREET,1/01/2023,Sunday,2223Q3,after,both ends
+4752,FRENCH STREET,2/11/2020,Monday,2021Q2,before,both ends
+4752,FRENCH STREET,8/11/2020,Sunday,2021Q2,before,both ends
+4752,FRENCH STREET,22/01/2021,Friday,2021Q3,before,both ends
+4752,FRENCH STREET,11/03/2021,Thursday,2021Q3,before,both ends
+4752,FRENCH STREET,29/04/2021,Thursday,2021Q4,before,both ends
+4752,FRENCH STREET,21/06/2021,Monday,2021Q4,before,both ends
+4752,FRENCH STREET,27/07/2021,Tuesday,2122Q1,before,both ends
+4752,FRENCH STREET,1/09/2021,Wednesday,2122Q1,before,both ends
+4752,FRENCH STREET,26/09/2021,Sunday,2122Q1,before,both ends
+4752,FRENCH STREET,27/10/2021,Wednesday,2122Q2,during construction (exclude),both ends
+4752,FRENCH STREET,24/12/2021,Friday,2122Q2,during construction (exclude),both ends
+4752,FRENCH STREET,12/02/2022,Saturday,2122Q3,after,both ends
+4752,FRENCH STREET,17/04/2022,Sunday,2122Q4,after,both ends
+4752,FRENCH STREET,28/06/2022,Tuesday,2122Q4,after,both ends
+4752,FRENCH STREET,21/07/2022,Thursday,2223Q1,after,both ends
+4752,FRENCH STREET,14/09/2022,Wednesday,2223Q1,after,both ends
+4752,FRENCH STREET,3/12/2022,Saturday,2223Q2,after,both ends
+4752,FRENCH STREET,1/01/2023,Sunday,2223Q3,after,both ends
+5082,WALKER STREET,6/11/2009,Friday,0910Q2,before,both ends
+5082,WALKER STREET,13/11/2009,Friday,0910Q2,before,both ends
+5082,WALKER STREET,7/01/2010,Thursday,0910Q3,before,both ends
+5082,WALKER STREET,20/02/2010,Saturday,0910Q3,before,both ends
+5082,WALKER STREET,16/04/2010,Friday,0910Q4,before,both ends
+5082,WALKER STREET,22/06/2010,Tuesday,0910Q4,before,both ends
+5082,WALKER STREET,11/07/2010,Sunday,1011Q1,before,both ends
+5082,WALKER STREET,3/10/2010,Sunday,1011Q2,during construction (exclude),both ends
+5082,WALKER STREET,20/10/2010,Wednesday,1011Q2,during construction (exclude),both ends
+5082,WALKER STREET,20/11/2010,Saturday,1011Q2,during construction (exclude),both ends
+5082,WALKER STREET,24/12/2010,Friday,1011Q2,during construction (exclude),both ends
+5082,WALKER STREET,20/01/2011,Thursday,1011Q3,during construction (exclude),both ends
+5082,WALKER STREET,6/04/2011,Wednesday,1011Q4,during construction (exclude),both ends
+5082,WALKER STREET,29/04/2011,Friday,1011Q4,during construction (exclude),both ends
+5082,WALKER STREET,28/06/2011,Tuesday,1011Q4,during construction (exclude),both ends
+5082,WALKER STREET,20/08/2011,Saturday,1112Q1,during construction (exclude),both ends
+5082,WALKER STREET,18/10/2011,Tuesday,1112Q2,during construction (exclude),both ends
+5082,WALKER STREET,17/11/2011,Thursday,1112Q2,during construction (exclude),both ends
+5082,WALKER STREET,5/12/2011,Monday,1112Q2,during construction (exclude),both ends
+5082,WALKER STREET,16/01/2012,Monday,1112Q3,after,both ends
+5082,WALKER STREET,1/02/2012,Wednesday,1112Q3,after,both ends
+5082,WALKER STREET,12/03/2012,Monday,1112Q3,after,both ends
+5082,WALKER STREET,20/03/2012,Tuesday,1112Q3,after,both ends
+5082,WALKER STREET,12/04/2012,Thursday,1112Q4,after,both ends
+5082,WALKER STREET,4/10/2012,Thursday,1213Q2,after,both ends
+5082,WALKER STREET,24/10/2012,Wednesday,1213Q2,after,both ends
+5082,WALKER STREET,19/11/2012,Monday,1213Q2,after,both ends
+5082,WALKER STREET,23/12/2012,Sunday,1213Q2,after,both ends
+5083,WALKER STREET,20/01/2013,Sunday,1213Q3,before,both ends
+5083,WALKER STREET,13/02/2013,Wednesday,1213Q3,before,both ends
+5083,WALKER STREET,5/03/2013,Tuesday,1213Q3,before,both ends
+5083,WALKER STREET,4/04/2013,Thursday,1213Q4,before,both ends
+5083,WALKER STREET,9/05/2013,Thursday,1213Q4,before,both ends
+5083,WALKER STREET,20/06/2013,Thursday,1213Q4,before,both ends
+5083,WALKER STREET,10/07/2013,Wednesday,1314Q1,before,both ends
+5083,WALKER STREET,30/08/2013,Friday,1314Q1,before,both ends
+5083,WALKER STREET,18/10/2013,Friday,1314Q2,before,both ends
+5083,WALKER STREET,8/01/2014,Wednesday,1314Q3,during construction (exclude),both ends
+5083,WALKER STREET,3/03/2014,Monday,1314Q3,during construction (exclude),both ends
+5083,WALKER STREET,16/04/2014,Wednesday,1314Q4,during construction (exclude),both ends
+5083,WALKER STREET,14/05/2014,Wednesday,1314Q4,during construction (exclude),both ends
+5083,WALKER STREET,4/08/2014,Monday,1415Q1,after,both ends
+5083,WALKER STREET,22/09/2014,Monday,1415Q1,after,both ends
+5083,WALKER STREET,3/11/2014,Monday,1415Q2,after,both ends
+5083,WALKER STREET,6/02/2015,Friday,1415Q3,after,both ends
+5083,WALKER STREET,26/05/2015,Tuesday,1415Q4,after,both ends
+5629,SOUTHBANK BOULEVARD,22/01/2021,Friday,2021Q3,before,both ends
+5629,SOUTHBANK BOULEVARD,11/03/2021,Thursday,2021Q3,before,both ends
+5629,SOUTHBANK BOULEVARD,29/04/2021,Thursday,2021Q4,before,both ends
+5629,SOUTHBANK BOULEVARD,21/06/2021,Monday,2021Q4,before,both ends
+5629,SOUTHBANK BOULEVARD,27/07/2021,Tuesday,2122Q1,before,both ends
+5629,SOUTHBANK BOULEVARD,1/09/2021,Wednesday,2122Q1,before,both ends
+5629,SOUTHBANK BOULEVARD,23/09/2021,Thursday,2122Q1,before,both ends
+5629,SOUTHBANK BOULEVARD,26/09/2021,Sunday,2122Q1,before,both ends
+5629,SOUTHBANK BOULEVARD,27/10/2021,Wednesday,2122Q2,before,both ends
+5629,SOUTHBANK BOULEVARD,31/10/2021,Sunday,2122Q2,before,both ends
+5629,SOUTHBANK BOULEVARD,24/12/2021,Friday,2122Q2,before,both ends
+5629,SOUTHBANK BOULEVARD,12/02/2022,Saturday,2122Q3,during construction (exclude),both ends
+5629,SOUTHBANK BOULEVARD,17/04/2022,Sunday,2122Q4,during construction (exclude),both ends
+5629,SOUTHBANK BOULEVARD,28/06/2022,Tuesday,2122Q4,during construction (exclude),both ends
+5629,SOUTHBANK BOULEVARD,21/07/2022,Thursday,2223Q1,after,both ends
+5629,SOUTHBANK BOULEVARD,14/09/2022,Wednesday,2223Q1,after,both ends
+5629,SOUTHBANK BOULEVARD,3/12/2022,Saturday,2223Q2,after,both ends
+5629,SOUTHBANK BOULEVARD,1/01/2023,Sunday,2223Q3,after,both ends
+5629,SOUTHBANK BOULEVARD,24/04/2023,Monday,2223Q4,after,both ends
+5637,SOUTHBANK BOULEVARD,4/05/2017,Thursday,1617Q4,before,both ends
+5637,SOUTHBANK BOULEVARD,9/08/2017,Wednesday,1718Q1,before,both ends
+5637,SOUTHBANK BOULEVARD,10/10/2017,Tuesday,1718Q2,before,both ends
+5637,SOUTHBANK BOULEVARD,23/11/2017,Thursday,1718Q2,before,both ends
+5637,SOUTHBANK BOULEVARD,16/01/2018,Tuesday,1718Q3,before,both ends
+5637,SOUTHBANK BOULEVARD,17/02/2018,Saturday,1718Q3,before,both ends
+5637,SOUTHBANK BOULEVARD,4/04/2018,Wednesday,1718Q4,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,23/08/2018,Thursday,1819Q1,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,19/10/2018,Friday,1819Q2,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,11/01/2019,Friday,1819Q3,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,23/02/2019,Saturday,1819Q3,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,7/04/2019,Sunday,1819Q4,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,31/08/2019,Saturday,1920Q1,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,17/12/2019,Tuesday,1920Q2,during construction (exclude),both ends
+5637,SOUTHBANK BOULEVARD,17/02/2020,Monday,1920Q3,after,both ends
+5637,SOUTHBANK BOULEVARD,28/04/2020,Tuesday,1920Q4,after,both ends
+5637,SOUTHBANK BOULEVARD,4/06/2020,Thursday,1920Q4,after,both ends
+5637,SOUTHBANK BOULEVARD,7/09/2020,Monday,2021Q1,after,both ends
+5637,SOUTHBANK BOULEVARD,2/11/2020,Monday,2021Q2,after,both ends
+5637,SOUTHBANK BOULEVARD,8/11/2020,Sunday,2021Q2,after,both ends
+5638,SOUTHBANK BOULEVARD,10/10/2017,Tuesday,1718Q2,before,both ends
+5638,SOUTHBANK BOULEVARD,23/11/2017,Thursday,1718Q2,before,both ends
+5638,SOUTHBANK BOULEVARD,16/01/2018,Tuesday,1718Q3,before,both ends
+5638,SOUTHBANK BOULEVARD,17/02/2018,Saturday,1718Q3,before,both ends
+5638,SOUTHBANK BOULEVARD,4/04/2018,Wednesday,1718Q4,before,both ends
+5638,SOUTHBANK BOULEVARD,23/08/2018,Thursday,1819Q1,before,both ends
+5638,SOUTHBANK BOULEVARD,19/10/2018,Friday,1819Q2,during construction (exclude),both ends
+5638,SOUTHBANK BOULEVARD,11/01/2019,Friday,1819Q3,during construction (exclude),both ends
+5638,SOUTHBANK BOULEVARD,23/02/2019,Saturday,1819Q3,during construction (exclude),both ends
+5638,SOUTHBANK BOULEVARD,7/04/2019,Sunday,1819Q4,after,both ends
+5638,SOUTHBANK BOULEVARD,31/08/2019,Saturday,1920Q1,after,both ends
+5638,SOUTHBANK BOULEVARD,17/12/2019,Tuesday,1920Q2,after,both ends
+5638,SOUTHBANK BOULEVARD,17/02/2020,Monday,1920Q3,after,both ends
+5639,SOUTHBANK BOULEVARD,4/04/2018,Wednesday,1718Q4,before,both ends
+5639,SOUTHBANK BOULEVARD,23/08/2018,Thursday,1819Q1,before,both ends
+5639,SOUTHBANK BOULEVARD,19/10/2018,Friday,1819Q2,before,both ends
+5639,SOUTHBANK BOULEVARD,11/01/2019,Friday,1819Q3,before,both ends
+5639,SOUTHBANK BOULEVARD,23/02/2019,Saturday,1819Q3,before,both ends
+5639,SOUTHBANK BOULEVARD,7/04/2019,Sunday,1819Q4,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,31/08/2019,Saturday,1920Q1,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,17/12/2019,Tuesday,1920Q2,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,17/02/2020,Monday,1920Q3,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,28/04/2020,Tuesday,1920Q4,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,4/06/2020,Thursday,1920Q4,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,2/11/2020,Monday,2021Q2,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+5639,SOUTHBANK BOULEVARD,29/04/2021,Thursday,2021Q4,after,both ends
+5639,SOUTHBANK BOULEVARD,21/06/2021,Monday,2021Q4,after,both ends
+5639,SOUTHBANK BOULEVARD,27/07/2021,Tuesday,2122Q1,after,both ends
+5639,SOUTHBANK BOULEVARD,1/09/2021,Wednesday,2122Q1,after,both ends
+5639,SOUTHBANK BOULEVARD,23/09/2021,Thursday,2122Q1,after,both ends
+5639,SOUTHBANK BOULEVARD,26/09/2021,Sunday,2122Q1,after,both ends
+5639,SOUTHBANK BOULEVARD,27/10/2021,Wednesday,2122Q2,after,both ends
+5639,SOUTHBANK BOULEVARD,31/10/2021,Sunday,2122Q2,after,both ends
+5639,SOUTHBANK BOULEVARD,24/12/2021,Friday,2122Q2,after,both ends
+5639,SOUTHBANK BOULEVARD,12/02/2022,Saturday,2122Q3,after,both ends
+5882,WELLINGTON STREET,9/01/2014,Thursday,1314Q3,before,both ends
+5882,WELLINGTON STREET,4/03/2014,Tuesday,1314Q3,before,both ends
+5882,WELLINGTON STREET,15/05/2014,Thursday,1314Q4,before,both ends
+5882,WELLINGTON STREET,3/08/2014,Sunday,1415Q1,before,both ends
+5882,WELLINGTON STREET,5/09/2014,Friday,1415Q1,before,both ends
+5882,WELLINGTON STREET,21/10/2014,Tuesday,1415Q2,before,both ends
+5882,WELLINGTON STREET,29/11/2014,Saturday,1415Q2,before,both ends
+5882,WELLINGTON STREET,5/02/2015,Thursday,1415Q3,during construction (exclude),both ends
+5882,WELLINGTON STREET,1/05/2015,Friday,1415Q4,during construction (exclude),both ends
+5882,WELLINGTON STREET,13/09/2015,Sunday,1516Q1,during construction (exclude),both ends
+5882,WELLINGTON STREET,14/12/2015,Monday,1516Q2,after,both ends
+5882,WELLINGTON STREET,5/02/2016,Friday,1516Q3,after,both ends
+5882,WELLINGTON STREET,20/03/2016,Sunday,1516Q3,after,both ends
+5883,WELLINGTON STREET,4/04/2018,Wednesday,1718Q4,before,both ends
+5883,WELLINGTON STREET,23/08/2018,Thursday,1819Q1,before,both ends
+5883,WELLINGTON STREET,19/10/2018,Friday,1819Q2,before,both ends
+5883,WELLINGTON STREET,11/01/2019,Friday,1819Q3,before,both ends
+5883,WELLINGTON STREET,23/02/2019,Saturday,1819Q3,before,both ends
+5883,WELLINGTON STREET,7/04/2019,Sunday,1819Q4,during construction (exclude),both ends
+5883,WELLINGTON STREET,31/08/2019,Saturday,1920Q1,during construction (exclude),both ends
+5883,WELLINGTON STREET,17/12/2019,Tuesday,1920Q2,after,both ends
+5883,WELLINGTON STREET,17/02/2020,Monday,1920Q3,after,both ends
+5883,WELLINGTON STREET,28/04/2020,Tuesday,1920Q4,after,both ends
+5883,WELLINGTON STREET,4/06/2020,Thursday,1920Q4,after,both ends
+5883,WELLINGTON STREET,7/09/2020,Monday,2021Q1,after,both ends
+6289,MORAY STREET,4/05/2017,Thursday,1617Q4,before,both ends
+6289,MORAY STREET,9/08/2017,Wednesday,1718Q1,before,both ends
+6289,MORAY STREET,10/10/2017,Tuesday,1718Q2,before,both ends
+6289,MORAY STREET,23/11/2017,Thursday,1718Q2,before,both ends
+6289,MORAY STREET,16/01/2018,Tuesday,1718Q3,before,both ends
+6289,MORAY STREET,17/02/2018,Saturday,1718Q3,before,both ends
+6289,MORAY STREET,4/04/2018,Wednesday,1718Q4,during construction (exclude),both ends
+6289,MORAY STREET,23/08/2018,Thursday,1819Q1,during construction (exclude),both ends
+6289,MORAY STREET,19/10/2018,Friday,1819Q2,during construction (exclude),both ends
+6289,MORAY STREET,11/01/2019,Friday,1819Q3,after,both ends
+6289,MORAY STREET,23/02/2019,Saturday,1819Q3,after,both ends
+6289,MORAY STREET,7/04/2019,Sunday,1819Q4,after,both ends
+6289,MORAY STREET,31/08/2019,Saturday,1920Q1,after,both ends
+6289,MORAY STREET,17/12/2019,Tuesday,1920Q2,after,both ends
+6290,MORAY STREET,4/05/2017,Thursday,1617Q4,before,both ends
+6290,MORAY STREET,9/08/2017,Wednesday,1718Q1,before,both ends
+6290,MORAY STREET,10/10/2017,Tuesday,1718Q2,before,both ends
+6290,MORAY STREET,23/11/2017,Thursday,1718Q2,before,both ends
+6290,MORAY STREET,16/01/2018,Tuesday,1718Q3,before,both ends
+6290,MORAY STREET,17/02/2018,Saturday,1718Q3,before,both ends
+6290,MORAY STREET,4/04/2018,Wednesday,1718Q4,during construction (exclude),both ends
+6290,MORAY STREET,23/08/2018,Thursday,1819Q1,during construction (exclude),both ends
+6290,MORAY STREET,19/10/2018,Friday,1819Q2,during construction (exclude),both ends
+6290,MORAY STREET,11/01/2019,Friday,1819Q3,after,both ends
+6290,MORAY STREET,23/02/2019,Saturday,1819Q3,after,both ends
+6290,MORAY STREET,7/04/2019,Sunday,1819Q4,after,both ends
+6290,MORAY STREET,31/08/2019,Saturday,1920Q1,after,both ends
+6290,MORAY STREET,17/12/2019,Tuesday,1920Q2,after,both ends
+6624,ST KILDA ROAD,27/07/2021,Tuesday,2122Q1,before,both ends
+6624,ST KILDA ROAD,1/09/2021,Wednesday,2122Q1,before,both ends
+6624,ST KILDA ROAD,23/09/2021,Thursday,2122Q1,before,both ends
+6624,ST KILDA ROAD,26/09/2021,Sunday,2122Q1,before,both ends
+6624,ST KILDA ROAD,27/10/2021,Wednesday,2122Q2,before,both ends
+6624,ST KILDA ROAD,31/10/2021,Sunday,2122Q2,before,both ends
+6624,ST KILDA ROAD,24/12/2021,Friday,2122Q2,before,both ends
+6624,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6624,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6624,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6624,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,during construction (exclude),both ends
+6624,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,during construction (exclude),both ends
+6624,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,during construction (exclude),both ends
+6624,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,after,both ends
+6624,ST KILDA ROAD,24/04/2023,Monday,2223Q4,after,both ends
+6624,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6624,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6624,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6624,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6625,ST KILDA ROAD,27/07/2021,Tuesday,2122Q1,before,both ends
+6625,ST KILDA ROAD,1/09/2021,Wednesday,2122Q1,before,both ends
+6625,ST KILDA ROAD,23/09/2021,Thursday,2122Q1,before,both ends
+6625,ST KILDA ROAD,26/09/2021,Sunday,2122Q1,before,both ends
+6625,ST KILDA ROAD,27/10/2021,Wednesday,2122Q2,before,both ends
+6625,ST KILDA ROAD,31/10/2021,Sunday,2122Q2,before,both ends
+6625,ST KILDA ROAD,24/12/2021,Friday,2122Q2,before,both ends
+6625,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6625,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6625,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6625,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,during construction (exclude),both ends
+6625,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,during construction (exclude),both ends
+6625,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,during construction (exclude),both ends
+6625,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,after,both ends
+6625,ST KILDA ROAD,24/04/2023,Monday,2223Q4,after,both ends
+6625,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6625,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6625,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6625,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6626,ST KILDA ROAD,27/07/2021,Tuesday,2122Q1,before,both ends
+6626,ST KILDA ROAD,1/09/2021,Wednesday,2122Q1,before,both ends
+6626,ST KILDA ROAD,23/09/2021,Thursday,2122Q1,before,both ends
+6626,ST KILDA ROAD,26/09/2021,Sunday,2122Q1,before,both ends
+6626,ST KILDA ROAD,27/10/2021,Wednesday,2122Q2,before,both ends
+6626,ST KILDA ROAD,31/10/2021,Sunday,2122Q2,before,both ends
+6626,ST KILDA ROAD,24/12/2021,Friday,2122Q2,before,both ends
+6626,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6626,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6626,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6626,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,during construction (exclude),both ends
+6626,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,during construction (exclude),both ends
+6626,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,during construction (exclude),both ends
+6626,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,during construction (exclude),both ends
+6626,ST KILDA ROAD,24/04/2023,Monday,2223Q4,during construction (exclude),both ends
+6626,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,during construction (exclude),both ends
+6626,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,during construction (exclude),both ends
+6626,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,during construction (exclude),both ends
+6626,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6626,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6626,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6626,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6626,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+6626,ST KILDA ROAD,23/07/2024,Tuesday,2425Q1,after,both ends
+6626,ST KILDA ROAD,4/08/2024,Sunday,2425Q1,after,both ends
+6630,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,before,both ends
+6630,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,before,both ends
+6630,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,before,both ends
+6630,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,before,both ends
+6630,ST KILDA ROAD,24/04/2023,Monday,2223Q4,before,both ends
+6630,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,during construction (exclude),both ends
+6630,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,during construction (exclude),both ends
+6630,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,during construction (exclude),both ends
+6630,ST KILDA ROAD,10/11/2023,Friday,2324Q2,during construction (exclude),both ends
+6630,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6630,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6630,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6630,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+6630,ST KILDA ROAD,23/07/2024,Tuesday,2425Q1,after,both ends
+6630,ST KILDA ROAD,4/08/2024,Sunday,2425Q1,after,both ends
+6630,ST KILDA ROAD,9/10/2024,Wednesday,2425Q2,after,both ends
+6630,ST KILDA ROAD,1/12/2024,Sunday,2425Q2,after,both ends
+6631,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6631,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6631,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6631,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,before,both ends
+6631,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,before,both ends
+6631,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,before,both ends
+6631,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,during construction (exclude),both ends
+6631,ST KILDA ROAD,24/04/2023,Monday,2223Q4,during construction (exclude),both ends
+6631,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6631,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6631,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6631,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6631,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6631,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6631,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6631,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+6632,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6632,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6632,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6632,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,before,both ends
+6632,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,before,both ends
+6632,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,before,both ends
+6632,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,during construction (exclude),both ends
+6632,ST KILDA ROAD,24/04/2023,Monday,2223Q4,during construction (exclude),both ends
+6632,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6632,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6632,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6632,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6632,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6632,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6632,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6632,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+6633,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6633,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6633,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6633,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,before,both ends
+6633,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,before,both ends
+6633,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,before,both ends
+6633,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,during construction (exclude),both ends
+6633,ST KILDA ROAD,24/04/2023,Monday,2223Q4,during construction (exclude),both ends
+6633,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6633,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6633,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6633,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6633,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6633,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6633,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6633,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+6634,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6634,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6634,ST KILDA ROAD,21/05/2022,Saturday,2122Q4,before,End A only
+6634,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6634,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,before,both ends
+6634,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,before,both ends
+6634,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,before,both ends
+6634,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,during construction (exclude),both ends
+6634,ST KILDA ROAD,24/04/2023,Monday,2223Q4,during construction (exclude),both ends
+6634,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6634,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6634,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6634,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6634,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6634,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6634,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6634,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+6635,ST KILDA ROAD,12/02/2022,Saturday,2122Q3,before,both ends
+6635,ST KILDA ROAD,17/04/2022,Sunday,2122Q4,before,both ends
+6635,ST KILDA ROAD,21/05/2022,Saturday,2122Q4,before,both ends
+6635,ST KILDA ROAD,28/06/2022,Tuesday,2122Q4,before,both ends
+6635,ST KILDA ROAD,21/07/2022,Thursday,2223Q1,before,both ends
+6635,ST KILDA ROAD,14/09/2022,Wednesday,2223Q1,before,both ends
+6635,ST KILDA ROAD,3/12/2022,Saturday,2223Q2,before,both ends
+6635,ST KILDA ROAD,1/01/2023,Sunday,2223Q3,during construction (exclude),both ends
+6635,ST KILDA ROAD,24/04/2023,Monday,2223Q4,during construction (exclude),both ends
+6635,ST KILDA ROAD,6/07/2023,Thursday,2324Q1,after,both ends
+6635,ST KILDA ROAD,23/08/2023,Wednesday,2324Q1,after,both ends
+6635,ST KILDA ROAD,3/09/2023,Sunday,2324Q1,after,both ends
+6635,ST KILDA ROAD,10/11/2023,Friday,2324Q2,after,both ends
+6635,ST KILDA ROAD,3/02/2024,Saturday,2324Q3,after,both ends
+6635,ST KILDA ROAD,17/03/2024,Sunday,2324Q3,after,both ends
+6635,ST KILDA ROAD,16/05/2024,Thursday,2324Q4,after,both ends
+6635,ST KILDA ROAD,23/06/2024,Sunday,2324Q4,after,both ends
+7658,DAWSON STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+7658,DAWSON STREET,7/09/2020,Monday,2021Q1,before,both ends
+7658,DAWSON STREET,8/11/2020,Sunday,2021Q2,before,both ends
+7658,DAWSON STREET,22/01/2021,Friday,2021Q3,before,both ends
+7658,DAWSON STREET,11/03/2021,Thursday,2021Q3,before,both ends
+7658,DAWSON STREET,29/04/2021,Thursday,2021Q4,during construction (exclude),both ends
+7658,DAWSON STREET,2/05/2021,Sunday,2021Q4,during construction (exclude),End A only
+7658,DAWSON STREET,1/09/2021,Wednesday,2122Q1,during construction (exclude),both ends
+7658,DAWSON STREET,23/09/2021,Thursday,2122Q1,during construction (exclude),both ends
+7658,DAWSON STREET,26/09/2021,Sunday,2122Q1,during construction (exclude),both ends
+7658,DAWSON STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+7658,DAWSON STREET,31/10/2021,Sunday,2122Q2,after,both ends
+7658,DAWSON STREET,24/12/2021,Friday,2122Q2,after,both ends
+7658,DAWSON STREET,12/02/2022,Saturday,2122Q3,after,both ends
+7658,DAWSON STREET,17/04/2022,Sunday,2122Q4,after,both ends
+7658,DAWSON STREET,14/09/2022,Wednesday,2223Q1,after,both ends
+7748,FITZROY STREET,12/10/2009,Monday,0910Q2,during construction (exclude),both ends
+7748,FITZROY STREET,6/11/2009,Friday,0910Q2,during construction (exclude),both ends
+7748,FITZROY STREET,13/11/2009,Friday,0910Q2,during construction (exclude),both ends
+7748,FITZROY STREET,7/01/2010,Thursday,0910Q3,after,both ends
+7748,FITZROY STREET,20/02/2010,Saturday,0910Q3,after,both ends
+7748,FITZROY STREET,16/04/2010,Friday,0910Q4,after,both ends
+7748,FITZROY STREET,21/06/2010,Monday,0910Q4,after,both ends
+7748,FITZROY STREET,11/07/2010,Sunday,1011Q1,after,both ends
+7748,FITZROY STREET,1/10/2010,Friday,1011Q2,after,both ends
+7748,FITZROY STREET,20/10/2010,Wednesday,1011Q2,after,both ends
+7748,FITZROY STREET,20/11/2010,Saturday,1011Q2,after,both ends
+7749,FITZROY STREET,12/10/2009,Monday,0910Q2,during construction (exclude),both ends
+7749,FITZROY STREET,6/11/2009,Friday,0910Q2,during construction (exclude),both ends
+7749,FITZROY STREET,13/11/2009,Friday,0910Q2,during construction (exclude),both ends
+7749,FITZROY STREET,7/01/2010,Thursday,0910Q3,after,both ends
+7749,FITZROY STREET,20/02/2010,Saturday,0910Q3,after,both ends
+7749,FITZROY STREET,16/04/2010,Friday,0910Q4,after,both ends
+7749,FITZROY STREET,21/06/2010,Monday,0910Q4,after,both ends
+7749,FITZROY STREET,11/07/2010,Sunday,1011Q1,after,both ends
+7749,FITZROY STREET,1/10/2010,Friday,1011Q2,after,both ends
+7749,FITZROY STREET,20/10/2010,Wednesday,1011Q2,after,both ends
+7749,FITZROY STREET,20/11/2010,Saturday,1011Q2,after,both ends
+8218,HEIDELBERG ROAD,17/12/2019,Tuesday,1920Q2,before,both ends
+8218,HEIDELBERG ROAD,17/02/2020,Monday,1920Q3,before,both ends
+8218,HEIDELBERG ROAD,28/04/2020,Tuesday,1920Q4,before,both ends
+8218,HEIDELBERG ROAD,7/09/2020,Monday,2021Q1,before,both ends
+8218,HEIDELBERG ROAD,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+8218,HEIDELBERG ROAD,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+8218,HEIDELBERG ROAD,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+8218,HEIDELBERG ROAD,29/04/2021,Thursday,2021Q4,after,both ends
+8218,HEIDELBERG ROAD,1/09/2021,Wednesday,2122Q1,after,both ends
+8218,HEIDELBERG ROAD,23/09/2021,Thursday,2122Q1,after,both ends
+8218,HEIDELBERG ROAD,26/09/2021,Sunday,2122Q1,after,both ends
+8218,HEIDELBERG ROAD,27/10/2021,Wednesday,2122Q2,after,both ends
+8218,HEIDELBERG ROAD,31/10/2021,Sunday,2122Q2,after,both ends
+8218,HEIDELBERG ROAD,24/12/2021,Friday,2122Q2,after,both ends
+8218,HEIDELBERG ROAD,12/02/2022,Saturday,2122Q3,after,both ends
+8219,HEIDELBERG ROAD,17/12/2019,Tuesday,1920Q2,before,both ends
+8219,HEIDELBERG ROAD,17/02/2020,Monday,1920Q3,before,both ends
+8219,HEIDELBERG ROAD,28/04/2020,Tuesday,1920Q4,before,both ends
+8219,HEIDELBERG ROAD,7/09/2020,Monday,2021Q1,before,both ends
+8219,HEIDELBERG ROAD,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+8219,HEIDELBERG ROAD,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+8219,HEIDELBERG ROAD,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+8219,HEIDELBERG ROAD,29/04/2021,Thursday,2021Q4,after,both ends
+8219,HEIDELBERG ROAD,1/09/2021,Wednesday,2122Q1,after,both ends
+8219,HEIDELBERG ROAD,23/09/2021,Thursday,2122Q1,after,both ends
+8219,HEIDELBERG ROAD,26/09/2021,Sunday,2122Q1,after,both ends
+8219,HEIDELBERG ROAD,27/10/2021,Wednesday,2122Q2,after,both ends
+8219,HEIDELBERG ROAD,31/10/2021,Sunday,2122Q2,after,both ends
+8219,HEIDELBERG ROAD,24/12/2021,Friday,2122Q2,after,both ends
+8219,HEIDELBERG ROAD,12/02/2022,Saturday,2122Q3,after,both ends
+8220,HEIDELBERG ROAD,17/12/2019,Tuesday,1920Q2,before,both ends
+8220,HEIDELBERG ROAD,17/02/2020,Monday,1920Q3,before,both ends
+8220,HEIDELBERG ROAD,28/04/2020,Tuesday,1920Q4,before,both ends
+8220,HEIDELBERG ROAD,7/09/2020,Monday,2021Q1,before,both ends
+8220,HEIDELBERG ROAD,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+8220,HEIDELBERG ROAD,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+8220,HEIDELBERG ROAD,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+8220,HEIDELBERG ROAD,29/04/2021,Thursday,2021Q4,after,both ends
+8220,HEIDELBERG ROAD,1/09/2021,Wednesday,2122Q1,after,both ends
+8220,HEIDELBERG ROAD,23/09/2021,Thursday,2122Q1,after,both ends
+8220,HEIDELBERG ROAD,26/09/2021,Sunday,2122Q1,after,both ends
+8220,HEIDELBERG ROAD,27/10/2021,Wednesday,2122Q2,after,both ends
+8220,HEIDELBERG ROAD,31/10/2021,Sunday,2122Q2,after,both ends
+8220,HEIDELBERG ROAD,24/12/2021,Friday,2122Q2,after,both ends
+8220,HEIDELBERG ROAD,12/02/2022,Saturday,2122Q3,after,both ends
+8221,HEIDELBERG ROAD,17/12/2019,Tuesday,1920Q2,before,both ends
+8221,HEIDELBERG ROAD,17/02/2020,Monday,1920Q3,before,both ends
+8221,HEIDELBERG ROAD,28/04/2020,Tuesday,1920Q4,before,both ends
+8221,HEIDELBERG ROAD,7/09/2020,Monday,2021Q1,before,both ends
+8221,HEIDELBERG ROAD,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+8221,HEIDELBERG ROAD,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+8221,HEIDELBERG ROAD,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+8221,HEIDELBERG ROAD,29/04/2021,Thursday,2021Q4,after,both ends
+8221,HEIDELBERG ROAD,1/09/2021,Wednesday,2122Q1,after,both ends
+8221,HEIDELBERG ROAD,23/09/2021,Thursday,2122Q1,after,both ends
+8221,HEIDELBERG ROAD,26/09/2021,Sunday,2122Q1,after,both ends
+8221,HEIDELBERG ROAD,27/10/2021,Wednesday,2122Q2,after,both ends
+8221,HEIDELBERG ROAD,31/10/2021,Sunday,2122Q2,after,both ends
+8221,HEIDELBERG ROAD,24/12/2021,Friday,2122Q2,after,both ends
+8221,HEIDELBERG ROAD,12/02/2022,Saturday,2122Q3,after,both ends
+9168,ELIZABETH STREET,7/04/2019,Sunday,1819Q4,before,both ends
+9168,ELIZABETH STREET,31/08/2019,Saturday,1920Q1,before,both ends
+9168,ELIZABETH STREET,17/12/2019,Tuesday,1920Q2,before,both ends
+9168,ELIZABETH STREET,17/02/2020,Monday,1920Q3,before,both ends
+9168,ELIZABETH STREET,28/04/2020,Tuesday,1920Q4,during construction (exclude),both ends
+9168,ELIZABETH STREET,4/06/2020,Thursday,1920Q4,during construction (exclude),End A only
+9168,ELIZABETH STREET,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+9168,ELIZABETH STREET,2/11/2020,Monday,2021Q2,after,End A only
+9168,ELIZABETH STREET,8/11/2020,Sunday,2021Q2,after,both ends
+9168,ELIZABETH STREET,22/01/2021,Friday,2021Q3,after,both ends
+9168,ELIZABETH STREET,11/03/2021,Thursday,2021Q3,after,both ends
+9168,ELIZABETH STREET,29/04/2021,Thursday,2021Q4,after,both ends
+9168,ELIZABETH STREET,21/06/2021,Monday,2021Q4,after,End A only
+9168,ELIZABETH STREET,27/07/2021,Tuesday,2122Q1,after,End A only
+9168,ELIZABETH STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+9168,ELIZABETH STREET,23/09/2021,Thursday,2122Q1,after,both ends
+9168,ELIZABETH STREET,26/09/2021,Sunday,2122Q1,after,both ends
+9800,ALBERT STREET,8/10/2016,Saturday,1617Q2,before,both ends
+9800,ALBERT STREET,23/12/2016,Friday,1617Q2,before,both ends
+9800,ALBERT STREET,7/02/2017,Tuesday,1617Q3,before,both ends
+9800,ALBERT STREET,4/05/2017,Thursday,1617Q4,before,both ends
+9800,ALBERT STREET,9/08/2017,Wednesday,1718Q1,before,both ends
+9800,ALBERT STREET,10/10/2017,Tuesday,1718Q2,during construction (exclude),both ends
+9800,ALBERT STREET,23/11/2017,Thursday,1718Q2,during construction (exclude),both ends
+9800,ALBERT STREET,16/01/2018,Tuesday,1718Q3,during construction (exclude),both ends
+9800,ALBERT STREET,17/02/2018,Saturday,1718Q3,during construction (exclude),both ends
+9800,ALBERT STREET,4/04/2018,Wednesday,1718Q4,after,both ends
+9800,ALBERT STREET,23/08/2018,Thursday,1819Q1,after,both ends
+9800,ALBERT STREET,19/10/2018,Friday,1819Q2,after,both ends
+9800,ALBERT STREET,11/01/2019,Friday,1819Q3,after,both ends
+9800,ALBERT STREET,23/02/2019,Saturday,1819Q3,after,both ends
+9801,ALBERT STREET,19/10/2018,Friday,1819Q2,before,both ends
+9801,ALBERT STREET,11/01/2019,Friday,1819Q3,before,both ends
+9801,ALBERT STREET,23/02/2019,Saturday,1819Q3,before,both ends
+9801,ALBERT STREET,7/04/2019,Sunday,1819Q4,before,both ends
+9801,ALBERT STREET,31/08/2019,Saturday,1920Q1,before,both ends
+9801,ALBERT STREET,17/12/2019,Tuesday,1920Q2,during construction (exclude),both ends
+9801,ALBERT STREET,17/02/2020,Monday,1920Q3,during construction (exclude),both ends
+9801,ALBERT STREET,28/04/2020,Tuesday,1920Q4,during construction (exclude),both ends
+9801,ALBERT STREET,4/06/2020,Thursday,1920Q4,during construction (exclude),both ends
+9801,ALBERT STREET,7/09/2020,Monday,2021Q1,after,both ends
+9801,ALBERT STREET,2/11/2020,Monday,2021Q2,after,both ends
+9801,ALBERT STREET,8/11/2020,Sunday,2021Q2,after,both ends
+9801,ALBERT STREET,22/01/2021,Friday,2021Q3,after,both ends
+9801,ALBERT STREET,11/03/2021,Thursday,2021Q3,after,both ends
+9801,ALBERT STREET,29/04/2021,Thursday,2021Q4,after,both ends
+9801,ALBERT STREET,21/06/2021,Monday,2021Q4,after,both ends
+9802,ALBERT STREET,12/10/2009,Monday,0910Q2,before,both ends
+9802,ALBERT STREET,6/11/2009,Friday,0910Q2,before,both ends
+9802,ALBERT STREET,13/11/2009,Friday,0910Q2,before,both ends
+9802,ALBERT STREET,7/01/2010,Thursday,0910Q3,before,both ends
+9802,ALBERT STREET,20/02/2010,Saturday,0910Q3,before,both ends
+9802,ALBERT STREET,16/04/2010,Friday,0910Q4,during construction (exclude),both ends
+9802,ALBERT STREET,21/06/2010,Monday,0910Q4,during construction (exclude),both ends
+9802,ALBERT STREET,11/07/2010,Sunday,1011Q1,after,both ends
+9802,ALBERT STREET,1/10/2010,Friday,1011Q2,after,both ends
+9802,ALBERT STREET,20/10/2010,Wednesday,1011Q2,after,both ends
+9802,ALBERT STREET,20/11/2010,Saturday,1011Q2,after,both ends
+9802,ALBERT STREET,24/12/2010,Friday,1011Q2,after,both ends
+9802,ALBERT STREET,29/01/2011,Saturday,1011Q3,after,both ends
+9802,ALBERT STREET,6/04/2011,Wednesday,1011Q4,after,both ends
+9802,ALBERT STREET,28/06/2011,Tuesday,1011Q4,after,both ends
+9803,ALBERT STREET,12/10/2009,Monday,0910Q2,before,both ends
+9803,ALBERT STREET,6/11/2009,Friday,0910Q2,before,both ends
+9803,ALBERT STREET,13/11/2009,Friday,0910Q2,before,both ends
+9803,ALBERT STREET,7/01/2010,Thursday,0910Q3,before,both ends
+9803,ALBERT STREET,20/02/2010,Saturday,0910Q3,before,both ends
+9803,ALBERT STREET,16/04/2010,Friday,0910Q4,during construction (exclude),both ends
+9803,ALBERT STREET,21/06/2010,Monday,0910Q4,during construction (exclude),both ends
+9803,ALBERT STREET,11/07/2010,Sunday,1011Q1,after,both ends
+9803,ALBERT STREET,1/10/2010,Friday,1011Q2,after,both ends
+9803,ALBERT STREET,20/10/2010,Wednesday,1011Q2,after,both ends
+9803,ALBERT STREET,20/11/2010,Saturday,1011Q2,after,both ends
+9803,ALBERT STREET,24/12/2010,Friday,1011Q2,after,both ends
+9803,ALBERT STREET,29/01/2011,Saturday,1011Q3,after,both ends
+9803,ALBERT STREET,6/04/2011,Wednesday,1011Q4,after,both ends
+9803,ALBERT STREET,28/06/2011,Tuesday,1011Q4,after,both ends
+9804,ALBERT STREET,12/10/2009,Monday,0910Q2,before,both ends
+9804,ALBERT STREET,6/11/2009,Friday,0910Q2,before,both ends
+9804,ALBERT STREET,13/11/2009,Friday,0910Q2,before,both ends
+9804,ALBERT STREET,7/01/2010,Thursday,0910Q3,before,both ends
+9804,ALBERT STREET,20/02/2010,Saturday,0910Q3,before,both ends
+9804,ALBERT STREET,16/04/2010,Friday,0910Q4,during construction (exclude),both ends
+9804,ALBERT STREET,21/06/2010,Monday,0910Q4,during construction (exclude),both ends
+9804,ALBERT STREET,11/07/2010,Sunday,1011Q1,during construction (exclude),both ends
+9804,ALBERT STREET,1/10/2010,Friday,1011Q2,during construction (exclude),both ends
+9804,ALBERT STREET,20/10/2010,Wednesday,1011Q2,during construction (exclude),both ends
+9804,ALBERT STREET,20/11/2010,Saturday,1011Q2,during construction (exclude),both ends
+9804,ALBERT STREET,24/12/2010,Friday,1011Q2,during construction (exclude),both ends
+9804,ALBERT STREET,29/01/2011,Saturday,1011Q3,during construction (exclude),both ends
+9804,ALBERT STREET,6/04/2011,Wednesday,1011Q4,during construction (exclude),both ends
+9804,ALBERT STREET,28/06/2011,Tuesday,1011Q4,during construction (exclude),both ends
+9804,ALBERT STREET,20/08/2011,Saturday,1112Q1,after,both ends
+9804,ALBERT STREET,18/10/2011,Tuesday,1112Q2,after,both ends
+9804,ALBERT STREET,17/11/2011,Thursday,1112Q2,after,both ends
+9804,ALBERT STREET,5/12/2011,Monday,1112Q2,after,both ends
+9804,ALBERT STREET,17/01/2012,Tuesday,1112Q3,after,both ends
+9804,ALBERT STREET,15/02/2012,Wednesday,1112Q3,after,both ends
+9804,ALBERT STREET,12/03/2012,Monday,1112Q3,after,both ends
+9804,ALBERT STREET,12/04/2012,Thursday,1112Q4,after,both ends
+10529,SWANSTON STREET,31/08/2019,Saturday,1920Q1,before,both ends
+10529,SWANSTON STREET,17/12/2019,Tuesday,1920Q2,before,both ends
+10529,SWANSTON STREET,17/02/2020,Monday,1920Q3,before,both ends
+10529,SWANSTON STREET,28/04/2020,Tuesday,1920Q4,before,both ends
+10529,SWANSTON STREET,4/06/2020,Thursday,1920Q4,before,both ends
+10529,SWANSTON STREET,7/09/2020,Monday,2021Q1,during construction (exclude),both ends
+10529,SWANSTON STREET,2/11/2020,Monday,2021Q2,during construction (exclude),both ends
+10529,SWANSTON STREET,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+10529,SWANSTON STREET,22/01/2021,Friday,2021Q3,after,both ends
+10529,SWANSTON STREET,11/03/2021,Thursday,2021Q3,after,both ends
+10529,SWANSTON STREET,29/04/2021,Thursday,2021Q4,after,both ends
+10529,SWANSTON STREET,21/06/2021,Monday,2021Q4,after,both ends
+10529,SWANSTON STREET,27/07/2021,Tuesday,2122Q1,after,both ends
+10529,SWANSTON STREET,1/09/2021,Wednesday,2122Q1,after,both ends
+10529,SWANSTON STREET,23/09/2021,Thursday,2122Q1,after,both ends
+10529,SWANSTON STREET,26/09/2021,Sunday,2122Q1,after,both ends
+10529,SWANSTON STREET,27/10/2021,Wednesday,2122Q2,after,both ends
+10529,SWANSTON STREET,31/10/2021,Sunday,2122Q2,after,both ends
+10529,SWANSTON STREET,24/12/2021,Friday,2122Q2,after,both ends
+10838,MOORABOOL STREET,25/11/2020,Wednesday,2021Q2,before,both ends
+10838,MOORABOOL STREET,11/01/2021,Monday,2021Q3,before,both ends
+10838,MOORABOOL STREET,11/03/2021,Thursday,2021Q3,before,both ends
+10838,MOORABOOL STREET,22/05/2021,Saturday,2021Q4,before,both ends
+10838,MOORABOOL STREET,31/07/2021,Saturday,2122Q1,before,both ends
+10838,MOORABOOL STREET,6/10/2021,Wednesday,2122Q2,during construction (exclude),both ends
+10838,MOORABOOL STREET,22/11/2021,Monday,2122Q2,during construction (exclude),both ends
+10838,MOORABOOL STREET,20/01/2022,Thursday,2122Q3,after,both ends
+10838,MOORABOOL STREET,14/04/2022,Thursday,2122Q4,after,both ends
+10838,MOORABOOL STREET,8/08/2022,Monday,2223Q1,after,both ends
+10838,MOORABOOL STREET,10/12/2022,Saturday,2223Q2,after,both ends
+12016,BALLARAT ST (STH),25/11/2019,Monday,1920Q2,before,both ends
+12016,BALLARAT ST (STH),17/12/2019,Tuesday,1920Q2,before,both ends
+12016,BALLARAT ST (STH),17/02/2020,Monday,1920Q3,before,both ends
+12016,BALLARAT ST (STH),28/04/2020,Tuesday,1920Q4,before,both ends
+12016,BALLARAT ST (STH),4/06/2020,Thursday,1920Q4,before,both ends
+12016,BALLARAT ST (STH),7/09/2020,Monday,2021Q1,before,both ends
+12016,BALLARAT ST (STH),2/11/2020,Monday,2021Q2,during construction (exclude),both ends
+12016,BALLARAT ST (STH),8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+12016,BALLARAT ST (STH),22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+12016,BALLARAT ST (STH),11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+12016,BALLARAT ST (STH),29/04/2021,Thursday,2021Q4,after,both ends
+12016,BALLARAT ST (STH),21/06/2021,Monday,2021Q4,after,both ends
+12016,BALLARAT ST (STH),27/07/2021,Tuesday,2122Q1,after,both ends
+12016,BALLARAT ST (STH),1/09/2021,Wednesday,2122Q1,after,both ends
+12016,BALLARAT ST (STH),27/10/2021,Wednesday,2122Q2,after,both ends
+12016,BALLARAT ST (STH),24/12/2021,Friday,2122Q2,after,both ends
+12016,BALLARAT ST (STH),12/02/2022,Saturday,2122Q3,after,both ends
+12017,Ballarat St,19/10/2013,Saturday,1314Q2,before,both ends
+12017,Ballarat St,9/01/2014,Thursday,1314Q3,before,both ends
+12017,Ballarat St,4/03/2014,Tuesday,1314Q3,before,both ends
+12017,Ballarat St,15/05/2014,Thursday,1314Q4,before,both ends
+12017,Ballarat St,3/08/2014,Sunday,1415Q1,before,both ends
+12017,Ballarat St,5/09/2014,Friday,1415Q1,before,both ends
+12017,Ballarat St,21/10/2014,Tuesday,1415Q2,during construction (exclude),both ends
+12017,Ballarat St,29/11/2014,Saturday,1415Q2,during construction (exclude),both ends
+12017,Ballarat St,5/02/2015,Thursday,1415Q3,during construction (exclude),both ends
+12017,Ballarat St,1/05/2015,Friday,1415Q4,after,both ends
+12017,Ballarat St,17/05/2015,Sunday,1415Q4,after,both ends
+12017,Ballarat St,13/09/2015,Sunday,1516Q1,after,both ends
+12017,Ballarat St,14/12/2015,Monday,1516Q2,after,both ends
+12017,Ballarat St,5/02/2016,Friday,1516Q3,after,both ends
+12017,Ballarat St,20/03/2016,Sunday,1516Q3,after,both ends
+12018,ACLAND,1/05/2015,Friday,1415Q4,before,both ends
+12018,ACLAND,17/05/2015,Sunday,1415Q4,before,both ends
+12018,ACLAND,26/05/2015,Tuesday,1415Q4,before,both ends
+12018,ACLAND,13/09/2015,Sunday,1516Q1,before,both ends
+12018,ACLAND,4/10/2015,Sunday,1516Q2,before,both ends
+12018,ACLAND,14/12/2015,Monday,1516Q2,before,both ends
+12018,ACLAND,15/12/2015,Tuesday,1516Q2,before,both ends
+12018,ACLAND,18/01/2016,Monday,1516Q3,before,both ends
+12018,ACLAND,5/02/2016,Friday,1516Q3,before,both ends
+12018,ACLAND,20/03/2016,Sunday,1516Q3,before,End A only
+12018,ACLAND,19/04/2016,Tuesday,1516Q4,during construction (exclude),both ends
+12018,ACLAND,28/08/2016,Sunday,1617Q1,during construction (exclude),both ends
+12018,ACLAND,8/10/2016,Saturday,1617Q2,after,both ends
+12018,ACLAND,17/11/2016,Thursday,1617Q2,after,End A only
+12018,ACLAND,22/12/2016,Thursday,1617Q2,after,both ends
+12018,ACLAND,23/12/2016,Friday,1617Q2,after,both ends
+12018,ACLAND,7/02/2017,Tuesday,1617Q3,after,both ends
+12018,ACLAND,22/02/2017,Wednesday,1617Q3,after,End A only
+12018,ACLAND,4/05/2017,Thursday,1617Q4,after,both ends
+12018,ACLAND,9/08/2017,Wednesday,1718Q1,after,both ends
+12018,ACLAND,17/09/2017,Sunday,1718Q1,after,End A only
+12019,MURNONG ST,25/11/2019,Monday,1920Q2,before,both ends
+12019,MURNONG ST,17/02/2020,Monday,1920Q3,before,both ends
+12019,MURNONG ST,28/04/2020,Tuesday,1920Q4,before,both ends
+12019,MURNONG ST,7/09/2020,Monday,2021Q1,before,both ends
+12019,MURNONG ST,8/11/2020,Sunday,2021Q2,during construction (exclude),both ends
+12019,MURNONG ST,22/01/2021,Friday,2021Q3,during construction (exclude),both ends
+12019,MURNONG ST,11/03/2021,Thursday,2021Q3,during construction (exclude),both ends
+12019,MURNONG ST,29/04/2021,Thursday,2021Q4,after,both ends
+12019,MURNONG ST,1/09/2021,Wednesday,2122Q1,after,both ends
+12019,MURNONG ST,27/10/2021,Wednesday,2122Q2,after,both ends
+12019,MURNONG ST,1/12/2021,Wednesday,2122Q2,after,both ends
+12019,MURNONG ST,24/12/2021,Friday,2122Q2,after,both ends
+12019,MURNONG ST,12/02/2022,Saturday,2122Q3,after,both ends
+12021,MALOP STREET,28/01/2017,Saturday,1617Q3,before,both ends
+12021,MALOP STREET,22/05/2017,Monday,1617Q4,before,both ends
+12021,MALOP STREET,1/09/2017,Friday,1718Q1,before,both ends
+12021,MALOP STREET,20/09/2017,Wednesday,1718Q1,before,both ends
+12021,MALOP STREET,29/10/2017,Sunday,1718Q2,before,both ends
+12021,MALOP STREET,23/12/2017,Saturday,1718Q2,before,both ends
+12021,MALOP STREET,17/02/2018,Saturday,1718Q3,during construction (exclude),both ends
+12021,MALOP STREET,22/03/2018,Thursday,1718Q3,during construction (exclude),both ends
+12021,MALOP STREET,2/05/2018,Wednesday,1718Q4,during construction (exclude),both ends
+12021,MALOP STREET,8/09/2018,Saturday,1819Q1,during construction (exclude),both ends
+12021,MALOP STREET,18/11/2018,Sunday,1819Q2,after,both ends
+12021,MALOP STREET,11/01/2019,Friday,1819Q3,after,both ends
+12021,MALOP STREET,25/02/2019,Monday,1819Q3,after,both ends
+12021,MALOP STREET,20/04/2019,Saturday,1819Q4,after,both ends
+12021,MALOP STREET,28/06/2019,Friday,1819Q4,after,End A only
+12021,MALOP STREET,30/08/2019,Friday,1920Q1,after,both ends
