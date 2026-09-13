@@ -20,6 +20,14 @@ import signal
 import socket
 from typing import List
 
+# Windows consoles default to a codepage (e.g. cp1252) that can't encode the
+# Unicode symbols this script prints (checkmarks, etc.), crashing the process
+# right after the servers start. Force UTF-8 stdio on Windows so those prints
+# don't tear down the backend/frontend it just launched.
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 # Define absolute paths using the project root
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 VENV_PATH = os.path.join(ROOT_DIR, ".venv")
