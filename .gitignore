@@ -11,6 +11,18 @@ scratch/
 .venv
 .pytest_cache
 __pycache__
+.ipynb_checkpoints/
+*.ipynb_checkpoints*
+reports*
+# Microsoft Office temporary lock files
+~$*
+*.tmp
+
+# Raw and large binary/data files (over GitHub 100MB limit)
+data/raw/
+*.csv.gz
+*.zip
+*.tar.gz
 
 *token.json
 *.env
@@ -19,3 +31,10 @@ processed*
 raw*
 .ipynb_checkpoints/
 .ipynb_checkpoints/
+*.duckdb
+*.parquet
+# Ignore data files under team_b/data but track directory structure
+team_b/data/**
+!team_b/data/
+!team_b/data/**/
+!team_b/data/**/__init__.py

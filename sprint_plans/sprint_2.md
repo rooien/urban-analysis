@@ -98,7 +98,7 @@ The following Exploratory Data Studies checked into [`team_b/notebooks/`](../tea
 
 #### Task SB-204: Symmetrical Street Name Normalization & Boundary Collision Fix
 - **Priority:** High
-- **Description:** Implement unified street name cleaning across Python and DuckDB SQL to eliminate the `Lt` vs `LITTLE`, `St` vs `SAINT`, and boundary street suburb collision bugs documented in [data_curation.md](../data_curation.md).
+- **Description:** Implement unified street name cleaning across Python and DuckDB SQL to eliminate the `Lt` vs `LITTLE`, `St` vs `SAINT`, and boundary street suburb collision bugs documented in [data_pipeline.md](../knowledge_base/data_pipeline.md).
 - **Acceptance Criteria:**
   - Normalization rule cleans strings (uppercasing, multiple spaces collapsed, `LITTLE ` $\to$ `LT `, `SAINT ` $\to$ `ST `, suffix standardizations).
   - Unifies block descriptions (`BETWEEN <St1> AND <St2>` alphabetically sorted).
@@ -185,5 +185,5 @@ The following Exploratory Data Studies checked into [`team_b/notebooks/`](../tea
 - [ ] All code adheres to [`CODING_STANDARDS.md`](../CODING_STANDARDS.md) (PEP 8, type hints, complete docstrings).
 - [ ] Pipeline runs end-to-end without manual intervention.
 - [ ] Storage outputs (DuckDB, Parquet, CSV) pass all automated validation assertions with 0 critical errors.
-- [ ] Ingestion documentation updated in [`README.md`](../README.md) and [`DATA.md`](../DATA.md).
+- [ ] Ingestion documentation updated in [`README.md`](../README.md) and [`data_inventory.md`](../knowledge_base/data_inventory.md).
 

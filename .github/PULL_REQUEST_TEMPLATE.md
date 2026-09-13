@@ -18,8 +18,9 @@ Please ensure all of the following are checked before requesting a review.
 - [ ] Code avoids duplication and leverages existing libraries or `src/` modules where possible.
 
 ### Git & Collaboration
-- [ ] Branch follows the naming convention (`feature/initials/description` or `bugfix/initials/description`).
-- [ ] Branch has been rebased against the latest `main`.
+- [ ] PR is submitted from a personal fork feature branch to `upstream:main`.
+- [ ] Branch follows the naming convention (`feature/initials/description`, `bugfix/initials/description`, etc.).
+- [ ] Branch has been rebased against the latest `upstream/main`.
 - [ ] **I confirm there are no merge conflicts** (PRs with conflicts will not be approved).
 
 ## Testing & Verification
