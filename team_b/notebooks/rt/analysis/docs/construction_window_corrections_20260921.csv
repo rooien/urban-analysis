@@ -1,0 +1,16 @@
+street_segment_id,street_name,suburb,method,is_under_construction_before_fix,construction_start_fy_qtr,construction_end_fy_qtr,n_construction_qtrs,construction_calendar,cells_changed
+859,Rathdowne Street,Carlton,Baseline 1->0 transition rule (IV reply),0 every quarter,2021Q3,2021Q3,1,Jan 2021 - Mar 2021,1
+1587,Armstrong St,Ballarat Central,explicit quarter range (IV reply),blank (NA) every quarter,1314Q2,1415Q2,5,Oct 2013 - Dec 2014,105
+1754,Cecil Street,South Melbourne,Baseline 1->0 transition rule (IV reply),0 every quarter,1011Q3,1011Q3,1,Jan 2011 - Mar 2011,1
+3503,High Street,Wodonga,explicit quarter range (IV reply),blank (NA) every quarter,1112Q3,1213Q3,5,Jan 2012 - Mar 2013,105
+3504,High Street,Wodonga,explicit quarter range (IV reply),blank (NA) every quarter,1112Q3,1213Q3,5,Jan 2012 - Mar 2013,105
+3750,Liebig Street,Warrnambool,explicit quarter range (IV reply),blank (NA) every quarter,1617Q3,1819Q1,7,Jan 2017 - Sep 2018,105
+3751,Liebig Street,Warrnambool,explicit quarter range (IV reply),blank (NA) every quarter,1617Q3,1819Q1,7,Jan 2017 - Sep 2018,105
+3752,Liebig Street,Warrnambool,explicit quarter range (IV reply),blank (NA) every quarter,1617Q3,1819Q1,7,Jan 2017 - Sep 2018,105
+3753,Liebig Street,Warrnambool,explicit quarter range (IV reply),blank (NA) every quarter,1617Q3,1819Q1,7,Jan 2017 - Sep 2018,105
+5881,Wellington Street,Collingwood,Baseline 1->0 transition rule (IV reply),0 every quarter,1415Q4,1415Q4,1,Apr 2015 - Jun 2015,1
+6237,Bair St,Leongatha,explicit quarter range (IV reply),blank (NA) every quarter,2021Q1,2122Q1,5,Jul 2020 - Sep 2021,105
+7072,Little Bridge Street,Bakery Hill,explicit quarter range (IV reply),blank (NA) every quarter,0910Q4,1213Q3,12,Apr 2010 - Mar 2013,106
+7851,Main Rd,Bakery Hill,explicit quarter range (IV reply),blank (NA) every quarter,1718Q1,1718Q3,3,Jul 2017 - Mar 2018,105
+10530,Swanston Street,Carlton,Baseline 1->0 transition rule (IV reply),0 every quarter,2122Q2,2324Q4,11,Oct 2021 - Jun 2024,11
+10531,Swanston Street,Carlton,Baseline 1->0 transition rule (IV reply),0 every quarter,2122Q2,2324Q4,11,Oct 2021 - Jun 2024,11
